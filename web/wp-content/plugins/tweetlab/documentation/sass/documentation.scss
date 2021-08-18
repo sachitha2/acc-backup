@@ -1,0 +1,198 @@
+$primary: #55acee;
+$primary-darken: darken($primary,5%);
+$sidebar-width: 320px;
+
+@import "reset.scss";
+
+body {
+	font: 400 14px 'Open Sans', Helvetica, Arial, Verdana, sans-serif;
+	background-color: #eee;
+	color:#444;
+}
+
+a {
+	text-decoration: none;
+	color: $primary;
+}
+
+h2 {
+	font-weight:700;
+	font-size:30px;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+
+h3 {
+	font-weight:700;
+	font-size:24px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	color: $primary-darken;
+}
+
+h4 {
+	font-weight:700;
+	font-size:20px;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+pre {
+	padding: 10px;
+	background: #eee;
+	border:1px solid #ddd;
+	border-radius:2px;
+	margin: 20px 0;
+}
+
+code {
+	padding: 2px 4px;
+	font-size: 90%;
+	color: #c7254e;
+	background-color: #f9f2f4;
+	border-radius: 4px;
+}
+
+kbd {
+	padding: 2px 6px;
+	font-size: 90%;
+	color: #fff;
+	background-color: #333;
+	border-radius: 3px;
+	box-shadow: inset 0 -1px 0 rgba(0,0,0,.25);
+	font-family: 'Open Sans';
+}
+
+.logo {
+	display:block;
+	font-size: 30px;
+	padding: 20px;
+	text-transform: uppercase;
+	color:#fff;
+	margin: 0;
+	span {
+		font-weight: 700;
+	}
+	small {
+		font-size:14px;
+	}
+}
+
+#sidebar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: $primary-darken;
+	width: $sidebar-width;
+	height: 100%;
+	box-shadow: 5px 0 7px rgba(0,0,0,.1);
+	
+	.logo {
+		background-color: $primary;
+	}
+
+	nav {
+		ol {
+			margin: 0;
+			padding: 0;
+			text-decoration: none;
+			li {
+				a {
+					color:#fff;
+					padding: 15px 20px;
+					display: block;
+					text-transform: uppercase;
+					transition: background-color .5s;
+					&:hover {
+						background-color: $primary;
+					}
+				}
+			}
+		}
+	}
+}
+
+#main {
+	padding-left: $sidebar-width;
+	line-height:25px;
+	section {
+		padding: 0 30px 60px;
+		
+		&:nth-child(2n) {
+			background-color: #fff;
+		}
+
+		h2 {
+			padding-top: 60px;
+		}
+
+		.container {
+			max-width: 1200px;
+		}
+		img {
+			display: block;
+			max-width: 100%;
+			margin-bottom: 30px;
+		}
+	}
+
+	p {
+		margin-bottom: 20px;
+	}
+
+	ul,ol {
+		margin-bottom: 20px;
+		li {
+			margin-left: 30px;
+		}
+	}
+
+	table {
+		width: 100%;
+		box-shadow:0 2px 3px rgba(0,0,0,.2);
+		th, td {
+			text-align: left;
+			padding: 10px;
+		}
+
+		thead {
+			tr {
+				background-color: $primary;
+				color:#fff;
+			}
+		}
+
+		tbody {
+			tr {
+				&:nth-child(2n){
+					background-color: #fff;
+				}
+			}
+		}
+	}
+
+	.first {
+		background-color: #444;
+		color:#fff;
+		padding-top: 60px;
+		text-align: center;
+		.logo {
+			background:url('../images/twitter_logo.png') no-repeat top center;
+			padding: 0;
+			padding-top: 60px;
+			margin-bottom: 30px;
+			small {
+				display: block;
+				margin-top: 10px;
+			}
+		}
+	}
+}
+.row {
+	display:flex;
+}
+@for $i from 1 through 12 {
+  	.col-#{$i} {
+    width: unquote( (100 * $i / 12) + '%' );
+	}
+}

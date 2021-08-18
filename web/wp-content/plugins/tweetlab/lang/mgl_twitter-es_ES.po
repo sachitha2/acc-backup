@@ -1,0 +1,472 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Twitter Slider\n"
+"POT-Creation-Date: 2015-07-01 16:35+0200\n"
+"PO-Revision-Date: 2015-07-01 16:44+0200\n"
+"Last-Translator: Pol <pol@insignia-studio.com>\n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.2\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../MGL_Twitter.class.php:57
+msgid "MGL Twitter error: "
+msgstr "Error de MGL Twitter"
+
+#: ../MGL_TwitterUtiles.php:6
+msgid "Left to right"
+msgstr "De izquierda a derecha"
+
+#: ../MGL_TwitterUtiles.php:7
+msgid "Right to left"
+msgstr "De derecha a izquierda"
+
+#: ../MGL_TwitterUtiles.php:8
+msgid "Vertical"
+msgstr "Vertical"
+
+#: ../controller/MGL_Twitter_BaseController.class.php:85
+msgid "now"
+msgstr "ahora"
+
+#: ../controller/MGL_Twitter_BaseController.class.php:88
+msgid "second"
+msgstr "segundos"
+
+#: ../controller/MGL_Twitter_BaseController.class.php:89
+msgid "seconds"
+msgstr "segun"
+
+#: ../controller/MGL_Twitter_BaseController.class.php:92
+msgid "minute"
+msgstr "minuto"
+
+#: ../controller/MGL_Twitter_BaseController.class.php:93
+msgid "minutes"
+msgstr "minutos"
+
+#: ../controller/MGL_Twitter_BaseController.class.php:96
+msgid "hour"
+msgstr "hora"
+
+#: ../controller/MGL_Twitter_BaseController.class.php:97
+msgid "hours"
+msgstr "horas"
+
+#: ../controller/MGL_Twitter_BaseController.class.php:100
+msgid "day"
+msgstr "dia"
+
+#: ../controller/MGL_Twitter_BaseController.class.php:101
+msgid "days"
+msgstr "dias"
+
+#: ../controller/MGL_Twitter_BaseController.class.php:104
+msgid "week"
+msgstr "semana"
+
+#: ../controller/MGL_Twitter_BaseController.class.php:105
+msgid "weeks"
+msgstr "semanas"
+
+#: ../controller/MGL_Twitter_BaseController.class.php:108
+msgid "month"
+msgstr "mes"
+
+#: ../controller/MGL_Twitter_BaseController.class.php:109
+msgid "months"
+msgstr "meses"
+
+#: ../controller/MGL_Twitter_BaseController.class.php:112
+msgid "year"
+msgstr "año"
+
+#: ../controller/MGL_Twitter_BaseController.class.php:113
+msgid "years"
+msgstr "años"
+
+#: ../controller/MGL_Twitter_BaseController.class.php:124
+#, php-format
+msgid "%1$s %2$s ago"
+msgstr "Hace %1$s %2$s"
+
+#: ../layers/Layers_MGL_TwitterCard_Widget.php:19
+#: ../layers/Layers_MGL_TwitterCard_Widget.php:198 ../vc_extend.php:121
+#: ../widgets/MGL_TwitterCard_Widget.php:10
+#: ../widgets/MGL_TwitterCard_Widget.php:45
+msgid "Twitter Card"
+msgstr "Tarjeta de Twitter"
+
+#: ../layers/Layers_MGL_TwitterCard_Widget.php:26
+msgid "Show a twitter card"
+msgstr "Muestra una tarjeta de Twitter"
+
+#: ../layers/Layers_MGL_TwitterCard_Widget.php:109
+#: ../layers/Layers_MGL_Twitter_Widget.php:109 ../vc_extend.php:12
+#: ../widgets/MGL_TwitterCard_Widget.php:52
+#: ../widgets/MGL_Twitter_Widget.php:61
+msgid "Yes"
+msgstr "Sí"
+
+#: ../layers/Layers_MGL_TwitterCard_Widget.php:109
+#: ../layers/Layers_MGL_Twitter_Widget.php:109 ../vc_extend.php:12
+#: ../widgets/MGL_TwitterCard_Widget.php:52
+#: ../widgets/MGL_Twitter_Widget.php:61
+msgid "No"
+msgstr "No"
+
+#: ../layers/Layers_MGL_TwitterCard_Widget.php:136
+#: ../layers/Layers_MGL_Twitter_Widget.php:158 ../vc_extend.php:54
+#: ../vc_extend.php:136 ../widgets/MGL_TwitterCard_Widget.php:67
+#: ../widgets/MGL_Twitter_Widget.php:86
+msgid "Display"
+msgstr "Mostrar"
+
+#: ../layers/Layers_MGL_TwitterCard_Widget.php:143
+#: ../layers/Layers_MGL_Twitter_Widget.php:165
+msgid "Tweet display"
+msgstr "Formato de Tweet"
+
+#: ../layers/Layers_MGL_TwitterCard_Widget.php:150
+msgid "Follow button"
+msgstr "Botón de seguir"
+
+#: ../layers/Layers_MGL_TwitterCard_Widget.php:157 ../vc_extend.php:142
+msgid "Button"
+msgstr "Botón"
+
+#: ../layers/Layers_MGL_TwitterCard_Widget.php:165
+#: ../layers/Layers_MGL_Twitter_Widget.php:187 ../vc_extend.php:76
+#: ../widgets/MGL_Twitter_Widget.php:126
+msgid "Pager"
+msgstr "Paginador"
+
+#: ../layers/Layers_MGL_TwitterCard_Widget.php:173
+#: ../layers/Layers_MGL_Twitter_Widget.php:195 ../vc_extend.php:68
+#: ../widgets/MGL_Twitter_Widget.php:137
+msgid "Arrows"
+msgstr "Flechas"
+
+#: ../layers/Layers_MGL_TwitterCard_Widget.php:206
+#: ../layers/Layers_MGL_Twitter_Widget.php:228 ../vc_extend.php:25
+#: ../vc_extend.php:131 ../widgets/MGL_TwitterCard_Widget.php:62
+#: ../widgets/MGL_Twitter_Widget.php:71
+msgid "Username"
+msgstr "Nombre de usuario"
+
+#: ../layers/Layers_MGL_TwitterCard_Widget.php:218
+#: ../layers/Layers_MGL_Twitter_Widget.php:264 ../vc_extend.php:84
+#: ../vc_extend.php:149 ../widgets/MGL_TwitterCard_Widget.php:72
+#: ../widgets/MGL_Twitter_Widget.php:101
+msgid "Template"
+msgstr "Plantilla"
+
+#: ../layers/Layers_MGL_Twitter_Widget.php:19
+#: ../layers/Layers_MGL_Twitter_Widget.php:220 ../vc_extend.php:15
+#: ../widgets/MGL_Twitter_Widget.php:10 ../widgets/MGL_Twitter_Widget.php:45
+msgid "Twitter Carousel"
+msgstr "Carrusel de Twitter"
+
+#: ../layers/Layers_MGL_Twitter_Widget.php:26
+msgid "Show a twitter slider"
+msgstr ""
+
+#: ../layers/Layers_MGL_Twitter_Widget.php:136
+msgid "Columns & count"
+msgstr ""
+
+#: ../layers/Layers_MGL_Twitter_Widget.php:145 ../vc_extend.php:48
+#: ../widgets/MGL_Twitter_Widget.php:96
+msgid "Count"
+msgstr "Número"
+
+#: ../layers/Layers_MGL_Twitter_Widget.php:152 ../vc_extend.php:42
+#: ../widgets/MGL_Twitter_Widget.php:91
+msgid "Slides"
+msgstr "Diapositivas"
+
+#: ../layers/Layers_MGL_Twitter_Widget.php:172 ../vc_extend.php:64
+#: ../vc_extend.php:72 ../vc_extend.php:80
+msgid "Controls"
+msgstr "Controles"
+
+#: ../layers/Layers_MGL_Twitter_Widget.php:179
+#: ../widgets/MGL_Twitter_Widget.php:115
+msgid "Autoplay"
+msgstr "Reproducción automática"
+
+#: ../layers/Layers_MGL_Twitter_Widget.php:240 ../vc_extend.php:31
+#: ../widgets/MGL_Twitter_Widget.php:76
+msgid "Search"
+msgstr "Búsqueda"
+
+#: ../layers/Layers_MGL_Twitter_Widget.php:252
+msgid "Custom query"
+msgstr ""
+
+#: ../mgl_twitter_admin.php:18
+msgid "Settings saved"
+msgstr "Cambios guardados"
+
+#: ../mgl_twitter_admin.php:34
+msgid "Twitter settings"
+msgstr "Configuración de Twitter"
+
+#: ../mgl_twitter_admin.php:35
+#, php-format
+msgid ""
+"You need to register a new Twitter application from %s in order to make this "
+"plugin work"
+msgstr ""
+"Tienes que crear una nueva aplicación de Twitter desde %s para que este "
+"plugin funcione"
+
+#: ../mgl_twitter_admin.php:35
+msgid "here"
+msgstr "aquí"
+
+#: ../mgl_twitter_admin.php:36
+msgid "After creating the app you need to create an access token"
+msgstr "Después de crear la aplicación, necesitas crear un \"access token\""
+
+#: ../mgl_twitter_admin.php:37
+msgid ""
+"Fill the fields below with the App settings you will find in the \"OAuth tool"
+"\" tab"
+msgstr ""
+"Rellena los campos a continuación con la configuración de tu aplicación que "
+"encontraras en la pestanya \"OAuth tool\""
+
+#: ../mgl_twitter_admin.php:40
+msgid "Fill this two fields with the information of your App"
+msgstr "Rellena estos dos campos con la información de tu aplicación"
+
+#: ../mgl_twitter_admin.php:60 ../mgl_twitter_admin.php:75
+msgid "Save settings"
+msgstr "Guardar cambios"
+
+#: ../mgl_twitter_admin.php:62
+msgid "Configuration"
+msgstr "Configuración"
+
+#: ../mgl_twitter_admin.php:65
+msgid "Load jQuery"
+msgstr "Cargar jQuery"
+
+#: ../mgl_twitter_admin.php:69
+msgid "Mark this if you're not loading jQuery by yourself"
+msgstr "Marca-lo si no estas cargando jQuery por tu cuenta"
+
+#: ../mgl_twitter_admin.php:83
+msgid "User feed"
+msgstr "Listado de usuario"
+
+#: ../mgl_twitter_admin.php:84
+msgid "If you want to show an user's last tweets simply put"
+msgstr "Si quieres mostrar los últimos tweets de un usuario simplemente pon"
+
+#: ../mgl_twitter_admin.php:86
+msgid "Add attributes to configure the aspect of the carousel"
+msgstr "Añade atributos para configurar el aspecto del carrusel"
+
+#: ../mgl_twitter_admin.php:88
+msgid "Search feed"
+msgstr "Listado de búsqueda"
+
+#: ../mgl_twitter_admin.php:89
+msgid "If you want to show the last tweets from an specific hashtag or search"
+msgstr "Si quieres mostrar los últimos tweets de un hashtag o búsqueda"
+
+#: ../mgl_twitter_admin.php:92
+msgid "User card"
+msgstr "Tarjeta de usuario"
+
+#: ../mgl_twitter_admin.php:93
+msgid "Display a card with the information of a user"
+msgstr "Muestra una tarjeta con información de un usuario"
+
+#: ../mgl_twitter_admin.php:95
+msgid "Attributes will let you hide/show different settings"
+msgstr "Los atributos te permiten ocultar/mostrar diferentes opciones"
+
+#: ../mgl_twitter_admin.php:97
+msgid "See all the options avaible in the plugin's documentation"
+msgstr "Mira todas las opciones disponibles en la documentación del plugin"
+
+#: ../templates/card/card.php:11 ../templates/default/card.php:11
+msgid "Open in Twitter"
+msgstr "Abrir en Twitter"
+
+#: ../templates/card/card.php:26 ../templates/default/card.php:26
+#, php-format
+msgid "Visit %d"
+msgstr "Visitar %d"
+
+#: ../templates/card/card.php:45 ../templates/default/card.php:45
+msgid "Tweets"
+msgstr "Tweets"
+
+#: ../templates/card/card.php:46 ../templates/default/card.php:46
+msgid "Followers"
+msgstr "Seguidores"
+
+#: ../templates/card/card.php:47 ../templates/default/card.php:47
+msgid "Following"
+msgstr "Siguiendo"
+
+#: ../templates/card/card.php:56 ../templates/default/card.php:56
+#, php-format
+msgid "Follow %d"
+msgstr "Seguir %d"
+
+#: ../vc_extend.php:16 ../vc_extend.php:122
+#: ../widgets/MGL_TwitterCard_Widget.php:11
+#: ../widgets/MGL_Twitter_Widget.php:11
+msgid "By MaGeek Lab"
+msgstr "Por MaGeek Lab"
+
+#: ../vc_extend.php:19 ../vc_extend.php:125
+msgid "Social"
+msgstr "Social"
+
+#: ../vc_extend.php:37 ../widgets/MGL_Twitter_Widget.php:81
+msgid "Custom Query"
+msgstr "Consulta personalizada"
+
+#: ../vc_extend.php:60
+msgid "Autoplay slider"
+msgstr "Reproduir el slider automáticamente"
+
+#: ../vc_extend.php:91 ../widgets/MGL_Twitter_Widget.php:149
+msgid "Direction"
+msgstr "Dirección"
+
+#: ../vc_extend.php:94 ../vc_extend.php:101 ../vc_extend.php:108
+#: ../vc_extend.php:115
+msgid "Advanced"
+msgstr "Configuración avanzada"
+
+#: ../vc_extend.php:98 ../widgets/MGL_Twitter_Widget.php:164
+msgid "Pause"
+msgstr "Pausa"
+
+#: ../vc_extend.php:105 ../widgets/MGL_Twitter_Widget.php:160
+msgid "Speed"
+msgstr "Velocidad"
+
+#: ../vc_extend.php:112 ../vc_extend.php:156
+#: ../widgets/MGL_TwitterCard_Widget.php:97
+#: ../widgets/MGL_Twitter_Widget.php:168
+msgid "Cache"
+msgstr "Cache"
+
+#: ../widgets/MGL_TwitterCard_Widget.php:57
+#: ../widgets/MGL_Twitter_Widget.php:66
+msgid "Title"
+msgstr "Título"
+
+#: ../widgets/MGL_TwitterCard_Widget.php:84
+msgid "Show button"
+msgstr "Mostrar botón de Twitter"
+
+#: ../widgets/MGL_TwitterCard_Widget.php:95
+#: ../widgets/MGL_Twitter_Widget.php:147
+msgid "Advanced settings"
+msgstr "Configuración avanzada"
+
+#: ../widgets/MGL_Twitter_Widget.php:112
+msgid "Slider settings"
+msgstr "Configuración de carrusel"
+
+#, fuzzy
+#~ msgid "Twitter Slider"
+#~ msgstr "Timeline de Twitter"
+
+#~ msgid "Consumer key is empty!"
+#~ msgstr "¡La Consumer key está vacia!"
+
+#~ msgid "Consumer secret is empty!"
+#~ msgstr "¡La Consumer secret está vacia!"
+
+#~ msgid "Access token is empty!"
+#~ msgstr "El Access token está vacio!"
+
+#~ msgid "Access token secret is empty!"
+#~ msgstr "El Access token secret está vacio!"
+
+#~ msgid "Type"
+#~ msgstr "Tipo"
+
+#~ msgid "User information"
+#~ msgstr "Información de usuario"
+
+#~ msgid "Hide user information on top of the search"
+#~ msgstr "Ocultar la información del usuario "
+
+#~ msgid "Prevent slider of autoplaying"
+#~ msgstr "Prevenir que el slider se reproduzca automáticamente"
+
+#~ msgid "Show slider controls"
+#~ msgstr "Mostrar controles de usuario"
+
+#~ msgid "Hide slider pagination"
+#~ msgstr "Ocultar paginación del slider"
+
+#~ msgid "Hide slider follow/tweet button"
+#~ msgstr "Ocultar el botón de seguir/twittear del slider"
+
+#~ msgid "Avatars"
+#~ msgstr "Avatars"
+
+#~ msgid "Hide user's avatars"
+#~ msgstr "Ocultar avatares de usuario"
+
+#~ msgid "Width"
+#~ msgstr "Anchura"
+
+#~ msgid "Height"
+#~ msgstr "Altura"
+
+#~ msgid "User data"
+#~ msgstr "Información de usuario"
+
+#~ msgid "Hide user data"
+#~ msgstr "Ocultar información de usuario"
+
+#~ msgid "Hide button"
+#~ msgstr "Ocultar botón"
+
+#~ msgid "Hide description"
+#~ msgstr "Ocultar descripción"
+
+#~ msgid "Display the card info of a Twitter user"
+#~ msgstr "Muestra la tarjeta de información de un usuario de Twitter"
+
+#~ msgid "Show description"
+#~ msgstr "Mostrar descripción"
+
+#~ msgid "Show user data"
+#~ msgstr "Mostrar información de usuario"
+
+#~ msgid "Display a carousel of the last tweets of a search"
+#~ msgstr "Muestra un carrusel de los últimos tweets de una búsqueda"
+
+#~ msgid "Show avatars"
+#~ msgstr "Mostrar avatars"
+
+#~ msgid "Slide width"
+#~ msgstr "Ancho de diapositiva"
+
+#~ msgid "Slide height"
+#~ msgstr "Alto de diapositiva"
+
+#~ msgid "Display a carousel of the last tweets of an user's timeline"
+#~ msgstr ""
+#~ "Muestra un carrusel de los últimos tweets del timeline de un usuario"
+
+#~ msgid "Show userinfo"
+#~ msgstr "Mostrar información de usuario"

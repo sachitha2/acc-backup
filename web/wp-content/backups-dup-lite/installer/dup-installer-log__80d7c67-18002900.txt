@@ -1,0 +1,1754 @@
+********************************************************************************
+* DUPLICATOR-PRO: Install-Log
+* STEP-1 START @ 10:37:03
+* VERSION: 1.3.40.1
+* NOTICE: Do NOT post to public sites or forums!!
+********************************************************************************
+PACKAGE INFO________ CURRENT SERVER                         |ORIGINAL SERVER
+PHP VERSION_________: 7.3.26                                |7.4.22
+OS__________________: Linux                                 |Linux
+CREATED_____________: 2021-02-18 00:29:00
+WP VERSION__________: 5.4.4
+DUP VERSION_________: 1.3.40.1
+DB__________________: 10.3.27
+DB TABLES___________: 156
+DB ROWS_____________: 492,503
+DB FILE SIZE________: 60.08MB
+********************************************************************************
+SERVER INFO
+PHP_________________: 7.4.22 | SAPI: fpm-fcgi
+PHP MEMORY__________: 4294967296 | SUHOSIN: disabled
+SERVER______________: nginx/1.20.1
+DOC ROOT____________: "/var/www/html"
+DOC ROOT 755________: true
+LOG FILE 644________: true
+REQUEST URL_________: "http://wordpress-docker.test/dup-installer/main.installer.php"
+********************************************************************************
+USER INPUTS
+ARCHIVE ENGINE______: "shellexec_unzip"
+SET DIR PERMS_______: 1
+DIR PERMS VALUE_____: 1363
+SET FILE PERMS______: 1
+FILE PERMS VALUE____: 1204
+SAFE MODE___________: "0"
+LOGGING_____________: "1"
+CONFIG MODE_________: "NEW"
+FILE TIME___________: "current"
+********************************************************************************
+
+
+--------------------------------------
+ARCHIVE SETUP
+--------------------------------------
+NAME________________: "/var/www/html/20210218_centralcollegeanuradhapura_[HASH]_20210218002900_archive.zip"
+SIZE________________: 464.68MB
+
+PRE-EXTRACT-CHECKS
+- PASS: Apache '.htaccess' not found - no backup needed.
+- PASS: Microsoft IIS 'web.config' not found - no backup needed.
+- PASS: WordFence '.user.ini' not found - no backup needed.
+
+
+START ZIP FILE EXTRACTION SHELLEXEC >>> 
+<<< Shell-Exec Unzip Complete.
+--------------------------------------
+POST-EXTACT-CHECKS
+--------------------------------------
+PERMISSION UPDATES:
+    -DIRS:  '755'
+    -FILES: '644'
+[PHP ERR][WARN] MSG:touch(): Utime failed: Permission denied [CODE:2|FILE:/var/www/html/dup-installer/ctrls/ctrl.s1.php|LINE:407]
+[PHP ERR][WARN] MSG:touch(): Utime failed: Permission denied [CODE:2|FILE:/var/www/html/dup-installer/ctrls/ctrl.s1.php|LINE:407]
+
+STEP-1 COMPLETE @ 10:37:14 - RUNTIME: 11.3461 sec.
+
+
+
+********************************************************************************
+* DUPLICATOR-LITE INSTALL-LOG
+* STEP-2 START @ 10:40:37
+* NOTICE: Do NOT post to public sites or forums!!
+********************************************************************************
+USER INPUTS
+VIEW MODE___________: "basic"
+DB ACTION___________: "empty"
+DB HOST_____________: "**OBSCURED**"
+DB NAME_____________: "**OBSCURED**"
+DB PASS_____________: "**OBSCURED**"
+DB PORT_____________: "**OBSCURED**"
+NON-BREAKING SPACES_: false
+MYSQL MODE__________: "DEFAULT"
+MYSQL MODE OPTS_____: ""
+CHARSET_____________: "utf8"
+COLLATE_____________: "utf8_general_ci"
+COLLATE FB__________: false
+VIEW CREATION_______: true
+STORED PROCEDURE____: true
+********************************************************************************
+
+--------------------------------------
+DATABASE-ENVIRONMENT
+--------------------------------------
+MYSQL VERSION:	This Server: 8.0.26 -- Build Server: 10.3.27
+FILE SIZE:	dup-database__[HASH].sql (36.73MB)
+TIMEOUT:	5000
+MAXPACK:	67108864
+SQLMODE:	ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION
+NEW SQL FILE:	[/var/www/html/dup-installer/dup-installer-data__[HASH].sql]
+COLLATE FB:	Off
+
+NOTICE: This servers version [8.0.26] is less than the build version [10.3.27].  
+If you find issues after testing your site please referr to this FAQ item.
+https://snapcreek.com/duplicator/docs/faqs-tech/#faq-installer-260-q
+--------------------------------------
+DATABASE RESULTS
+--------------------------------------
+DB VIEWS:	enabled
+DB PROCEDURES:	enabled
+ERRORS FOUND:	0
+DROPPED TABLES:	0
+RENAMED TABLES:	0
+QUERIES RAN:	1362
+
+wp_FinalTiles_gallery: (1)
+wp_FinalTiles_gallery_images: (0)
+wp_actionscheduler_actions: (65)
+wp_actionscheduler_claims: (0)
+wp_actionscheduler_groups: (2)
+wp_actionscheduler_logs: (191)
+wp_addonlibrary_addons: (204)
+wp_addonlibrary_categories: (11)
+wp_commentmeta: (0)
+wp_comments: (0)
+wp_dpproeventcalendar_booking: (0)
+wp_dpproeventcalendar_calendars: (0)
+wp_dpproeventcalendar_special_dates: (0)
+wp_dpproeventcalendar_special_dates_calendar: (0)
+wp_dpproeventcalendar_subscribers_calendar: (0)
+wp_duplicator_packages: (0)
+wp_eg_grids: (5)
+wp_eg_item_elements: (0)
+wp_eg_item_skins: (51)
+wp_eg_navigation_skins: (8)
+wp_flag_album: (0)
+wp_flag_comments: (0)
+wp_flag_gallery: (0)
+wp_flag_pictures: (0)
+wp_itsec_lockouts: (0)
+wp_itsec_log: (19)
+wp_itsec_temp: (0)
+wp_links: (0)
+wp_options: (982)
+wp_ose_app_admin: (0)
+wp_ose_app_adminrecemail: (0)
+wp_ose_app_email: (3)
+wp_ose_app_geoip: (0)
+wp_ose_secConfig: (62)
+wp_osefirewall_acl: (49)
+wp_osefirewall_adminemails: (0)
+wp_osefirewall_advancepatterns: (0)
+wp_osefirewall_aiscan: (0)
+wp_osefirewall_attacktype: (15)
+wp_osefirewall_backup: (0)
+wp_osefirewall_backupath: (0)
+wp_osefirewall_backuplog: (0)
+wp_osefirewall_basicrules: (12)
+wp_osefirewall_bkfiles: (0)
+wp_osefirewall_cronsettings: (0)
+wp_osefirewall_dbconfiggit: (0)
+wp_osefirewall_detattacktype: (95)
+wp_osefirewall_detcontdetail: (95)
+wp_osefirewall_detcontent: (73)
+wp_osefirewall_detected: (95)
+wp_osefirewall_domains: (0)
+wp_osefirewall_emailnotificationmgmtv7: (11)
+wp_osefirewall_errorlog: (0)
+wp_osefirewall_files: (3)
+wp_osefirewall_fileuploadext: (183)
+wp_osefirewall_fileuploadlog: (0)
+wp_osefirewall_fileuploadlogv7: (0)
+wp_osefirewall_fwscannerv7Config: (34)
+wp_osefirewall_gitlog: (0)
+wp_osefirewall_ipmanagement: (0)
+wp_osefirewall_iptable: (49)
+wp_osefirewall_iptable_tmp: (6397)
+wp_osefirewall_logs: (0)
+wp_osefirewall_malware: (3)
+wp_osefirewall_pages: (32)
+wp_osefirewall_referers: (16)
+wp_osefirewall_scanhist: (1)
+wp_osefirewall_sfschecked: (7348)
+wp_osefirewall_updateLog: (0)
+wp_osefirewall_vars: (6)
+wp_osefirewall_versioninfo: (0)
+wp_osefirewall_versions: (1)
+wp_osefirewall_virusVersion: (0)
+wp_osefirewall_vlscanner: (0)
+wp_osefirewall_vshash: (0)
+wp_osefirewall_vspatterns: (312)
+wp_osefirewall_vstypes: (9)
+wp_osefirewall_whitelistmgmt: (0)
+wp_postmeta: (16641)
+wp_posts: (858)
+wp_preloader_ultimate: (0)
+wp_revslider_css: (109)
+wp_revslider_css_bkp: (109)
+wp_revslider_layer_animations: (2)
+wp_revslider_layer_animations_bkp: (2)
+wp_revslider_navigations: (0)
+wp_revslider_navigations_bkp: (0)
+wp_revslider_sliders: (4)
+wp_revslider_sliders_bkp: (3)
+wp_revslider_slides: (22)
+wp_revslider_slides_bkp: (17)
+wp_revslider_static_slides: (1)
+wp_revslider_static_slides_bkp: (0)
+wp_rj_quickcharts: (2)
+wp_sbi_instagram_feeds_posts: (0)
+wp_sbi_instagram_posts: (0)
+wp_scroll_news: (3)
+wp_smartiplog: (11)
+wp_smush_dir_images: (0)
+wp_stream: (1)
+wp_stream_meta: (2)
+wp_term_relationships: (245)
+wp_term_taxonomy: (154)
+wp_termmeta: (12)
+wp_terms: (154)
+wp_tm_taskmeta: (0)
+wp_tm_tasks: (0)
+wp_ultimatetables: (1)
+wp_unitegallery_categories: (0)
+wp_unitegallery_galleries: (0)
+wp_unitegallery_items: (0)
+wp_usermeta: (198)
+wp_users: (4)
+wp_wfBadLeechers: (0)
+wp_wfBlockedIPLog: (0)
+wp_wfBlocks: (0)
+wp_wfBlocksAdv: (0)
+wp_wfConfig: (116)
+wp_wfCrawlers: (0)
+wp_wfFileMods: (10285)
+wp_wfHits: (1)
+wp_wfHoover: (0)
+wp_wfIssues: (0)
+wp_wfLeechers: (0)
+wp_wfLockedOut: (0)
+wp_wfLocs: (0)
+wp_wfLogins: (0)
+wp_wfNet404s: (0)
+wp_wfReverseCache: (0)
+wp_wfScanners: (0)
+wp_wfStatus: (126)
+wp_wfThrottleLog: (0)
+wp_wfVulnScanners: (0)
+wp_woocommerce_api_keys: (0)
+wp_woocommerce_attribute_taxonomies: (0)
+wp_woocommerce_downloadable_product_permissions: (0)
+wp_woocommerce_log: (0)
+wp_woocommerce_order_itemmeta: (0)
+wp_woocommerce_order_items: (0)
+wp_woocommerce_payment_tokenmeta: (0)
+wp_woocommerce_payment_tokens: (0)
+wp_woocommerce_sessions: (2)
+wp_woocommerce_shipping_zone_locations: (0)
+wp_woocommerce_shipping_zone_methods: (0)
+wp_woocommerce_shipping_zones: (0)
+wp_woocommerce_tax_rate_locations: (0)
+wp_woocommerce_tax_rates: (0)
+wp_wpdatatable_2: (1)
+wp_wpforms_entries: (0)
+wp_wpforms_entry_fields: (0)
+wp_wpforms_entry_meta: (0)
+wp_wpforms_tasks_meta: (27)
+wp_wsal_metadata: (368676)
+wp_wsal_occurrences: (77570)
+wp_wsal_options: (31)
+wpposts: (635)
+Removed '55' cache/transient rows
+
+INSERT DATA RUNTIME: 11.9021 sec.
+STEP-2 COMPLETE @ 10:40:49 - RUNTIME: 11.9423 sec.
+
+====================================
+SET SEARCH AND REPLACE LIST
+====================================
+
+
+********************************************************************************
+DUPLICATOR PRO INSTALL-LOG
+STEP-3 START @ 10:41:14
+NOTICE: Do NOT post to public sites or forums
+********************************************************************************
+CHARSET SERVER:	"utf8"
+CHARSET CLIENT:	"utf8"
+********************************************************************************
+OPTIONS:
+blogname______________: "Central College | Anuradhapura"
+postguid______________: false
+fullsearch____________: false
+path_old______________: "/home/anuclfix/public_html"
+path_new______________: "/var/www/html"
+siteurl_______________: "http://3.1.33.61:4000"
+url_old_______________: "https://anucentralcollege.lk"
+url_new_______________: "http://3.1.33.61:4000"
+maxSerializeStrlen____: 4000000
+replaceMail___________: false
+dbcharset_____________: "utf8"
+dbcollate_____________: "utf8_general_ci"
+wp_mail_______________: ""
+wp_nickname___________: ""
+wp_first_name_________: ""
+wp_last_name__________: ""
+ssl_admin_____________: false
+cache_wp______________: false
+cache_path____________: false
+exe_safe_mode_________: false
+config_mode___________: "NEW"
+********************************************************************************
+
+
+====================================
+RUN SEARCH AND REPLACE
+====================================
+
+EVALUATE TABLE: "wp_FinalTiles_gallery"___________________________[ROWS:     1][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_FinalTiles_gallery_images"____________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_actionscheduler_actions"______________________[ROWS:    65][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_actionscheduler_claims"_______________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_actionscheduler_groups"_______________________[ROWS:     2][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_actionscheduler_logs"_________________________[ROWS:   191][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_addonlibrary_addons"__________________________[ROWS:   204][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_addonlibrary_categories"______________________[ROWS:    11][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_commentmeta"__________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_comments"_____________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_dpproeventcalendar_booking"___________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_dpproeventcalendar_calendars"_________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_dpproeventcalendar_special_dates"_____________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_dpproeventcalendar_special_dates_calendar"____[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_dpproeventcalendar_subscribers_calendar"______[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_duplicator_packages"__________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_eg_grids"_____________________________________[ROWS:     5][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_eg_item_elements"_____________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_eg_item_skins"________________________________[ROWS:    51][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_eg_navigation_skins"__________________________[ROWS:     8][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_flag_album"___________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_flag_comments"________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_flag_gallery"_________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_flag_pictures"________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_itsec_lockouts"_______________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_itsec_log"____________________________________[ROWS:    19][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_itsec_temp"___________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_links"________________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_options"______________________________________[ROWS:   982][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_ose_app_admin"________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_ose_app_adminrecemail"________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_ose_app_email"________________________________[ROWS:     3][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_ose_app_geoip"________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_ose_secConfig"________________________________[ROWS:    62][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_osefirewall_acl"______________________________[ROWS:    49][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_osefirewall_adminemails"______________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_osefirewall_advancepatterns"__________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_osefirewall_aiscan"___________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_osefirewall_attacktype"_______________________[ROWS:    15][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_osefirewall_backup"___________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_osefirewall_backupath"________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_osefirewall_backuplog"________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_osefirewall_basicrules"_______________________[ROWS:    12][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_osefirewall_bkfiles"__________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_osefirewall_cronsettings"_____________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_osefirewall_dbconfiggit"______________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_osefirewall_detattacktype"____________________[ROWS:    95][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_osefirewall_detcontdetail"____________________[ROWS:    95][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_osefirewall_detcontent"_______________________[ROWS:    73][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_osefirewall_detected"_________________________[ROWS:    95][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_osefirewall_domains"__________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_osefirewall_emailnotificationmgmtv7"__________[ROWS:    11][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_osefirewall_errorlog"_________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_osefirewall_files"____________________________[ROWS:     3][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_osefirewall_fileuploadext"____________________[ROWS:   183][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_osefirewall_fileuploadlog"____________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_osefirewall_fileuploadlogv7"__________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_osefirewall_fwscannerv7Config"________________[ROWS:    34][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_osefirewall_gitlog"___________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_osefirewall_ipmanagement"_____________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_osefirewall_iptable"__________________________[ROWS:    49][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_osefirewall_iptable_tmp"______________________[ROWS:  6397][PG:   2][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_osefirewall_logs"_____________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_osefirewall_malware"__________________________[ROWS:     3][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_osefirewall_pages"____________________________[ROWS:    32][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_osefirewall_referers"_________________________[ROWS:    16][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_osefirewall_scanhist"_________________________[ROWS:     1][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_osefirewall_sfschecked"_______________________[ROWS:  7348][PG:   3][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_osefirewall_updateLog"________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_osefirewall_vars"_____________________________[ROWS:     6][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_osefirewall_versioninfo"______________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_osefirewall_versions"_________________________[ROWS:     1][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_osefirewall_virusVersion"_____________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_osefirewall_vlscanner"________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_osefirewall_vshash"___________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_osefirewall_vspatterns"_______________________[ROWS:   312][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_osefirewall_vstypes"__________________________[ROWS:     9][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_osefirewall_whitelistmgmt"____________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_postmeta"_____________________________________[ROWS: 16641][PG:   5][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_posts"________________________________________[ROWS:   858][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_preloader_ultimate"___________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_revslider_css"________________________________[ROWS:   109][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_revslider_css_bkp"____________________________[ROWS:   109][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_revslider_layer_animations"___________________[ROWS:     2][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_revslider_layer_animations_bkp"_______________[ROWS:     2][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_revslider_navigations"________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_revslider_navigations_bkp"____________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_revslider_sliders"____________________________[ROWS:     4][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_revslider_sliders_bkp"________________________[ROWS:     3][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_revslider_slides"_____________________________[ROWS:    22][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_revslider_slides_bkp"_________________________[ROWS:    17][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_revslider_static_slides"______________________[ROWS:     1][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_revslider_static_slides_bkp"__________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_rj_quickcharts"_______________________________[ROWS:     2][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_sbi_instagram_feeds_posts"____________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_sbi_instagram_posts"__________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_scroll_news"__________________________________[ROWS:     3][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_smartiplog"___________________________________[ROWS:    11][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_smush_dir_images"_____________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_stream"_______________________________________[ROWS:     1][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_stream_meta"__________________________________[ROWS:     2][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_term_relationships"___________________________[ROWS:   245][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_term_taxonomy"________________________________[ROWS:   154][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_termmeta"_____________________________________[ROWS:    12][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_terms"________________________________________[ROWS:   154][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_tm_taskmeta"__________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_tm_tasks"_____________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_ultimatetables"_______________________________[ROWS:     1][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_unitegallery_categories"______________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_unitegallery_galleries"_______________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_unitegallery_items"___________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_usermeta"_____________________________________[ROWS:   198][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_users"________________________________________[ROWS:     4][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_wfBadLeechers"________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wfBlockedIPLog"_______________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wfBlocks"_____________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wfBlocksAdv"__________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wfConfig"_____________________________________[ROWS:   116][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_wfCrawlers"___________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wfFileMods"___________________________________[ROWS: 10285][PG:   3][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_wfHits"_______________________________________[ROWS:     1][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_wfHoover"_____________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wfIssues"_____________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wfLeechers"___________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wfLockedOut"__________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wfLocs"_______________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wfLogins"_____________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wfNet404s"____________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wfReverseCache"_______________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wfScanners"___________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wfStatus"_____________________________________[ROWS:   126][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_wfThrottleLog"________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wfVulnScanners"_______________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_woocommerce_api_keys"_________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_woocommerce_attribute_taxonomies"_____________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_woocommerce_downloadable_product_permissions"_[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_woocommerce_log"______________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_woocommerce_order_itemmeta"___________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_woocommerce_order_items"______________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_woocommerce_payment_tokenmeta"________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_woocommerce_payment_tokens"___________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_woocommerce_sessions"_________________________[ROWS:     2][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_woocommerce_shipping_zone_locations"__________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_woocommerce_shipping_zone_methods"____________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_woocommerce_shipping_zones"___________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_woocommerce_tax_rate_locations"_______________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_woocommerce_tax_rates"________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wpdatatable_2"________________________________[ROWS:     1][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_wpforms_entries"______________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wpforms_entry_fields"_________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wpforms_entry_meta"___________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wpforms_tasks_meta"___________________________[ROWS:    27][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_wsal_metadata"________________________________[ROWS:368676][PG: 106][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_wsal_occurrences"_____________________________[ROWS: 77570][PG:  23][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wp_wsal_options"_________________________________[ROWS:    31][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+
+EVALUATE TABLE: "wpposts"_________________________________________[ROWS:   635][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/anuclfix/public_html" ======================> "/var/www/html"
+	SEARCH  2:"\/home\/anuclfix\/public_html" ===================> "\/var\/www\/html"
+	SEARCH  3:"%2Fhome%2Fanuclfix%2Fpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  4:"\home\anuclfix\public_html" ======================> "/var/www/html"
+	SEARCH  5:"\\home\\anuclfix\\public_html" ===================> "\/var\/www\/html"
+	SEARCH  6:"%5Chome%5Canuclfix%5Cpublic_html" ================> "%2Fvar%2Fwww%2Fhtml"
+	SEARCH  7:"//anucentralcollege.lk" ==========================> "//3.1.33.61:4000"
+	SEARCH  8:"\/\/anucentralcollege.lk" ========================> "\/\/3.1.33.61:4000"
+	SEARCH  9:"%2F%2Fanucentralcollege.lk" ======================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 10:"//www.anucentralcollege.lk" ======================> "//3.1.33.61:4000"
+	SEARCH 11:"\/\/www.anucentralcollege.lk" ====================> "\/\/3.1.33.61:4000"
+	SEARCH 12:"%2F%2Fwww.anucentralcollege.lk" ==================> "%2F%2F3.1.33.61%3A4000"
+	SEARCH 13:"https://3.1.33.61:4000" ==========================> "http://3.1.33.61:4000"
+	SEARCH 14:"https:\/\/3.1.33.61:4000" ========================> "http:\/\/3.1.33.61:4000"
+	SEARCH 15:"https%3A%2F%2F3.1.33.61%3A4000" ==================> "http%3A%2F%2F3.1.33.61%3A4000"
+--------------------------------------
+SCANNED:	Tables:156 	|	 Rows:492468 	|	 Cells:2159873 
+UPDATED:	Tables:12 	|	 Rows:4708 	|	 Cells:4928 
+ERRORS:		0 
+RUNTIME:	47.629900 sec
+
+====================================
+REMOVE LICENSE KEY
+====================================
+
+====================================
+CREATE NEW ADMIN USER
+====================================
+
+====================================
+CONFIGURATION FILE UPDATES
+====================================
+	UPDATE DB_NAME ""wp""
+	UPDATE DB_USER ""wp""
+	UPDATE DB_PASSWORD "** OBSCURED **"
+	UPDATE DB_HOST ""accbackup_mysql_1""
+	REMOVE WPCACHEHOME
+	
+*** UPDATED WP CONFIG FILE ***
+
+====================================
+HTACCESS UPDATE MODE: "NEW"
+====================================
+- PASS: Successfully created a new .htaccess file.
+- PASS: Existing Apache '.htaccess__[HASH]' was removed
+
+====================================
+GENERAL UPDATES & CLEANUP
+====================================
+
+====================================
+DEACTIVATE PLUGINS CHECK
+====================================
+Deactivated plugins list here: Array
+(
+    [0] => really-simple-ssl/rlrsssl-really-simple-ssl.php
+    [1] => simple-google-recaptcha/simple-google-recaptcha.php
+    [2] => js_composer/js_composer.php
+)
+
+deactivate js_composer/js_composer.php
+Plugin(s) listed here are deactivated: js_composer/js_composer.php
+Plugin(s) reactivated after installation: js_composer/js_composer.php
+
+====================================
+NOTICES TEST
+====================================
+No General Notices Found
+
+
+====================================
+CLEANUP TMP FILES
+====================================
+
+====================================
+FINAL REPORT NOTICES
+====================================
+
+STEP-3 COMPLETE @ 10:42:01 - RUNTIME: 47.6679 sec. 
+
+
+====================================
+FINAL REPORT NOTICES LIST
+====================================
+-----------------------
+[INFO] Info
+	SECTIONS: general
+	LONG MSG:             The following is a list of notices that may need to be fixed in order to finalize your setup. These values should only be investigated if you're running into
+            issues with your site. For more details see the <a href="https://codex.wordpress.org/Editing_wp-config.php" target="_blank">WordPress Codex</a>.
+
+-----------------------
+[INFO] No errors in database
+	SECTIONS: database
+
+-----------------------
+[INFO] No search and replace data errors
+	SECTIONS: search_replace
+
+-----------------------
+[INFO] No files extraction errors
+	SECTIONS: files
+
+-----------------------
+[WARNING] Deactivated Plugin:  WPBakery Page Builder
+	SECTIONS: general
+	LONG MSG: This plugin is deactivated automatically, because it requires a reacivation to work properly.  <b>Please reactivate from the WordPress admin panel after logging in.</b> This will re-enable your site's frontend.
+
+====================================
