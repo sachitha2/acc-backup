@@ -20,5 +20,7 @@ services:
     build:
       context: .
       dockerfile: php.dockerfile
+    ports:
+        - 4001:9000
     volumes:
       - ./web:/var/www/html
