@@ -103,7 +103,7 @@ $expandClass =  $sectionId == $open_section ? 'open' : 'close';
                 </td>
             </tr>
             <tr>
-                <td class="col-opt">Overwrite Install <sup>pro</sup></td>
+                <td class="col-opt">Overwrite Install</td>
                 <td>
                     This mode indicates that the installer was started in a location that contains an existing site.  With this mode <b>the existing site will be overwritten</b> with
                     the contents of the archive.zip/daf and the database.sql file.  This is an advanced option and users should be pre-paired to know that state of their database
@@ -409,6 +409,13 @@ $expandClass =  $sectionId == $open_section ? 'open' : 'close';
                     <td>The MySQL mode option will allow you to set the mode for this session.  It is very useful when running into conversion issues.  For a full overview please
                     see the	<a href="https://dev.mysql.com/doc/refman/5.7/en/sql-mode.html" target="_blank">MySQL mode documentation</a> specific to your version.</td>
                 </tr>
+                <tr>
+                    <td class="col-opt">Objects</td>
+                    <td>Allow or Ignore  objects for 'Views', 'Stored Procedures", and 'DEFINER' statements.   Typically the defaults for these settings should be used.
+                    In the event you see an error such as "'Access denied; you need (at least one of) the SUPER privilege(s) for this operation" then changing the value
+                    for each operation should be considered.
+                    </td>
+                </tr>                
                 <tr>
                     <td class="col-opt">Charset</td>
                     <td>When the database is populated from the SQL script it will use this value as part of its connection.  Only change this value if you know what your

@@ -4924,3 +4924,108 @@
 [2020-05-24 14:42:39 : INFO] - multisite: N 
 [2020-05-24 14:42:39 : INFO] - openssl: OpenSSL 1.0.2k  26 Jan 2017 
 [2020-05-24 14:42:39 : INFO] - The queue for tasks of type "smush" is empty. Aborting! 
+[2021-06-13 14:42:51 : INFO] - Re_Smush_It_Task with attachment ID : 3855, autocreated on : June 13, 2021 02:42:51 
+[2021-06-13 15:04:09 : INFO] - Re_Smush_It_Task with attachment ID : 3856, autocreated on : June 13, 2021 03:04:09 
+[2021-06-13 15:07:09 : INFO] - Re_Smush_It_Task with attachment ID : 3857, autocreated on : June 13, 2021 03:07:09 
+[2021-06-13 15:09:22 : INFO] - 
+ 
+[2021-06-13 15:09:22 : INFO] - Header for logs at time:  Sun, 13 Jun 2021 15:09:22 +0000 on http://anucentralcollege.lk 
+[2021-06-13 15:09:22 : INFO] - WP: 5.7.2 
+[2021-06-13 15:09:22 : INFO] - PHP: 7.4.20 (fpm-fcgi, Linux ea8b985465cc 5.4.0-1042-gcp #45~18.04.1-Ubuntu SMP Tue Apr 13 18:51:16 UTC 2021 x86_64) 
+[2021-06-13 15:09:22 : INFO] - MySQL: 8.0.25 
+[2021-06-13 15:09:22 : INFO] - WPLANG: en_US 
+[2021-06-13 15:09:22 : INFO] - Server: nginx/1.20.1 
+[2021-06-13 15:09:22 : INFO] - Outbound connections: N 
+[2021-06-13 15:09:22 : INFO] - safe_mode: 0 
+[2021-06-13 15:09:22 : INFO] - max_execution_time: 30 
+[2021-06-13 15:09:22 : INFO] - memory_limit: 128M (used: 78M | 7M) 
+[2021-06-13 15:09:22 : INFO] - multisite: N 
+[2021-06-13 15:09:22 : INFO] - openssl: OpenSSL 1.1.1k  25 Mar 2021 
+[2021-06-13 15:09:22 : INFO] - A total of 3 tasks of type smush found and will be processed in this iteration 
+[2021-06-13 15:09:22 : INFO] - Set semaphore last lock (smush) time to 2021-06-13 15:09:22 
+[2021-06-13 15:09:22 : INFO] - Semaphore lock (smush) complete 
+[2021-06-13 15:09:22 : INFO] - Processing task with ID : 286, and type 'smush' 
+[2021-06-13 15:09:22 : INFO] - Re_Smush_It_Task with attachment ID : 3855, autocreated on : June 13, 2021 02:42:51 
+[2021-06-13 15:09:22 : INFO] - 90 
+[2021-06-13 15:09:24 : INFO] - Backing up the original image - 2021/06/1592321040-GCE-Advanced-Level-exam-2020-L-updraft-pre-smush-original.jpg 
+[2021-06-13 15:09:24 : INFO] - Successfully optimized the image - /var/www/html/wp-content/uploads/2021/06/1592321040-GCE-Advanced-Level-exam-2020-L.jpg.The file was compressed from 156.39 KB to 53.84 KB saving 65.58 percent using WP-Optimize 
+[2021-06-13 15:09:24 : INFO] - Completed processing task with ID : 286, and type 'smush' 
+[2021-06-13 15:09:24 : INFO] - Processing task with ID : 287, and type 'smush' 
+[2021-06-13 15:09:24 : INFO] - Re_Smush_It_Task with attachment ID : 3856, autocreated on : June 13, 2021 03:04:09 
+[2021-06-13 15:09:24 : INFO] - 90 
+[2021-06-13 15:09:26 : INFO] - Backing up the original image - 2021/06/sri-lanka-students-doing-exam-AL-updraft-pre-smush-original.jpg 
+[2021-06-13 15:09:26 : INFO] - Successfully optimized the image - /var/www/html/wp-content/uploads/2021/06/sri-lanka-students-doing-exam-AL.jpg.The file was compressed from 155.58 KB to 27.53 KB saving 82.3 percent using WP-Optimize 
+[2021-06-13 15:09:27 : INFO] - Completed processing task with ID : 287, and type 'smush' 
+[2021-06-13 15:09:27 : INFO] - Processing task with ID : 288, and type 'smush' 
+[2021-06-13 15:09:27 : INFO] - Re_Smush_It_Task with attachment ID : 3857, autocreated on : June 13, 2021 03:07:09 
+[2021-06-13 15:09:27 : INFO] - 90 
+[2021-06-13 15:09:32 : INFO] - Backing up the original image - 2021/06/al-2-updraft-pre-smush-original.jpg 
+[2021-06-13 15:09:32 : INFO] - Successfully optimized the image - /var/www/html/wp-content/uploads/2021/06/al-2.jpg.The file was compressed from 24.79 KB to 21.13 KB saving 14.77 percent using WP-Optimize 
+[2021-06-13 15:09:32 : INFO] - Completed processing task with ID : 288, and type 'smush' 
+[2021-06-13 15:09:32 : INFO] - Decremented the semaphore (smush) by 1 
+[2021-06-13 15:09:32 : INFO] - Semaphore (smush) unlocked 
+[2021-06-13 15:09:32 : INFO] - Successfully processed the queue (smush). 3 tasks were processed out of 3. 
+[2021-06-13 15:09:32 : INFO] - Semaphore (smush, wp_options) was successfully cleaned up 
+[2021-06-13 15:09:32 : INFO] - Cleaning up tasks of type (smush). A total of 3 tasks will be deleted. 
+[2021-06-13 15:19:25 : INFO] - 
+ 
+[2021-06-13 15:19:25 : INFO] - Header for logs at time:  Sun, 13 Jun 2021 15:19:25 +0000 on http://anucentralcollege.lk 
+[2021-06-13 15:19:25 : INFO] - WP: 5.7.2 
+[2021-06-13 15:19:25 : INFO] - PHP: 7.4.20 (fpm-fcgi, Linux ea8b985465cc 5.4.0-1042-gcp #45~18.04.1-Ubuntu SMP Tue Apr 13 18:51:16 UTC 2021 x86_64) 
+[2021-06-13 15:19:25 : INFO] - MySQL: 8.0.25 
+[2021-06-13 15:19:25 : INFO] - WPLANG: en_US 
+[2021-06-13 15:19:25 : INFO] - Server: nginx/1.20.1 
+[2021-06-13 15:19:25 : INFO] - Outbound connections: N 
+[2021-06-13 15:19:25 : INFO] - safe_mode: 0 
+[2021-06-13 15:19:25 : INFO] - max_execution_time: 30 
+[2021-06-13 15:19:25 : INFO] - memory_limit: 256M (used: 77.9M | 7M) 
+[2021-06-13 15:19:25 : INFO] - multisite: N 
+[2021-06-13 15:19:25 : INFO] - openssl: OpenSSL 1.1.1k  25 Mar 2021 
+[2021-06-13 15:19:25 : INFO] - The queue for tasks of type "smush" is empty. Aborting! 
+[2021-06-13 15:39:41 : INFO] - Re_Smush_It_Task with attachment ID : 3859, autocreated on : June 13, 2021 03:39:41 
+[2021-06-13 15:42:00 : INFO] - Re_Smush_It_Task with attachment ID : 3860, autocreated on : June 13, 2021 03:42:00 
+[2021-06-13 15:45:01 : INFO] - 
+ 
+[2021-06-13 15:45:01 : INFO] - Header for logs at time:  Sun, 13 Jun 2021 15:45:01 +0000 on http://anucentralcollege.lk 
+[2021-06-13 15:45:01 : INFO] - WP: 5.7.2 
+[2021-06-13 15:45:01 : INFO] - PHP: 7.4.20 (fpm-fcgi, Linux ea8b985465cc 5.4.0-1042-gcp #45~18.04.1-Ubuntu SMP Tue Apr 13 18:51:16 UTC 2021 x86_64) 
+[2021-06-13 15:45:01 : INFO] - MySQL: 8.0.25 
+[2021-06-13 15:45:01 : INFO] - WPLANG: en_US 
+[2021-06-13 15:45:01 : INFO] - Server: nginx/1.20.1 
+[2021-06-13 15:45:01 : INFO] - Outbound connections: N 
+[2021-06-13 15:45:01 : INFO] - safe_mode: 0 
+[2021-06-13 15:45:01 : INFO] - max_execution_time: 30 
+[2021-06-13 15:45:01 : INFO] - memory_limit: 128M (used: 78M | 7M) 
+[2021-06-13 15:45:01 : INFO] - multisite: N 
+[2021-06-13 15:45:01 : INFO] - openssl: OpenSSL 1.1.1k  25 Mar 2021 
+[2021-06-13 15:45:01 : INFO] - A total of 2 tasks of type smush found and will be processed in this iteration 
+[2021-06-13 15:45:01 : INFO] - Set semaphore last lock (smush) time to 2021-06-13 15:45:01 
+[2021-06-13 15:45:01 : INFO] - Semaphore lock (smush) complete 
+[2021-06-13 15:45:01 : INFO] - Processing task with ID : 290, and type 'smush' 
+[2021-06-13 15:45:01 : INFO] - Re_Smush_It_Task with attachment ID : 3860, autocreated on : June 13, 2021 03:42:00 
+[2021-06-13 15:45:01 : INFO] - 90 
+[2021-06-13 15:45:03 : INFO] - Backing up the original image - 2021/06/logo_yellow-200x200-1-updraft-pre-smush-original.png 
+[2021-06-13 15:45:03 : INFO] - Successfully optimized the image - /var/www/html/wp-content/uploads/2021/06/logo_yellow-200x200-1.png.The file was compressed from 11.67 KB to 11.67 KB saving 0 percent using WP-Optimize 
+[2021-06-13 15:45:03 : INFO] - Completed processing task with ID : 290, and type 'smush' 
+[2021-06-13 15:45:03 : INFO] - Processing task with ID : 289, and type 'smush' 
+[2021-06-13 15:45:03 : INFO] - Task with ID 289 and type (smush) failed with error code invalid_file_path - The linked attachment ID does not have a valid file path 
+[2021-06-13 15:45:03 : INFO] - Decremented the semaphore (smush) by 1 
+[2021-06-13 15:45:03 : INFO] - Semaphore (smush) unlocked 
+[2021-06-13 15:45:03 : INFO] - Successfully processed the queue (smush). 2 tasks were processed out of 2. 
+[2021-06-13 15:45:03 : INFO] - Semaphore (smush, wp_options) was successfully cleaned up 
+[2021-06-13 15:45:03 : INFO] - Cleaning up tasks of type (smush). A total of 2 tasks will be deleted. 
+[2021-06-13 15:57:20 : INFO] - 
+ 
+[2021-06-13 15:57:20 : INFO] - Header for logs at time:  Sun, 13 Jun 2021 15:57:20 +0000 on http://anucentralcollege.lk 
+[2021-06-13 15:57:20 : INFO] - WP: 5.7.2 
+[2021-06-13 15:57:20 : INFO] - PHP: 7.4.20 (fpm-fcgi, Linux ea8b985465cc 5.4.0-1042-gcp #45~18.04.1-Ubuntu SMP Tue Apr 13 18:51:16 UTC 2021 x86_64) 
+[2021-06-13 15:57:20 : INFO] - MySQL: 8.0.25 
+[2021-06-13 15:57:20 : INFO] - WPLANG: en_US 
+[2021-06-13 15:57:20 : INFO] - Server: nginx/1.20.1 
+[2021-06-13 15:57:20 : INFO] - Outbound connections: N 
+[2021-06-13 15:57:20 : INFO] - safe_mode: 0 
+[2021-06-13 15:57:20 : INFO] - max_execution_time: 30 
+[2021-06-13 15:57:20 : INFO] - memory_limit: 256M (used: 77.9M | 7M) 
+[2021-06-13 15:57:20 : INFO] - multisite: N 
+[2021-06-13 15:57:20 : INFO] - openssl: OpenSSL 1.1.1k  25 Mar 2021 
+[2021-06-13 15:57:20 : INFO] - The queue for tasks of type "smush" is empty. Aborting! 

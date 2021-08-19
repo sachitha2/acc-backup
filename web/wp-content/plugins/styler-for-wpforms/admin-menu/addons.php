@@ -19,7 +19,7 @@ class Sfwf_Addons_Page {
 		<h2 class="sfwf-addon-heading">Addons </h2>
 		<p> You can use below addons to extend the functionality of Styler for WPForms</p>
 		</div>
-		
+
 		<div class="sfwf-extend sfwf-box">
 		<img src="<?php echo SFWF_URL; ?>/css/images/addons/bootstrap.png">
 		<div class="sfwf-extend-content">
@@ -57,7 +57,26 @@ class Sfwf_Addons_Page {
 		</div> <!-- End Sfwf Box -->
 		<div class="sfwf-addon-clearfix"></div>
 		</div>
+		<br/>
+		<div class="sfwf-admin-addon-wrap">
+		<div class="sfwf-page-heading">
+			<h2 class="sfwf-addon-heading">Views for WPForms </h2>
+			<p> Display & Edit WPForms Entries on your site frontend easily!</p>
+		</div>
 
+		<div class="sfwf-extend sfwf-box">
+			<img src="<?php echo SFWF_URL; ?>/css/images/addons/views.png">
+			<div class="sfwf-extend-content">
+			<h5>Views for WPForms</h5>
+			<p>Display & Edit WPForms Entries on your site frontend</p>
+			<div class="sfwf-extend-buttons">
+
+			<a href="https://formviewswp.com/pricing/?utm_source=dashboard&utm_medium=addons-menu&utm_campaign=wpforms-styler-plugin" target="_blank" title="Conditional Logic" class="button-primary nf-button">Learn More</a>
+			</div>
+			</div>
+			</div> <!-- End Sfwf Box -->
+		<div class="sfwf-addon-clearfix"></div>
+		</div>
 
 	<?php
 	}

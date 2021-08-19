@@ -4,12 +4,25 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit0f3c7879864926723775159c1bfbd4d2
+class ComposerStaticInit955a27bdfde28a768e9da152ba66c047
 {
+    public static $files = array (
+        'ce89ac35a6c330c55f4710717db9ff78' => __DIR__ . '/..' . '/kriswallsmith/assetic/src/functions.php',
+    );
+
     public static $prefixLengthsPsr4 = array (
         't' => 
         array (
             'tubalmartin\\CssMin\\' => 19,
+        ),
+        'W' => 
+        array (
+            'WebPConvert\\' => 12,
+            'WebPConvertCloudService\\' => 24,
+        ),
+        'S' => 
+        array (
+            'Symfony\\Component\\Process\\' => 26,
         ),
         'P' => 
         array (
@@ -25,6 +38,7 @@ class ComposerStaticInit0f3c7879864926723775159c1bfbd4d2
         'I' => 
         array (
             'Intervention\\HttpAuth\\' => 22,
+            'ImageMimeTypeGuesser\\' => 21,
         ),
     );
 
@@ -32,6 +46,18 @@ class ComposerStaticInit0f3c7879864926723775159c1bfbd4d2
         'tubalmartin\\CssMin\\' => 
         array (
             0 => __DIR__ . '/..' . '/tubalmartin/cssmin/src',
+        ),
+        'WebPConvert\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/rosell-dk/webp-convert/src',
+        ),
+        'WebPConvertCloudService\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/rosell-dk/webp-convert-cloud-service/src',
+        ),
+        'Symfony\\Component\\Process\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/process',
         ),
         'Psr\\Log\\' => 
         array (
@@ -57,6 +83,10 @@ class ComposerStaticInit0f3c7879864926723775159c1bfbd4d2
         array (
             0 => __DIR__ . '/..' . '/intervention/httpauth/src',
         ),
+        'ImageMimeTypeGuesser\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/rosell-dk/image-mime-type-guesser/src',
+        ),
     );
 
     public static $prefixesPsr0 = array (
@@ -78,9 +108,24 @@ class ComposerStaticInit0f3c7879864926723775159c1bfbd4d2
                 0 => __DIR__ . '/..' . '/mrclay/jsmin-php/src',
             ),
         ),
+        'C' => 
+        array (
+            'ComponentInstaller' => 
+            array (
+                0 => __DIR__ . '/..' . '/robloach/component-installer/src',
+            ),
+        ),
+        'A' => 
+        array (
+            'Assetic' => 
+            array (
+                0 => __DIR__ . '/..' . '/kriswallsmith/assetic/src',
+            ),
+        ),
     );
 
     public static $classMap = array (
+        'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'HTTP_ConditionalGet' => __DIR__ . '/..' . '/mrclay/minify/lib/HTTP/ConditionalGet.php',
         'HTTP_Encoder' => __DIR__ . '/..' . '/mrclay/minify/lib/HTTP/Encoder.php',
         'Minify' => __DIR__ . '/..' . '/mrclay/minify/lib/Minify.php',
@@ -141,10 +186,10 @@ class ComposerStaticInit0f3c7879864926723775159c1bfbd4d2
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit0f3c7879864926723775159c1bfbd4d2::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit0f3c7879864926723775159c1bfbd4d2::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit0f3c7879864926723775159c1bfbd4d2::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit0f3c7879864926723775159c1bfbd4d2::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit955a27bdfde28a768e9da152ba66c047::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit955a27bdfde28a768e9da152ba66c047::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit955a27bdfde28a768e9da152ba66c047::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit955a27bdfde28a768e9da152ba66c047::$classMap;
 
         }, null, ClassLoader::class);
     }

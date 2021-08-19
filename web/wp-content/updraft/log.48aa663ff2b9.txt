@@ -1,0 +1,548 @@
+0000.007 () Opened log file at time: Thu, 19 Aug 2021 08:23:18 +0000 on http://test.learnia.xyz
+0000.008 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.59 WP: 5.4.6 PHP: 7.4.22 (fpm-fcgi, Linux 37ff8cd8e78f 5.4.0-1045-aws #47~18.04.1-Ubuntu SMP Tue Apr 13 15:58:14 UTC 2021 x86_64) MySQL: 8.0.26 (max packet size=67108864) WPLANG: en_US Server: nginx/1.20.1 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 77.1M | 11M) multisite: N openssl: OpenSSL 1.1.1k  25 Mar 2021 mcrypt: N LANG:  ZipArchive::addFile: N
+0000.008 () Free space on disk containing Updraft's temporary directory: 6231.7 MB
+0000.022 () Restore setup, now closing connection and starting restore over AJAX.
+0000.006 () Opened log file at time: Thu, 19 Aug 2021 08:23:20 +0000 on http://test.learnia.xyz
+0000.006 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.59 WP: 5.4.6 PHP: 7.4.22 (fpm-fcgi, Linux 37ff8cd8e78f 5.4.0-1045-aws #47~18.04.1-Ubuntu SMP Tue Apr 13 15:58:14 UTC 2021 x86_64) MySQL: 8.0.26 (max packet size=67108864) WPLANG: en_US Server: nginx/1.20.1 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 74.2M | 7M) multisite: N openssl: OpenSSL 1.1.1k  25 Mar 2021 mcrypt: N LANG:  ZipArchive::addFile: N
+0000.006 () Free space on disk containing Updraft's temporary directory: 6231.7 MB
+0000.015 () Ensuring WP_Filesystem is setup for a restore
+0000.015 () WP_Filesystem is setup and ready for a restore
+0000.027 () Restore job started. Entities to restore: plugins, themes, uploads, others, db. Restore options: {"updraft_restorer_charset":"utf8","include_unspecified_tables":false,"tables_to_restore":["wp_usermeta","wp_actionscheduler_actions","wp_actionscheduler_claims","wp_actionscheduler_groups","wp_actionscheduler_logs","wp_commentmeta","wp_comments","wp_links","wp_postmeta","wp_posts","wp_term_relationships","wp_term_taxonomy","wp_termmeta","wp_terms","wp_FinalTiles_gallery","wp_FinalTiles_gallery_images","wp_addonlibrary_addons","wp_addonlibrary_categories","wp_dpproeventcalendar_booking","wp_dpproeventcalendar_calendars","wp_dpproeventcalendar_special_dates","wp_dpproeventcalendar_special_dates_calendar","wp_dpproeventcalendar_subscribers_calendar","wp_duplicator_packages","wp_eg_grids","wp_eg_item_elements","wp_eg_item_skins","wp_eg_navigation_skins","wp_flag_album","wp_flag_comments","wp_flag_gallery","wp_flag_pictures","wp_itsec_lockouts","wp_itsec_log","wp_itsec_temp","wp_ose_app_admin","wp_ose_app_adminrecemail","wp_ose_app_email","wp_ose_app_geoip","wp_ose_secConfig","wp_osefirewall_acl","wp_osefirewall_adminemails","wp_osefirewall_advancepatterns","wp_osefirewall_aiscan","wp_osefirewall_attacktype","wp_osefirewall_backup","wp_osefirewall_backupath","wp_osefirewall_backuplog","wp_osefirewall_basicrules","wp_osefirewall_bkfiles","wp_osefirewall_cronsettings","wp_osefirewall_dbconfiggit","wp_osefirewall_detattacktype","wp_osefirewall_detcontdetail","wp_osefirewall_detcontent","wp_osefirewall_detected","wp_osefirewall_domains","wp_osefirewall_emailnotificationmgmtv7","wp_osefirewall_errorlog","wp_osefirewall_files","wp_osefirewall_fileuploadext","wp_osefirewall_fileuploadlog","wp_osefirewall_fileuploadlogv7","wp_osefirewall_fwscannerv7Config","wp_osefirewall_gitlog","wp_osefirewall_ipmanagement","wp_osefirewall_iptable","wp_osefirewall_iptable_tmp","wp_osefirewall_logs","wp_osefirewall_malware","wp_osefirewall_pages","wp_osefirewall_referers","wp_osefirewall_scanhist","wp_osefirewall_sfschecked","wp_osefirewall_updateLog","wp_osefirewall_vars","wp_osefirewall_versioninfo","wp_osefirewall_versions","wp_osefirewall_virusVersion","wp_osefirewall_vlscanner","wp_osefirewall_vshash","wp_osefirewall_vspatterns","wp_osefirewall_vstypes","wp_osefirewall_whitelistmgmt","wp_preloader_ultimate","wp_revslider_css","wp_revslider_css_bkp","wp_revslider_layer_animations","wp_revslider_layer_animations_bkp","wp_revslider_navigations","wp_revslider_navigations_bkp","wp_revslider_sliders","wp_revslider_sliders_bkp","wp_revslider_slides","wp_revslider_slides_bkp","wp_revslider_static_slides","wp_revslider_static_slides_bkp","wp_rj_quickcharts","wp_sbi_instagram_feeds_posts","wp_sbi_instagram_posts","wp_scroll_news","wp_smartiplog","wp_smush_dir_images","wp_stream","wp_stream_meta","wp_tm_taskmeta","wp_tm_tasks","wp_ultimatetables","wp_unitegallery_categories","wp_unitegallery_galleries","wp_unitegallery_items","wp_wfBadLeechers","wp_wfBlockedIPLog","wp_wfBlocks","wp_wfBlocksAdv","wp_wfConfig","wp_wfCrawlers","wp_wfFileMods","wp_wfHits","wp_wfHoover","wp_wfIssues","wp_wfLeechers","wp_wfLockedOut","wp_wfLocs","wp_wfLogins","wp_wfNet404s","wp_wfReverseCache","wp_wfScanners","wp_wfStatus","wp_wfThrottleLog","wp_wfVulnScanners","wp_woocommerce_api_keys","wp_woocommerce_attribute_taxonomies","wp_woocommerce_downloadable_product_permissions","wp_woocommerce_log","wp_woocommerce_order_itemmeta","wp_woocommerce_order_items","wp_woocommerce_payment_tokenmeta","wp_woocommerce_payment_tokens","wp_woocommerce_sessions","wp_woocommerce_shipping_zone_locations","wp_woocommerce_shipping_zone_methods","wp_woocommerce_shipping_zones","wp_woocommerce_tax_rate_locations","wp_woocommerce_tax_rates","wp_wpdatatable_2","wp_wpforms_entries","wp_wpforms_entry_fields","wp_wpforms_entry_meta","wp_wpforms_tasks_meta","wp_wsal_metadata","wp_wsal_occurrences","wp_wsal_options"],"tables_to_skip":["wp_options","wp_users"],"updraft_encryptionphrase":"","updraft_restorer_wpcore_includewpconfig":false,"updraft_incremental_restore_point":-1}
+0000.034 () Entity: db
+0000.034 () restore_backup(backup_file=backup_2021-07-30-2003_Central_College_Anuradhapura_e74525e55aeb-db.gz, type=db, info=a:0:{}, last_one=)
+0000.034 () Unpacking backup... (backup_2021-07-30-2003_Central_College_Anuradhapura_e74525e55aeb-db.gz, 4.9 Mb)
+0000.039 () Database successfully unpacked
+0000.040 () Restoring the database (on a large site this can take a long time - if it times out (which can happen if your web hosting company has configured your hosting to limit resources) then you should use a different method, such as phpMyAdmin)...
+0000.040 () Using direct MySQL access; value of use_mysqli is: 1
+0000.041 () SQL compatibility mode is: NO_AUTO_VALUE_ON_ZERO,NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION
+0000.140 () Max packet size: 64 MB
+0000.140 () Entering maintenance mode
+0000.140 () Enabling Maintenance mode&#8230;
+0000.148 () is_stored_routine_supported(): An error occurred while attempting to check the support of stored routines creation (You do not have the SUPER privilege and binary logging is enabled (you *might* want to use the less safe log_bin_trust_function_creators variable) - CREATE FUNCTION updraft_test_stored_routine() RETURNS tinyint(1) DETERMINISTIC READS SQL DATA RETURN true)
+0000.149 () Backup created by: 1.16.59
+0000.149 () Backup of: http://anucentralcollege.lk
+0000.161 () Content URL: http://anucentralcollege.lk/wp-content
+0000.161 () Uploads URL: http://anucentralcollege.lk/wp-content/uploads
+0000.161 () Old table prefix: wp_
+0000.161 () Site information: multisite=0
+0000.161 () Site information: sql_mode=NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION
+0000.162 () Skipped tables: wpposts
+0000.165 () New table prefix: 50_
+0000.226 () Processing table (MyISAM): wp_usermeta - will restore as: 50_usermeta
+0000.254 () Atomic restore: dropping original table (wp_usermeta)
+0000.260 () Atomic restore: renaming new table (50_usermeta) to final table name (wp_usermeta)
+0000.266 () Processing table (MyISAM): wp_actionscheduler_actions - will restore as: 50_actionscheduler_actions
+0000.289 () Atomic restore: dropping original table (wp_actionscheduler_actions)
+0000.296 () Atomic restore: renaming new table (50_actionscheduler_actions) to final table name (wp_actionscheduler_actions)
+0000.304 () Processing table (MyISAM): wp_actionscheduler_claims - will restore as: 50_actionscheduler_claims
+0000.318 () Atomic restore: dropping original table (wp_actionscheduler_claims)
+0000.323 () Atomic restore: renaming new table (50_actionscheduler_claims) to final table name (wp_actionscheduler_claims)
+0000.329 () Processing table (MyISAM): wp_actionscheduler_groups - will restore as: 50_actionscheduler_groups
+0000.347 () Atomic restore: dropping original table (wp_actionscheduler_groups)
+0000.355 () Atomic restore: renaming new table (50_actionscheduler_groups) to final table name (wp_actionscheduler_groups)
+0000.360 () Processing table (MyISAM): wp_actionscheduler_logs - will restore as: 50_actionscheduler_logs
+0000.379 () Atomic restore: dropping original table (wp_actionscheduler_logs)
+0000.385 () Atomic restore: renaming new table (50_actionscheduler_logs) to final table name (wp_actionscheduler_logs)
+0000.391 () Processing table (MyISAM): wp_commentmeta - will restore as: 50_commentmeta
+0000.411 () Atomic restore: dropping original table (wp_commentmeta)
+0000.417 () Atomic restore: renaming new table (50_commentmeta) to final table name (wp_commentmeta)
+0000.425 () Processing table (MyISAM): wp_comments - will restore as: 50_comments
+0000.443 () Atomic restore: dropping original table (wp_comments)
+0000.459 () Atomic restore: renaming new table (50_comments) to final table name (wp_comments)
+0000.467 () Processing table (MyISAM): wp_links - will restore as: 50_links
+0000.483 () Atomic restore: dropping original table (wp_links)
+0000.489 () Atomic restore: renaming new table (50_links) to final table name (wp_links)
+0000.496 () Processing table (MyISAM): wp_postmeta - will restore as: 50_postmeta
+0001.839 () Atomic restore: dropping original table (wp_postmeta)
+0001.845 () Atomic restore: renaming new table (50_postmeta) to final table name (wp_postmeta)
+0001.853 () Processing table (MyISAM): wp_posts - will restore as: 50_posts
+0001.995 () Atomic restore: dropping original table (wp_posts)
+0002.004 () Atomic restore: renaming new table (50_posts) to final table name (wp_posts)
+0002.011 () Processing table (MyISAM): wp_term_relationships - will restore as: 50_term_relationships
+0002.025 () Database queries processed: 50 in 1.98 seconds
+0002.034 () Atomic restore: dropping original table (wp_term_relationships)
+0002.042 () Atomic restore: renaming new table (50_term_relationships) to final table name (wp_term_relationships)
+0002.049 () Processing table (MyISAM): wp_term_taxonomy - will restore as: 50_term_taxonomy
+0002.072 () Atomic restore: dropping original table (wp_term_taxonomy)
+0002.078 () Atomic restore: renaming new table (50_term_taxonomy) to final table name (wp_term_taxonomy)
+0002.084 () Processing table (MyISAM): wp_termmeta - will restore as: 50_termmeta
+0002.104 () Atomic restore: dropping original table (wp_termmeta)
+0002.113 () Atomic restore: renaming new table (50_termmeta) to final table name (wp_termmeta)
+0002.119 () Processing table (MyISAM): wp_terms - will restore as: 50_terms
+0002.138 () Atomic restore: dropping original table (wp_terms)
+0002.144 () Atomic restore: renaming new table (50_terms) to final table name (wp_terms)
+0002.151 () Processing table (MyISAM): wp_FinalTiles_gallery - will restore as: 50_FinalTiles_gallery
+0002.167 () Atomic restore: dropping original table (wp_FinalTiles_gallery)
+0002.173 () Atomic restore: renaming new table (50_FinalTiles_gallery) to final table name (wp_FinalTiles_gallery)
+0002.180 () Processing table (MyISAM): wp_FinalTiles_gallery_images - will restore as: 50_FinalTiles_gallery_images
+0002.194 () Atomic restore: dropping original table (wp_FinalTiles_gallery_images)
+0002.200 () Atomic restore: renaming new table (50_FinalTiles_gallery_images) to final table name (wp_FinalTiles_gallery_images)
+0002.208 () Processing table (MyISAM): wp_addonlibrary_addons - will restore as: 50_addonlibrary_addons
+0002.257 () Atomic restore: dropping original table (wp_addonlibrary_addons)
+0002.263 () Atomic restore: renaming new table (50_addonlibrary_addons) to final table name (wp_addonlibrary_addons)
+0002.270 () Processing table (MyISAM): wp_addonlibrary_categories - will restore as: 50_addonlibrary_categories
+0002.289 () Atomic restore: dropping original table (wp_addonlibrary_categories)
+0002.294 () Atomic restore: renaming new table (50_addonlibrary_categories) to final table name (wp_addonlibrary_categories)
+0002.301 () Processing table (InnoDB): wp_dpproeventcalendar_booking - will restore as: 50_dpproeventcalendar_booking
+0002.337 () Atomic restore: dropping original table (wp_dpproeventcalendar_booking)
+0002.353 () Atomic restore: renaming new table (50_dpproeventcalendar_booking) to final table name (wp_dpproeventcalendar_booking)
+0002.370 () Processing table (InnoDB): wp_dpproeventcalendar_calendars - will restore as: 50_dpproeventcalendar_calendars
+0002.414 () Atomic restore: dropping original table (wp_dpproeventcalendar_calendars)
+0002.443 () Atomic restore: renaming new table (50_dpproeventcalendar_calendars) to final table name (wp_dpproeventcalendar_calendars)
+0002.471 () Processing table (InnoDB): wp_dpproeventcalendar_special_dates - will restore as: 50_dpproeventcalendar_special_dates
+0002.503 () Atomic restore: dropping original table (wp_dpproeventcalendar_special_dates)
+0002.519 () Atomic restore: renaming new table (50_dpproeventcalendar_special_dates) to final table name (wp_dpproeventcalendar_special_dates)
+0002.538 () Processing table (InnoDB): wp_dpproeventcalendar_special_dates_calendar - will restore as: 50_dpproeventcalendar_special_dates_calendar
+0002.573 () Atomic restore: dropping original table (wp_dpproeventcalendar_special_dates_calendar)
+0002.585 () Atomic restore: renaming new table (50_dpproeventcalendar_special_dates_calendar) to final table name (wp_dpproeventcalendar_special_dates_calendar)
+0002.605 () Processing table (InnoDB): wp_dpproeventcalendar_subscribers_calendar - will restore as: 50_dpproeventcalendar_subscribers_calendar
+0002.638 () Atomic restore: dropping original table (wp_dpproeventcalendar_subscribers_calendar)
+0002.651 () Atomic restore: renaming new table (50_dpproeventcalendar_subscribers_calendar) to final table name (wp_dpproeventcalendar_subscribers_calendar)
+0002.669 () Processing table (MyISAM): wp_duplicator_packages - will restore as: 50_duplicator_packages
+0002.683 () Atomic restore: dropping original table (wp_duplicator_packages)
+0002.691 () Atomic restore: renaming new table (50_duplicator_packages) to final table name (wp_duplicator_packages)
+0002.697 () Processing table (MyISAM): wp_eg_grids - will restore as: 50_eg_grids
+0002.718 () Atomic restore: dropping original table (wp_eg_grids)
+0002.724 () Atomic restore: renaming new table (50_eg_grids) to final table name (wp_eg_grids)
+0002.730 () Processing table (MyISAM): wp_eg_item_elements - will restore as: 50_eg_item_elements
+0002.744 () Atomic restore: dropping original table (wp_eg_item_elements)
+0002.750 () Atomic restore: renaming new table (50_eg_item_elements) to final table name (wp_eg_item_elements)
+0002.756 () Processing table (MyISAM): wp_eg_item_skins - will restore as: 50_eg_item_skins
+0002.795 () Atomic restore: dropping original table (wp_eg_item_skins)
+0002.801 () Atomic restore: renaming new table (50_eg_item_skins) to final table name (wp_eg_item_skins)
+0002.810 () Processing table (MyISAM): wp_eg_navigation_skins - will restore as: 50_eg_navigation_skins
+0002.828 () Atomic restore: dropping original table (wp_eg_navigation_skins)
+0002.835 () Atomic restore: renaming new table (50_eg_navigation_skins) to final table name (wp_eg_navigation_skins)
+0002.841 () Processing table (MyISAM): wp_flag_album - will restore as: 50_flag_album
+0002.857 () Atomic restore: dropping original table (wp_flag_album)
+0002.864 () Atomic restore: renaming new table (50_flag_album) to final table name (wp_flag_album)
+0002.870 () Processing table (MyISAM): wp_flag_comments - will restore as: 50_flag_comments
+0002.886 () Database queries processed: 100 in 2.84 seconds
+0002.886 () Atomic restore: dropping original table (wp_flag_comments)
+0002.893 () Atomic restore: renaming new table (50_flag_comments) to final table name (wp_flag_comments)
+0002.901 () Processing table (MyISAM): wp_flag_gallery - will restore as: 50_flag_gallery
+0002.920 () Atomic restore: dropping original table (wp_flag_gallery)
+0002.926 () Atomic restore: renaming new table (50_flag_gallery) to final table name (wp_flag_gallery)
+0002.933 () Processing table (MyISAM): wp_flag_pictures - will restore as: 50_flag_pictures
+0002.948 () Atomic restore: dropping original table (wp_flag_pictures)
+0002.955 () Atomic restore: renaming new table (50_flag_pictures) to final table name (wp_flag_pictures)
+0002.962 () Processing table (MyISAM): wp_itsec_lockouts - will restore as: 50_itsec_lockouts
+0002.977 () Atomic restore: dropping original table (wp_itsec_lockouts)
+0002.983 () Atomic restore: renaming new table (50_itsec_lockouts) to final table name (wp_itsec_lockouts)
+0002.989 () Processing table (MyISAM): wp_itsec_log - will restore as: 50_itsec_log
+0003.010 () Atomic restore: dropping original table (wp_itsec_log)
+0003.017 () Atomic restore: renaming new table (50_itsec_log) to final table name (wp_itsec_log)
+0003.024 () Processing table (MyISAM): wp_itsec_temp - will restore as: 50_itsec_temp
+0003.039 () Atomic restore: dropping original table (wp_itsec_temp)
+0003.045 () Atomic restore: renaming new table (50_itsec_temp) to final table name (wp_itsec_temp)
+0003.051 () Processing table (InnoDB): wp_ose_app_admin - will restore as: 50_ose_app_admin
+0003.085 () Atomic restore: dropping original table (wp_ose_app_admin)
+0003.103 () Atomic restore: renaming new table (50_ose_app_admin) to final table name (wp_ose_app_admin)
+0003.143 () Processing table (InnoDB): wp_ose_app_adminrecemail
+0003.188 () Processing table (InnoDB): wp_ose_app_email - will restore as: 50_ose_app_email
+0003.229 () Atomic restore: dropping original table (wp_ose_app_email)
+0003.246 () Atomic restore: renaming new table (50_ose_app_email) to final table name (wp_ose_app_email)
+0003.267 () Processing table (InnoDB): wp_ose_app_geoip - will restore as: 50_ose_app_geoip
+0003.301 () Atomic restore: dropping original table (wp_ose_app_geoip)
+0003.318 () Atomic restore: renaming new table (50_ose_app_geoip) to final table name (wp_ose_app_geoip)
+0003.338 () Processing table (InnoDB): wp_ose_secConfig - will restore as: 50_ose_secConfig
+0003.381 () Atomic restore: dropping original table (wp_ose_secConfig)
+0003.395 () Atomic restore: renaming new table (50_ose_secConfig) to final table name (wp_ose_secConfig)
+0003.435 () Processing table (InnoDB): wp_osefirewall_acl
+0003.522 () Processing table (InnoDB): wp_osefirewall_adminemails
+0003.583 () Processing table (InnoDB): wp_osefirewall_advancepatterns
+0003.626 () Processing table (InnoDB): wp_osefirewall_aiscan - will restore as: 50_osefirewall_aiscan
+0003.662 () Atomic restore: dropping original table (wp_osefirewall_aiscan)
+0003.675 () Atomic restore: renaming new table (50_osefirewall_aiscan) to final table name (wp_osefirewall_aiscan)
+0003.693 () Processing table (InnoDB): wp_osefirewall_attacktype - will restore as: 50_osefirewall_attacktype
+0003.736 () Atomic restore: dropping original table (wp_osefirewall_attacktype)
+0003.754 () Atomic restore: renaming new table (50_osefirewall_attacktype) to final table name (wp_osefirewall_attacktype)
+0003.773 () Processing table (InnoDB): wp_osefirewall_backup - will restore as: 50_osefirewall_backup
+0003.814 () Atomic restore: dropping original table (wp_osefirewall_backup)
+0003.830 () Atomic restore: renaming new table (50_osefirewall_backup) to final table name (wp_osefirewall_backup)
+0003.848 () Processing table (InnoDB): wp_osefirewall_backupath - will restore as: 50_osefirewall_backupath
+0003.888 () Atomic restore: dropping original table (wp_osefirewall_backupath)
+0003.908 () Atomic restore: renaming new table (50_osefirewall_backupath) to final table name (wp_osefirewall_backupath)
+0003.931 () Processing table (InnoDB): wp_osefirewall_backuplog - will restore as: 50_osefirewall_backuplog
+0003.965 () Atomic restore: dropping original table (wp_osefirewall_backuplog)
+0003.979 () Atomic restore: renaming new table (50_osefirewall_backuplog) to final table name (wp_osefirewall_backuplog)
+0003.998 () Processing table (InnoDB): wp_osefirewall_basicrules - will restore as: 50_osefirewall_basicrules
+0004.034 () Atomic restore: dropping original table (wp_osefirewall_basicrules)
+0004.049 () Atomic restore: renaming new table (50_osefirewall_basicrules) to final table name (wp_osefirewall_basicrules)
+0004.064 () Processing table (InnoDB): wp_osefirewall_bkfiles - will restore as: 50_osefirewall_bkfiles
+0004.099 () Atomic restore: dropping original table (wp_osefirewall_bkfiles)
+0004.114 () Atomic restore: renaming new table (50_osefirewall_bkfiles) to final table name (wp_osefirewall_bkfiles)
+0004.133 () Processing table (InnoDB): wp_osefirewall_cronsettings - will restore as: 50_osefirewall_cronsettings
+0004.166 () Atomic restore: dropping original table (wp_osefirewall_cronsettings)
+0004.182 () Atomic restore: renaming new table (50_osefirewall_cronsettings) to final table name (wp_osefirewall_cronsettings)
+0004.199 () Processing table (InnoDB): wp_osefirewall_dbconfiggit - will restore as: 50_osefirewall_dbconfiggit
+0004.235 () Database queries processed: 150 in 4.19 seconds
+0004.236 () Atomic restore: dropping original table (wp_osefirewall_dbconfiggit)
+0004.250 () Atomic restore: renaming new table (50_osefirewall_dbconfiggit) to final table name (wp_osefirewall_dbconfiggit)
+0004.285 () Processing table (InnoDB): wp_osefirewall_detattacktype
+0004.363 () Processing table (InnoDB): wp_osefirewall_detcontdetail
+0004.420 () Processing table (InnoDB): wp_osefirewall_detcontent - will restore as: 50_osefirewall_detcontent
+0004.492 () Atomic restore: dropping original table (wp_osefirewall_detcontent)
+0004.510 () Atomic restore: renaming new table (50_osefirewall_detcontent) to final table name (wp_osefirewall_detcontent)
+0004.551 () Processing table (InnoDB): wp_osefirewall_detected
+0004.616 () Processing table (InnoDB): wp_osefirewall_domains - will restore as: 50_osefirewall_domains
+0004.652 () Atomic restore: dropping original table (wp_osefirewall_domains)
+0004.667 () Atomic restore: renaming new table (50_osefirewall_domains) to final table name (wp_osefirewall_domains)
+0004.686 () Processing table (InnoDB): wp_osefirewall_emailnotificationmgmtv7 - will restore as: 50_osefirewall_emailnotificationmgmtv7
+0004.723 () Atomic restore: dropping original table (wp_osefirewall_emailnotificationmgmtv7)
+0004.735 () Atomic restore: renaming new table (50_osefirewall_emailnotificationmgmtv7) to final table name (wp_osefirewall_emailnotificationmgmtv7)
+0004.751 () Processing table (InnoDB): wp_osefirewall_errorlog - will restore as: 50_osefirewall_errorlog
+0004.786 () Atomic restore: dropping original table (wp_osefirewall_errorlog)
+0004.799 () Atomic restore: renaming new table (50_osefirewall_errorlog) to final table name (wp_osefirewall_errorlog)
+0004.818 () Processing table (InnoDB): wp_osefirewall_files - will restore as: 50_osefirewall_files
+0004.856 () Atomic restore: dropping original table (wp_osefirewall_files)
+0004.870 () Atomic restore: renaming new table (50_osefirewall_files) to final table name (wp_osefirewall_files)
+0004.883 () Processing table (InnoDB): wp_osefirewall_fileuploadext - will restore as: 50_osefirewall_fileuploadext
+0004.935 () Atomic restore: dropping original table (wp_osefirewall_fileuploadext)
+0004.952 () Atomic restore: renaming new table (50_osefirewall_fileuploadext) to final table name (wp_osefirewall_fileuploadext)
+0004.994 () Processing table (InnoDB): wp_osefirewall_fileuploadlog
+0005.050 () Processing table (InnoDB): wp_osefirewall_fileuploadlogv7 - will restore as: 50_osefirewall_fileuploadlogv7
+0005.086 () Atomic restore: dropping original table (wp_osefirewall_fileuploadlogv7)
+0005.098 () Atomic restore: renaming new table (50_osefirewall_fileuploadlogv7) to final table name (wp_osefirewall_fileuploadlogv7)
+0005.119 () Processing table (InnoDB): wp_osefirewall_fwscannerv7Config - will restore as: 50_osefirewall_fwscannerv7Config
+0005.174 () Atomic restore: dropping original table (wp_osefirewall_fwscannerv7Config)
+0005.187 () Atomic restore: renaming new table (50_osefirewall_fwscannerv7Config) to final table name (wp_osefirewall_fwscannerv7Config)
+0005.205 () Processing table (InnoDB): wp_osefirewall_gitlog - will restore as: 50_osefirewall_gitlog
+0005.243 () Atomic restore: dropping original table (wp_osefirewall_gitlog)
+0005.254 () Atomic restore: renaming new table (50_osefirewall_gitlog) to final table name (wp_osefirewall_gitlog)
+0005.271 () Processing table (InnoDB): wp_osefirewall_ipmanagement - will restore as: 50_osefirewall_ipmanagement
+0005.321 () Atomic restore: dropping original table (wp_osefirewall_ipmanagement)
+0005.340 () Atomic restore: renaming new table (50_osefirewall_ipmanagement) to final table name (wp_osefirewall_ipmanagement)
+0005.382 () Processing table (InnoDB): wp_osefirewall_iptable
+0005.444 () Processing table (InnoDB): wp_osefirewall_iptable_tmp - will restore as: 50_osefirewall_iptable_tmp
+0005.657 () Atomic restore: dropping original table (wp_osefirewall_iptable_tmp)
+0005.671 () Atomic restore: renaming new table (50_osefirewall_iptable_tmp) to final table name (wp_osefirewall_iptable_tmp)
+0005.687 () Processing table (InnoDB): wp_osefirewall_logs - will restore as: 50_osefirewall_logs
+0005.724 () Atomic restore: dropping original table (wp_osefirewall_logs)
+0005.741 () Database queries processed: 200 in 5.69 seconds
+0005.741 () Atomic restore: renaming new table (50_osefirewall_logs) to final table name (wp_osefirewall_logs)
+0005.759 () Processing table (InnoDB): wp_osefirewall_malware - will restore as: 50_osefirewall_malware
+0005.821 () Atomic restore: dropping original table (wp_osefirewall_malware)
+0005.838 () Atomic restore: renaming new table (50_osefirewall_malware) to final table name (wp_osefirewall_malware)
+0005.857 () Processing table (InnoDB): wp_osefirewall_pages - will restore as: 50_osefirewall_pages
+0005.898 () Atomic restore: dropping original table (wp_osefirewall_pages)
+0005.914 () Atomic restore: renaming new table (50_osefirewall_pages) to final table name (wp_osefirewall_pages)
+0005.939 () Processing table (InnoDB): wp_osefirewall_referers - will restore as: 50_osefirewall_referers
+0005.984 () Atomic restore: dropping original table (wp_osefirewall_referers)
+0006.002 () Atomic restore: renaming new table (50_osefirewall_referers) to final table name (wp_osefirewall_referers)
+0006.021 () Processing table (InnoDB): wp_osefirewall_scanhist - will restore as: 50_osefirewall_scanhist
+0006.062 () Atomic restore: dropping original table (wp_osefirewall_scanhist)
+0006.078 () Atomic restore: renaming new table (50_osefirewall_scanhist) to final table name (wp_osefirewall_scanhist)
+0006.095 () Processing table (InnoDB): wp_osefirewall_sfschecked - will restore as: 50_osefirewall_sfschecked
+0006.289 () Atomic restore: dropping original table (wp_osefirewall_sfschecked)
+0006.306 () Atomic restore: renaming new table (50_osefirewall_sfschecked) to final table name (wp_osefirewall_sfschecked)
+0006.322 () Processing table (InnoDB): wp_osefirewall_updateLog - will restore as: 50_osefirewall_updateLog
+0006.355 () Atomic restore: dropping original table (wp_osefirewall_updateLog)
+0006.377 () Atomic restore: renaming new table (50_osefirewall_updateLog) to final table name (wp_osefirewall_updateLog)
+0006.393 () Processing table (InnoDB): wp_osefirewall_vars - will restore as: 50_osefirewall_vars
+0006.437 () Atomic restore: dropping original table (wp_osefirewall_vars)
+0006.458 () Atomic restore: renaming new table (50_osefirewall_vars) to final table name (wp_osefirewall_vars)
+0006.479 () Processing table (InnoDB): wp_osefirewall_versioninfo - will restore as: 50_osefirewall_versioninfo
+0006.513 () Atomic restore: dropping original table (wp_osefirewall_versioninfo)
+0006.530 () Atomic restore: renaming new table (50_osefirewall_versioninfo) to final table name (wp_osefirewall_versioninfo)
+0006.545 () Processing table (InnoDB): wp_osefirewall_versions - will restore as: 50_osefirewall_versions
+0006.586 () Atomic restore: dropping original table (wp_osefirewall_versions)
+0006.599 () Atomic restore: renaming new table (50_osefirewall_versions) to final table name (wp_osefirewall_versions)
+0006.618 () Processing table (InnoDB): wp_osefirewall_virusVersion - will restore as: 50_osefirewall_virusVersion
+0006.647 () Atomic restore: dropping original table (wp_osefirewall_virusVersion)
+0006.661 () Atomic restore: renaming new table (50_osefirewall_virusVersion) to final table name (wp_osefirewall_virusVersion)
+0006.678 () Processing table (InnoDB): wp_osefirewall_vlscanner - will restore as: 50_osefirewall_vlscanner
+0006.707 () Atomic restore: dropping original table (wp_osefirewall_vlscanner)
+0006.724 () Atomic restore: renaming new table (50_osefirewall_vlscanner) to final table name (wp_osefirewall_vlscanner)
+0006.744 () Processing table (InnoDB): wp_osefirewall_vshash - will restore as: 50_osefirewall_vshash
+0006.783 () Atomic restore: dropping original table (wp_osefirewall_vshash)
+0006.799 () Atomic restore: renaming new table (50_osefirewall_vshash) to final table name (wp_osefirewall_vshash)
+0006.838 () Processing table (InnoDB): wp_osefirewall_vspatterns
+0006.907 () Processing table (InnoDB): wp_osefirewall_vstypes - will restore as: 50_osefirewall_vstypes
+0006.955 () Atomic restore: dropping original table (wp_osefirewall_vstypes)
+0006.989 () Atomic restore: renaming new table (50_osefirewall_vstypes) to final table name (wp_osefirewall_vstypes)
+0007.011 () Processing table (InnoDB): wp_osefirewall_whitelistmgmt - will restore as: 50_osefirewall_whitelistmgmt
+0007.056 () Atomic restore: dropping original table (wp_osefirewall_whitelistmgmt)
+0007.073 () Atomic restore: renaming new table (50_osefirewall_whitelistmgmt) to final table name (wp_osefirewall_whitelistmgmt)
+0007.095 () Processing table (MyISAM): wp_preloader_ultimate - will restore as: 50_preloader_ultimate
+0007.114 () Atomic restore: dropping original table (wp_preloader_ultimate)
+0007.122 () Atomic restore: renaming new table (50_preloader_ultimate) to final table name (wp_preloader_ultimate)
+0007.131 () Processing table (MyISAM): wp_revslider_css - will restore as: 50_revslider_css
+0007.153 () Atomic restore: dropping original table (wp_revslider_css)
+0007.159 () Database queries processed: 250 in 7.11 seconds
+0007.159 () Atomic restore: renaming new table (50_revslider_css) to final table name (wp_revslider_css)
+0007.165 () Processing table (MyISAM): wp_revslider_css_bkp - will restore as: 50_revslider_css_bkp
+0007.190 () Atomic restore: dropping original table (wp_revslider_css_bkp)
+0007.197 () Atomic restore: renaming new table (50_revslider_css_bkp) to final table name (wp_revslider_css_bkp)
+0007.204 () Processing table (MyISAM): wp_revslider_layer_animations - will restore as: 50_revslider_layer_animations
+0007.221 () Atomic restore: dropping original table (wp_revslider_layer_animations)
+0007.227 () Atomic restore: renaming new table (50_revslider_layer_animations) to final table name (wp_revslider_layer_animations)
+0007.233 () Processing table (MyISAM): wp_revslider_layer_animations_bkp - will restore as: 50_revslider_layer_animations_bkp
+0007.249 () Atomic restore: dropping original table (wp_revslider_layer_animations_bkp)
+0007.255 () Atomic restore: renaming new table (50_revslider_layer_animations_bkp) to final table name (wp_revslider_layer_animations_bkp)
+0007.260 () Processing table (MyISAM): wp_revslider_navigations - will restore as: 50_revslider_navigations
+0007.274 () Atomic restore: dropping original table (wp_revslider_navigations)
+0007.282 () Atomic restore: renaming new table (50_revslider_navigations) to final table name (wp_revslider_navigations)
+0007.288 () Processing table (MyISAM): wp_revslider_navigations_bkp - will restore as: 50_revslider_navigations_bkp
+0007.303 () Atomic restore: dropping original table (wp_revslider_navigations_bkp)
+0007.309 () Atomic restore: renaming new table (50_revslider_navigations_bkp) to final table name (wp_revslider_navigations_bkp)
+0007.319 () Processing table (MyISAM): wp_revslider_sliders - will restore as: 50_revslider_sliders
+0007.337 () Atomic restore: dropping original table (wp_revslider_sliders)
+0007.343 () Atomic restore: renaming new table (50_revslider_sliders) to final table name (wp_revslider_sliders)
+0007.349 () Processing table (MyISAM): wp_revslider_sliders_bkp - will restore as: 50_revslider_sliders_bkp
+0007.370 () Atomic restore: dropping original table (wp_revslider_sliders_bkp)
+0007.377 () Atomic restore: renaming new table (50_revslider_sliders_bkp) to final table name (wp_revslider_sliders_bkp)
+0007.383 () Processing table (MyISAM): wp_revslider_slides - will restore as: 50_revslider_slides
+0007.405 () Atomic restore: dropping original table (wp_revslider_slides)
+0007.413 () Atomic restore: renaming new table (50_revslider_slides) to final table name (wp_revslider_slides)
+0007.420 () Processing table (MyISAM): wp_revslider_slides_bkp - will restore as: 50_revslider_slides_bkp
+0007.444 () Atomic restore: dropping original table (wp_revslider_slides_bkp)
+0007.452 () Atomic restore: renaming new table (50_revslider_slides_bkp) to final table name (wp_revslider_slides_bkp)
+0007.459 () Processing table (MyISAM): wp_revslider_static_slides - will restore as: 50_revslider_static_slides
+0007.478 () Atomic restore: dropping original table (wp_revslider_static_slides)
+0007.486 () Atomic restore: renaming new table (50_revslider_static_slides) to final table name (wp_revslider_static_slides)
+0007.494 () Processing table (MyISAM): wp_revslider_static_slides_bkp - will restore as: 50_revslider_static_slides_bkp
+0007.508 () Atomic restore: dropping original table (wp_revslider_static_slides_bkp)
+0007.517 () Atomic restore: renaming new table (50_revslider_static_slides_bkp) to final table name (wp_revslider_static_slides_bkp)
+0007.524 () Processing table (MyISAM): wp_rj_quickcharts - will restore as: 50_rj_quickcharts
+0007.544 () Atomic restore: dropping original table (wp_rj_quickcharts)
+0007.550 () Atomic restore: renaming new table (50_rj_quickcharts) to final table name (wp_rj_quickcharts)
+0007.556 () Processing table (MyISAM): wp_sbi_instagram_feeds_posts - will restore as: 50_sbi_instagram_feeds_posts
+0007.571 () Atomic restore: dropping original table (wp_sbi_instagram_feeds_posts)
+0007.576 () Atomic restore: renaming new table (50_sbi_instagram_feeds_posts) to final table name (wp_sbi_instagram_feeds_posts)
+0007.582 () Processing table (MyISAM): wp_sbi_instagram_posts - will restore as: 50_sbi_instagram_posts
+0007.597 () Atomic restore: dropping original table (wp_sbi_instagram_posts)
+0007.604 () Atomic restore: renaming new table (50_sbi_instagram_posts) to final table name (wp_sbi_instagram_posts)
+0007.618 () Processing table (InnoDB): wp_scroll_news - will restore as: 50_scroll_news
+0007.663 () Atomic restore: dropping original table (wp_scroll_news)
+0007.683 () Atomic restore: renaming new table (50_scroll_news) to final table name (wp_scroll_news)
+0007.702 () Processing table (MyISAM): wp_smartiplog - will restore as: 50_smartiplog
+0007.722 () Atomic restore: dropping original table (wp_smartiplog)
+0007.729 () Atomic restore: renaming new table (50_smartiplog) to final table name (wp_smartiplog)
+0007.735 () Processing table (MyISAM): wp_smush_dir_images - will restore as: 50_smush_dir_images
+0007.749 () Atomic restore: dropping original table (wp_smush_dir_images)
+0007.755 () Atomic restore: renaming new table (50_smush_dir_images) to final table name (wp_smush_dir_images)
+0007.762 () Processing table (MyISAM): wp_stream - will restore as: 50_stream
+0007.781 () Atomic restore: dropping original table (wp_stream)
+0007.786 () Atomic restore: renaming new table (50_stream) to final table name (wp_stream)
+0007.793 () Processing table (MyISAM): wp_stream_meta - will restore as: 50_stream_meta
+0007.810 () Atomic restore: dropping original table (wp_stream_meta)
+0007.820 () Atomic restore: renaming new table (50_stream_meta) to final table name (wp_stream_meta)
+0007.829 () Processing table (MyISAM): wp_tm_taskmeta - will restore as: 50_tm_taskmeta
+0007.844 () Atomic restore: dropping original table (wp_tm_taskmeta)
+0007.850 () Atomic restore: renaming new table (50_tm_taskmeta) to final table name (wp_tm_taskmeta)
+0007.857 () Processing table (MyISAM): wp_tm_tasks - will restore as: 50_tm_tasks
+0007.872 () Atomic restore: dropping original table (wp_tm_tasks)
+0007.879 () Atomic restore: renaming new table (50_tm_tasks) to final table name (wp_tm_tasks)
+0007.886 () Processing table (InnoDB): wp_ultimatetables - will restore as: 50_ultimatetables
+0007.937 () Atomic restore: dropping original table (wp_ultimatetables)
+0007.954 () Atomic restore: renaming new table (50_ultimatetables) to final table name (wp_ultimatetables)
+0007.974 () Processing table (MyISAM): wp_unitegallery_categories - will restore as: 50_unitegallery_categories
+0007.990 () Atomic restore: dropping original table (wp_unitegallery_categories)
+0007.998 () Atomic restore: renaming new table (50_unitegallery_categories) to final table name (wp_unitegallery_categories)
+0008.004 () Processing table (MyISAM): wp_unitegallery_galleries - will restore as: 50_unitegallery_galleries
+0008.021 () Atomic restore: dropping original table (wp_unitegallery_galleries)
+0008.029 () Atomic restore: renaming new table (50_unitegallery_galleries) to final table name (wp_unitegallery_galleries)
+0008.036 () Processing table (MyISAM): wp_unitegallery_items - will restore as: 50_unitegallery_items
+0008.055 () Atomic restore: dropping original table (wp_unitegallery_items)
+0008.062 () Atomic restore: renaming new table (50_unitegallery_items) to final table name (wp_unitegallery_items)
+0008.069 () Processing table (MyISAM): wp_wfBadLeechers - will restore as: 50_wfBadLeechers
+0008.084 () Atomic restore: dropping original table (wp_wfBadLeechers)
+0008.090 () Atomic restore: renaming new table (50_wfBadLeechers) to final table name (wp_wfBadLeechers)
+0008.097 () Processing table (MyISAM): wp_wfBlockedIPLog - will restore as: 50_wfBlockedIPLog
+0008.111 () Atomic restore: dropping original table (wp_wfBlockedIPLog)
+0008.118 () Atomic restore: renaming new table (50_wfBlockedIPLog) to final table name (wp_wfBlockedIPLog)
+0008.124 () Processing table (MyISAM): wp_wfBlocks - will restore as: 50_wfBlocks
+0008.139 () Atomic restore: dropping original table (wp_wfBlocks)
+0008.148 () Atomic restore: renaming new table (50_wfBlocks) to final table name (wp_wfBlocks)
+0008.155 () Processing table (MyISAM): wp_wfBlocksAdv - will restore as: 50_wfBlocksAdv
+0008.170 () Atomic restore: dropping original table (wp_wfBlocksAdv)
+0008.176 () Atomic restore: renaming new table (50_wfBlocksAdv) to final table name (wp_wfBlocksAdv)
+0008.182 () Processing table (MyISAM): wp_wfConfig - will restore as: 50_wfConfig
+0008.201 () Atomic restore: dropping original table (wp_wfConfig)
+0008.207 () Atomic restore: renaming new table (50_wfConfig) to final table name (wp_wfConfig)
+0008.213 () Processing table (MyISAM): wp_wfCrawlers - will restore as: 50_wfCrawlers
+0008.230 () Atomic restore: dropping original table (wp_wfCrawlers)
+0008.237 () Atomic restore: renaming new table (50_wfCrawlers) to final table name (wp_wfCrawlers)
+0008.244 () Processing table (MyISAM): wp_wfFileMods - will restore as: 50_wfFileMods
+0008.549 () Atomic restore: dropping original table (wp_wfFileMods)
+0008.557 () Atomic restore: renaming new table (50_wfFileMods) to final table name (wp_wfFileMods)
+0008.563 () Processing table (MyISAM): wp_wfHits - will restore as: 50_wfHits
+0008.585 () Atomic restore: dropping original table (wp_wfHits)
+0008.593 () Atomic restore: renaming new table (50_wfHits) to final table name (wp_wfHits)
+0008.603 () Processing table (MyISAM): wp_wfHoover - will restore as: 50_wfHoover
+0008.622 () Atomic restore: dropping original table (wp_wfHoover)
+0008.630 () Atomic restore: renaming new table (50_wfHoover) to final table name (wp_wfHoover)
+0008.637 () Processing table (MyISAM): wp_wfIssues - will restore as: 50_wfIssues
+0008.651 () Atomic restore: dropping original table (wp_wfIssues)
+0008.658 () Atomic restore: renaming new table (50_wfIssues) to final table name (wp_wfIssues)
+0008.666 () Processing table (MyISAM): wp_wfLeechers - will restore as: 50_wfLeechers
+0008.681 () Atomic restore: dropping original table (wp_wfLeechers)
+0008.691 () Atomic restore: renaming new table (50_wfLeechers) to final table name (wp_wfLeechers)
+0008.698 () Processing table (MyISAM): wp_wfLockedOut - will restore as: 50_wfLockedOut
+0008.714 () Atomic restore: dropping original table (wp_wfLockedOut)
+0008.720 () Atomic restore: renaming new table (50_wfLockedOut) to final table name (wp_wfLockedOut)
+0008.729 () Processing table (MyISAM): wp_wfLocs - will restore as: 50_wfLocs
+0008.744 () Atomic restore: dropping original table (wp_wfLocs)
+0008.749 () Atomic restore: renaming new table (50_wfLocs) to final table name (wp_wfLocs)
+0008.756 () Processing table (MyISAM): wp_wfLogins - will restore as: 50_wfLogins
+0008.771 () Atomic restore: dropping original table (wp_wfLogins)
+0008.777 () Atomic restore: renaming new table (50_wfLogins) to final table name (wp_wfLogins)
+0008.784 () Processing table (MyISAM): wp_wfNet404s - will restore as: 50_wfNet404s
+0008.801 () Atomic restore: dropping original table (wp_wfNet404s)
+0008.806 () Atomic restore: renaming new table (50_wfNet404s) to final table name (wp_wfNet404s)
+0008.814 () Processing table (MyISAM): wp_wfReverseCache - will restore as: 50_wfReverseCache
+0008.828 () Atomic restore: dropping original table (wp_wfReverseCache)
+0008.833 () Atomic restore: renaming new table (50_wfReverseCache) to final table name (wp_wfReverseCache)
+0008.841 () Processing table (MyISAM): wp_wfScanners - will restore as: 50_wfScanners
+0008.854 () Atomic restore: dropping original table (wp_wfScanners)
+0008.860 () Atomic restore: renaming new table (50_wfScanners) to final table name (wp_wfScanners)
+0008.866 () Processing table (MyISAM): wp_wfStatus - will restore as: 50_wfStatus
+0008.889 () Atomic restore: dropping original table (wp_wfStatus)
+0008.895 () Atomic restore: renaming new table (50_wfStatus) to final table name (wp_wfStatus)
+0008.901 () Processing table (MyISAM): wp_wfThrottleLog - will restore as: 50_wfThrottleLog
+0008.921 () Atomic restore: dropping original table (wp_wfThrottleLog)
+0008.928 () Atomic restore: renaming new table (50_wfThrottleLog) to final table name (wp_wfThrottleLog)
+0008.934 () Processing table (MyISAM): wp_wfVulnScanners - will restore as: 50_wfVulnScanners
+0008.950 () Atomic restore: dropping original table (wp_wfVulnScanners)
+0008.955 () Atomic restore: renaming new table (50_wfVulnScanners) to final table name (wp_wfVulnScanners)
+0008.962 () Processing table (MyISAM): wp_woocommerce_api_keys - will restore as: 50_woocommerce_api_keys
+0008.977 () Atomic restore: dropping original table (wp_woocommerce_api_keys)
+0008.983 () Atomic restore: renaming new table (50_woocommerce_api_keys) to final table name (wp_woocommerce_api_keys)
+0008.989 () Processing table (MyISAM): wp_woocommerce_attribute_taxonomies - will restore as: 50_woocommerce_attribute_taxonomies
+0009.003 () Atomic restore: dropping original table (wp_woocommerce_attribute_taxonomies)
+0009.010 () Atomic restore: renaming new table (50_woocommerce_attribute_taxonomies) to final table name (wp_woocommerce_attribute_taxonomies)
+0009.020 () Processing table (MyISAM): wp_woocommerce_downloadable_product_permissions - will restore as: 50_woocommerce_downloadable_product_permissions
+0009.036 () Atomic restore: dropping original table (wp_woocommerce_downloadable_product_permissions)
+0009.043 () Atomic restore: renaming new table (50_woocommerce_downloadable_product_permissions) to final table name (wp_woocommerce_downloadable_product_permissions)
+0009.051 () Processing table (MyISAM): wp_woocommerce_log - will restore as: 50_woocommerce_log
+0009.067 () Atomic restore: dropping original table (wp_woocommerce_log)
+0009.073 () Atomic restore: renaming new table (50_woocommerce_log) to final table name (wp_woocommerce_log)
+0009.080 () Processing table (MyISAM): wp_woocommerce_order_itemmeta - will restore as: 50_woocommerce_order_itemmeta
+0009.094 () Atomic restore: dropping original table (wp_woocommerce_order_itemmeta)
+0009.100 () Atomic restore: renaming new table (50_woocommerce_order_itemmeta) to final table name (wp_woocommerce_order_itemmeta)
+0009.107 () Processing table (MyISAM): wp_woocommerce_order_items - will restore as: 50_woocommerce_order_items
+0009.124 () Atomic restore: dropping original table (wp_woocommerce_order_items)
+0009.133 () Atomic restore: renaming new table (50_woocommerce_order_items) to final table name (wp_woocommerce_order_items)
+0009.139 () Processing table (MyISAM): wp_woocommerce_payment_tokenmeta - will restore as: 50_woocommerce_payment_tokenmeta
+0009.153 () Atomic restore: dropping original table (wp_woocommerce_payment_tokenmeta)
+0009.159 () Atomic restore: renaming new table (50_woocommerce_payment_tokenmeta) to final table name (wp_woocommerce_payment_tokenmeta)
+0009.166 () Processing table (MyISAM): wp_woocommerce_payment_tokens - will restore as: 50_woocommerce_payment_tokens
+0009.180 () Atomic restore: dropping original table (wp_woocommerce_payment_tokens)
+0009.186 () Atomic restore: renaming new table (50_woocommerce_payment_tokens) to final table name (wp_woocommerce_payment_tokens)
+0009.193 () Processing table (MyISAM): wp_woocommerce_sessions - will restore as: 50_woocommerce_sessions
+0009.211 () Atomic restore: dropping original table (wp_woocommerce_sessions)
+0009.219 () Atomic restore: renaming new table (50_woocommerce_sessions) to final table name (wp_woocommerce_sessions)
+0009.226 () Processing table (MyISAM): wp_woocommerce_shipping_zone_locations - will restore as: 50_woocommerce_shipping_zone_locations
+0009.243 () Atomic restore: dropping original table (wp_woocommerce_shipping_zone_locations)
+0009.249 () Atomic restore: renaming new table (50_woocommerce_shipping_zone_locations) to final table name (wp_woocommerce_shipping_zone_locations)
+0009.259 () Processing table (MyISAM): wp_woocommerce_shipping_zone_methods - will restore as: 50_woocommerce_shipping_zone_methods
+0009.273 () Atomic restore: dropping original table (wp_woocommerce_shipping_zone_methods)
+0009.279 () Atomic restore: renaming new table (50_woocommerce_shipping_zone_methods) to final table name (wp_woocommerce_shipping_zone_methods)
+0009.285 () Processing table (MyISAM): wp_woocommerce_shipping_zones - will restore as: 50_woocommerce_shipping_zones
+0009.299 () Atomic restore: dropping original table (wp_woocommerce_shipping_zones)
+0009.305 () Atomic restore: renaming new table (50_woocommerce_shipping_zones) to final table name (wp_woocommerce_shipping_zones)
+0009.311 () Processing table (MyISAM): wp_woocommerce_tax_rate_locations - will restore as: 50_woocommerce_tax_rate_locations
+0009.328 () Atomic restore: dropping original table (wp_woocommerce_tax_rate_locations)
+0009.333 () Atomic restore: renaming new table (50_woocommerce_tax_rate_locations) to final table name (wp_woocommerce_tax_rate_locations)
+0009.339 () Processing table (MyISAM): wp_woocommerce_tax_rates - will restore as: 50_woocommerce_tax_rates
+0009.354 () Atomic restore: dropping original table (wp_woocommerce_tax_rates)
+0009.360 () Atomic restore: renaming new table (50_woocommerce_tax_rates) to final table name (wp_woocommerce_tax_rates)
+0009.367 () Processing table (MyISAM): wp_wpdatatable_2 - will restore as: 50_wpdatatable_2
+0009.385 () Atomic restore: dropping original table (wp_wpdatatable_2)
+0009.390 () Atomic restore: renaming new table (50_wpdatatable_2) to final table name (wp_wpdatatable_2)
+0009.397 () Processing table (MyISAM): wp_wpforms_entries - will restore as: 50_wpforms_entries
+0009.412 () Atomic restore: dropping original table (wp_wpforms_entries)
+0009.419 () Atomic restore: renaming new table (50_wpforms_entries) to final table name (wp_wpforms_entries)
+0009.431 () Processing table (MyISAM): wp_wpforms_entry_fields - will restore as: 50_wpforms_entry_fields
+0009.447 () Atomic restore: dropping original table (wp_wpforms_entry_fields)
+0009.453 () Atomic restore: renaming new table (50_wpforms_entry_fields) to final table name (wp_wpforms_entry_fields)
+0009.461 () Processing table (MyISAM): wp_wpforms_entry_meta - will restore as: 50_wpforms_entry_meta
+0009.477 () Atomic restore: dropping original table (wp_wpforms_entry_meta)
+0009.485 () Atomic restore: renaming new table (50_wpforms_entry_meta) to final table name (wp_wpforms_entry_meta)
+0009.492 () Processing table (MyISAM): wp_wpforms_tasks_meta - will restore as: 50_wpforms_tasks_meta
+0009.511 () Atomic restore: dropping original table (wp_wpforms_tasks_meta)
+0009.519 () Atomic restore: renaming new table (50_wpforms_tasks_meta) to final table name (wp_wpforms_tasks_meta)
+0009.525 () Processing table (MyISAM): wp_wsal_metadata - will restore as: 50_wsal_metadata
+0027.997 () Database queries processed: 500 in 27.95 seconds
+0028.834 () Atomic restore: dropping original table (wp_wsal_metadata)
+0028.845 () Atomic restore: renaming new table (50_wsal_metadata) to final table name (wp_wsal_metadata)
+0028.852 () Processing table (MyISAM): wp_wsal_occurrences - will restore as: 50_wsal_occurrences
+0032.716 () Atomic restore: dropping original table (wp_wsal_occurrences)
+0032.725 () Atomic restore: renaming new table (50_wsal_occurrences) to final table name (wp_wsal_occurrences)
+0032.731 () Processing table (MyISAM): wp_wsal_options - will restore as: 50_wsal_options
+0032.754 () UpdraftPlus Vault: this site has not been connected - check your settings
+0033.263 () Google Drive: this account is not authorised
+0033.263 () An error condition has occurred for the first time during this job
+0033.264 () Unlocking database and leaving maintenance mode
+0033.264 () Disabling Maintenance mode&#8230;
+0033.264 () Atomic restore: dropping original table (wp_wsal_options)
+0033.274 () Atomic restore: renaming new table (50_wsal_options) to final table name (wp_wsal_options)
+0033.281 () Finished: lines processed: 535 in 33.23 seconds
+0033.282 () Cleaning up rubbish...
+0033.297 () Entity: plugins
+0033.297 () restore_backup(backup_file=backup_2021-07-30-2003_Central_College_Anuradhapura_e74525e55aeb-plugins.zip, type=plugins, info=a:2:{s:4:"path";s:32:"/var/www/html/wp-content/plugins";s:11:"description";s:7:"Plugins";}, last_one=)
+0033.297 () Unpacking backup... (backup_2021-07-30-2003_Central_College_Anuradhapura_e74525e55aeb-plugins.zip, 129 MB)
+0033.299 () Unzipping backup_2021-07-30-2003_Central_College_Anuradhapura_e74525e55aeb-plugins.zip to /var/www/html/wp-content/upgrade/b70850e0/ using UpdraftPlus_PclZip, starting index 0
+0035.052 () Unzip progress: 2508 out of 19779 files (1.1 KB, plugins/vc-social-stream/addons/social-stream/template/template.html)
+0035.173 () Unzip progress: 3509 out of 19779 files (56.9 MB, plugins/meta-box/inc/templates/upload.php)
+0035.248 () Unzip progress: 4510 out of 19779 files (69.2 MB, plugins/revslider/public/assets/assets/svg/busy-icons-svg/preson-laurels.svg)
+0035.307 () Unzip progress: 5511 out of 19779 files (71.3 MB, plugins/revslider/admin/includes/shortcode_generator/gutenberg/dist/blocks.style.build.css)
+0035.382 () Unzip progress: 6512 out of 19779 files (91.7 MB, plugins/wpforms/assets/js/lity.min.js)
+0035.484 () Unzip progress: 7513 out of 19779 files (112.5 MB, plugins/old_plugins/js_composer/assets/lib/bower/bootstrap3/less/mixins/grid-framework.less)
+0035.568 () Unzip progress: 8514 out of 19779 files (120.5 MB, plugins/wp-asset-clean-up-pro/vendor/rawr/t-regx/test/CleanRegex/Internal/Delimiter/DelimiterParserTest.php)
+0035.646 () Unzip progress: 9515 out of 19779 files (134.7 MB, plugins/old/revslider/public/assets/assets/svg/busy-icons-svg/calendar1.svg)
+0035.706 () Unzip progress: 10516 out of 19779 files (137.1 MB, plugins/old/revslider/public/assets/assets/svg/av/ic_replay_5_24px.svg)
+0035.784 () Unzip progress: 11517 out of 19779 files (147.3 MB, plugins/old/essential-grid/admin/includes/index.php)
+0037.152 () Unzip progress: 12518 out of 19779 files (166.2 MB, plugins/old/js_composer/include/classes/shortcodes/vc-facebook.php)
+0037.228 () Unzip progress: 13519 out of 19779 files (185.8 MB, plugins/updraftplus/vendor/guzzle/guzzle/src/Guzzle/Service/Exception/ServiceBuilderException.php)
+0037.295 () Unzip progress: 14520 out of 19779 files (193.6 MB, plugins/wp-table-builder/inc/frontend/index.php)
+0037.353 () Unzip progress: 15521 out of 19779 files (194.3 MB, plugins/wp-table-builder/inc/frontend/views/icons/house-damage.svg)
+0037.445 () Unzip progress: 16522 out of 19779 files (214.7 MB, plugins/wp-security-audit-log/classes/Loggers/Database.php)
+0037.540 () Unzip progress: 17523 out of 19779 files (238.3 MB, plugins/wp-optimize/vendor/marcusschwarz/lesserphp/tests/inputs_lessjs/mixins-args.less)
+0037.656 () Unzip progress: 18524 out of 19779 files (268.1 MB, plugins/js_composer/assets/less/shortcodes/vc_flickr.less)
+0037.736 () Unzip progress: 19525 out of 19779 files (277 MB, plugins/wp-smushit/_src/scss/accessibility/_color-accessibility.scss)
+0037.763 () Unzip progress: 19779 out of 19779 files (282.4 MB, plugins/vc-extensions-imageoverlay/js/init.min.js)
+0037.777 () Moving old data: filesystem method / updraft_dir is potentially possible
+0037.777 () Moving old data: can potentially use wp_filesystem method / -old
+0037.777 () Moving old data out of the way...
+0038.868 () Top-level entities being moved: all-in-one-seo-pack-pro.tar.gz, all-in-one-seo-pack-pro-PURCHASHED.zip, styler-for-wpforms, responsive-photo-gallery, revslider.zip, revslider, ot_portfolio, envira.lrplugin, sp-news-and-widget.zip, old, wpforms, addon-library.zip, wp-asset-clean-up-pro, contact-form-7, wp-fastest-cache, updraftplus, php-code-widget, duplicator-pro.zip, wp-optimize, js_composer.zip, wpcf7-recaptcha, duplicate-post, redux-framework, vc-social-stream, vc-extensions-imageoverlay, wp-smush-pro, ot-themes-one-click-import, flagallery-skins, duplicator, envira_plugins, contentprotector, hide-plugin-updates-notifications, health-check, preloader-ultimate.zip, tweetlab, essential-grid, ot_testimonial, insert-headers-and-footers, sp-news-and-widget_2017-10-01-err.tar.gz, options-importer, global-gallery.zip, classic-editor, index.php, old_plugins, rj-quickcharts, responsive-flickr-gallery, SecurityPro.zip, wpmudev-updates, meta-box, wp-security-audit-log, ot_process, css3-preloader-ultimate, essential-grid.zip, wp-smushit, ot_service, ultimate-tables, wpforms.zip, zoho-forms, instagram-feed, Essential_Grid_[v2.1.6].zip, akismet, addon-library, contentprotector.zip, js_composer, js_composer-PURCHASHED.zip
+0038.876 () Moving unpacked backup into place...
+0039.916 () Top-level entities being moved: all-in-one-seo-pack-pro.tar.gz, all-in-one-seo-pack-pro-PURCHASHED.zip, styler-for-wpforms, responsive-photo-gallery, revslider.zip, revslider, ot_portfolio, envira.lrplugin, sp-news-and-widget.zip, old, wpforms, wp-table-builder, addon-library.zip, wp-asset-clean-up-pro, contact-form-7, wp-fastest-cache, updraftplus, php-code-widget, duplicator-pro.zip, wp-optimize, js_composer.zip, wpcf7-recaptcha, duplicate-post, redux-framework, vc-social-stream, vc-extensions-imageoverlay, wp-smush-pro, ot-themes-one-click-import, flagallery-skins, duplicator, envira_plugins, better-search-replace, contentprotector, hide-plugin-updates-notifications, health-check, preloader-ultimate.zip, tweetlab, essential-grid, ot_testimonial, insert-headers-and-footers, sp-news-and-widget_2017-10-01-err.tar.gz, options-importer, global-gallery.zip, classic-editor, index.php, old_plugins, rj-quickcharts, responsive-flickr-gallery, SecurityPro.zip, wpmudev-updates, meta-box, wp-security-audit-log, ot_process, css3-preloader-ultimate, essential-grid.zip, wp-smushit, ot_service, ultimate-tables, wpforms.zip, zoho-forms, instagram-feed, Essential_Grid_[v2.1.6].zip, akismet, go-live-update-urls, addon-library, contentprotector.zip, js_composer, js_composer-PURCHASHED.zip
+0039.924 () Cleaning up rubbish...
+0039.937 () Entity: themes
+0039.937 () restore_backup(backup_file=backup_2021-07-30-2003_Central_College_Anuradhapura_e74525e55aeb-themes.zip, type=themes, info=a:2:{s:4:"path";s:31:"/var/www/html/wp-content/themes";s:11:"description";s:6:"Themes";}, last_one=)
+0039.937 () Unpacking backup... (backup_2021-07-30-2003_Central_College_Anuradhapura_e74525e55aeb-themes.zip, 25.8 MB)
+0039.937 () Unzipping backup_2021-07-30-2003_Central_College_Anuradhapura_e74525e55aeb-themes.zip to /var/www/html/wp-content/upgrade/be8b390f/ using UpdraftPlus_PclZip, starting index 0
+0040.330 () Unzip progress: 1002 out of 2578 files (18.6 MB, themes/betheme/functions/importer/demo/be/band/menu.txt)
+0040.419 () Unzip progress: 2003 out of 2578 files (30.7 MB, themes/betheme/functions/builder/images/items/portfolio_photo.png)
+0040.471 () Unzip progress: 2578 out of 2578 files (40.8 MB, themes/archi/js/total1.js)
+0040.476 () Moving old data: filesystem method / updraft_dir is potentially possible
+0040.476 () Moving old data: can potentially use wp_filesystem method / -old
+0040.476 () Moving old data out of the way...
+0040.664 () Top-level entities being moved: archi, twentynineteen, twentytwenty, archi.zip, index.php, betheme, archi-3.0.1.zip, mTheme-Unus
+0040.665 () Moving unpacked backup into place...
+0040.801 () Top-level entities being moved: archi, twentynineteen, twentytwenty, twentytwentyone, archi.zip, index.php, betheme, archi-3.0.1.zip, mTheme-Unus
+0040.802 () Cleaning up rubbish...
+0040.812 () Entity: uploads
+0040.812 () restore_backup(backup_file=backup_2021-07-30-2003_Central_College_Anuradhapura_e74525e55aeb-uploads.zip, type=uploads, info=a:2:{s:4:"path";s:32:"/var/www/html/wp-content/uploads";s:11:"description";s:7:"Uploads";}, last_one=)
+0040.812 () Unpacking backup... (backup_2021-07-30-2003_Central_College_Anuradhapura_e74525e55aeb-uploads.zip, 310.4 MB)
+0040.812 () Unzipping backup_2021-07-30-2003_Central_College_Anuradhapura_e74525e55aeb-uploads.zip to /var/www/html/wp-content/upgrade/48a87354/ using UpdraftPlus_PclZip, starting index 0
+0042.225 () Unzip progress: 1002 out of 6512 files (9.7 MB, uploads/ac_assets/uc_diamond_accordion/uc_diamond_accordion.css)
+0042.321 () Unzip progress: 2003 out of 6512 files (23.1 MB, uploads/revslider/templates/blooming-wedding-carousel/slide1.jpg)
+0042.433 () Unzip progress: 3004 out of 6512 files (47.2 MB, uploads/2017/07/vr-bg-img-01-700x358.jpg)
+0042.622 () Unzip progress: 3966 out of 6512 files (147.2 MB, uploads/2017/06/THE-TEACHERS-DAY-2014-700x358.jpg)
+0044.191 () Unzip progress: 4967 out of 6512 files (219.8 MB, uploads/2020/04/AL-Category-05-2048x474.png)
+0044.349 () Unzip progress: 5968 out of 6512 files (284 MB, uploads/2014/05/nietop1.jpg)
+0044.441 () Unzip progress: 6512 out of 6512 files (320.9 MB, uploads/js_composer/index.php)
+0044.474 () Moving old data: filesystem method / updraft_dir is potentially possible
+0044.474 () Moving old data: can potentially use wp_filesystem method / -old
+0044.474 () Moving old data out of the way...
+0045.701 () Moving unpacked backup into place...
+0046.050 () Cleaning up rubbish...
+0046.060 () Entity: others
+0046.060 () restore_backup(backup_file=backup_2021-07-30-2003_Central_College_Anuradhapura_e74525e55aeb-others.zip, type=others, info=a:2:{s:4:"path";s:24:"/var/www/html/wp-content";s:11:"description";s:6:"Others";}, last_one=1)
+0046.060 () Unpacking backup... (backup_2021-07-30-2003_Central_College_Anuradhapura_e74525e55aeb-others.zip, 3.3 MB)
+0046.060 () Unzipping backup_2021-07-30-2003_Central_College_Anuradhapura_e74525e55aeb-others.zip to /var/www/html/wp-content/upgrade/adc2d28a/ using UpdraftPlus_PclZip, starting index 0
+0046.102 () Unzip progress: 111 out of 111 files (3.5 MB, wflogs/ips.php)
+0046.107 () Cleaning up rubbish...

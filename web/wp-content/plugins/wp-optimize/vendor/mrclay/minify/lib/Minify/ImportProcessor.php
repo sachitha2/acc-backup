@@ -66,7 +66,7 @@ class Minify_ImportProcessor
         $this->_currentDir = dirname($file);
 
         // remove UTF-8 BOM if present
-        if (pack("CCC",0xef,0xbb,0xbf) === substr($content, 0, 3)) {
+        if (pack("CCC", 0xef, 0xbb, 0xbf) === substr($content, 0, 3)) {
             $content = substr($content, 3);
         }
         // ensure uniform EOLs
@@ -182,7 +182,7 @@ class Minify_ImportProcessor
     private function truepath($path)
     {
         // whether $path is unix or not
-        $unipath = ('' === $path) || ($path{0} !== '/');
+        $unipath = ('' === $path) || ($path[0] !== '/');
 
         // attempts to detect if path is relative in which case, add cwd
         if (strpos($path, ':') === false && $unipath) {

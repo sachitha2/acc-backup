@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+	<meta charset="UTF-8">
+	<title>Tweetlab by MaGeek Lab - Documentation</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="css/documentation.css" type="text/css" media="all">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="js/main.js"></script>
+</head>
+<body>
+<aside id="sidebar">
+	<span class="logo">
+		<span>Tweet</span>lab <small>v2.0</small>
+	</span>
+	<nav>
+		<ol>
+			<li><a href="#installation">Installation</a></li>
+			<li><a href="#twitterApp">Creating the Twitter App</a></li>
+			<li><a href="#shortcodes">Shortcodes</a></li>
+			<li><a href="#parameters">Parameters</a></li>
+			<li><a href="#templates">Templates</a></li>
+			<li><a href="#widgets">Widgets</a></li>
+			<li><a href="#credits">FAQ</a></li>
+		</ol>
+	</nav>
+</aside>
+<div id="main">
+	<section class="first">
+		<div class="container">
+			
+			<h1 class="logo">
+				<span>Tweet</span>lab <small>By MaGeek Lab</small>
+			</h1>
+			
+			<div class="borderTop">
+				Created: 15/10/2013<br />
+				Email: <a href="mailto:hello@mageeklab.com">hello@mageeklab.com</a>
+			</div>
+		
+			<div class="span-12 last">
+				<p>Thank you for purchasing this plugin!</p>
+				<p>If you have any questions that are beyond the scope of this help file, <br />please feel free to email us on our user page contact form <a href="http://codecanyon.net/user/mageeklab?ref=MaGeekLab">in CodeCanyon</a>.</p>
+				<p>Thanks you so much!</p>
+			</div>
+		</div>
+	</section>
+	<section>	
+		<div class="container">
+			<h2 id="installation">Installation</h2>
+			<p>To install the plugin go to <kbd>Plugins > Add New > Upload</kbd> and select the <code>mgl-twitter.zip</code> file</p>
+			<p>Activate the plugin and <strong>¡Congratulations!</strong> The plugin have been installed.</p>
+			<p>You can also install the plugin via FTP uploading the folder <code>mgl-twitter</code> to your plugins folder</p>
+		</div>
+	</section>	
+	<section>
+		<div class="container">
+			<h2 id="twitterApp">Creating the Twitter App</h2>
+			<p>First of all, go to <kbd>Settings > Tweetlab</kbd> </p>
+			<p>In order to use this plugin you first need to create a <a href="https://dev.twitter.com/apps/new" target="_blank">Twitter Application</a> in the Twitter api site</p> 
+			<em>You can pull info for any other user you want, so you can create the app with any user you want</em>
+			<img src="images/twitter-application.png" alt="Twitters's API website - Creating new App" />
+
+			<p>Fill the fields with your site information (just the required ones), accept terms and submit yout App (Sometimes the captcha can be a pain in the ass)</p>  
+			
+			<p>After creating your application you will be in your App home page, scroll to bottom, there you will find a button that allows you to create your acces token, just click it</p>
+
+			<img src="images/twitter-token.png" alt="Access token button - Your App" /> 
+
+			<p>Then scroll up to the App menu and go to the <strong>"OAuth tool"</strong> tab</p>
+			<p>Copy the four fields of the app to your WordPress site <em>(consumer key, consumer secret, access token, access token secret)</em></p>
+
+			<img src="images/twitter-app-settings.png" alt="Twitters's Developer website - Settings" /> 
+
+			<p>That's all, save settings, you are <strong>ready to go!</strong></p>
+
+		</div>
+	</section>
+	<section>	
+		<div class="container">
+			<h2 id="shortcodes">Shortcodes</h2>
+			
+			<p>To display Twetts use our amazing shortcodes:
+				<br /> Not knowing what a shortcode is? Take a look <a href="http://en.support.wordpress.com/shortcodes/" target="_blank">here</a>
+			</p>
+			<p><strong>Tweetlab</strong> supports both <a href="http://codecanyon.net/item/visual-composer-page-builder-for-wordpress/242431?ref=mageeklab" target="_blank">Visual Composer</a> and <a href="http://go.themeforest.net/layerswp/?ref=mageeklab" target="_blank">Layers</a></p>
+			<p>So if you are using one of them you don't need to worry, the customization is easy as pie</p>
+
+			<h3>Twitter Carousel</h3>
+			
+			<p>To display a twitter carousel you just need to fill the username or search field</p>
+			
+			<h4>User</h4> <pre>[mgl_twitter username="mageeklab"]</pre>
+			<h4>Search</h4> <pre>[mgl_twitter search="#codecanyon"]</pre>
+			
+			<p>You can also combine both to filter by user and hashtag</p>
+			
+			<h4>User & search</h4> <pre>[mgl_twitter username="mageeklab" search="#codecanyon"]</pre>
+
+			<p>You can also sepparete with commas users and search to include tweets from both users / searches</p>
+
+			<h4>Multiple users</h4> <pre>[mgl_twitter username="mageeklab,envato"]</pre>
+
+			<h4>Multiple searches</h4> <pre>[mgl_twitter search="#codecanyon,#themeforest"]</pre>
+
+			<h4>Custom Query</h4> 
+			<p>The Twitter API is pretty big and has so many options so we've included a field for this cases when you need to do an advanced query, see all the documentation on <a href="https://dev.twitter.com/rest/public/search" target="_blank">Twitter API website</a>, also check some examples:</p>
+			
+			<pre>[mgl_twitter custom_query="traffic ?"]</pre>
+			<p>This will display a carousel of tweets asking for traffic</p>
+			
+			<pre>[mgl_twitter custom_query="@envato"]</pre>
+			<p>This will display a carousel of tweets mentioning envato</p>
+
+			<pre>[mgl_twitter custom_query=#codecanyon -#themeforest"]</pre>
+			<p>This will display a carousel of that contain #codecanyon but not #themeforest</p>
+
+			<p><em>Note: The custom query will overwrite the user & search parameter, but not the count one, so no need to include it in your custom query</em></p>
+			<p><em>Note 2: To avoid conflicts with Wordpress' shortcodes, use single quotes instead of doubles ones on custom_query parameter value</em></p>
+			
+			<h3>Twitter User Card</h3>
+			<p>A Twitter Card shows the relevant info of a Twitter account, the only required parameter is the username itself</p>
+			<pre>[mgl_twitter_card username="mageeklab"]</pre>
+
+		</div>
+	</section>
+	<section>
+		<div class="container">
+			<h2 id="parameters">Parameters</h2>
+
+			<p>Adding this extra parameters to your shortcode will let you customize how the gallery looks (Some parameters are not available in the single video shortcode)</p>
+			
+			<h3>Twitter Carousel</h3>
+			<table>
+				<thead>
+					<tr>
+						<th>Parameter</th>
+						<th>Possible values</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>count</td>
+						<td>Number</td>
+						<td>Total number of tweets to display</td>
+					</tr>
+					<tr>
+						<td>cache</td>
+						<td>Number</td>
+						<td>Interval time the tweets will be stored before pulling new ones, defaults to 900 milisecons (15 min)</td>
+					</tr>
+					<tr>
+						<td>display</td>
+						<td>String</td>
+						<td>Comma sepparated list of elements to show for each tweet, by default is "avatar,name,text"</td>
+					</tr>
+					<tr>
+						<td>template</td>
+						<td>Check the <a class="anchor" href="#templates">templates section</a></td>
+						<td>The template to use</td>
+					</tr>
+					<tr>
+						<td>direction</td>
+						<td>lfr / rtl / vertical</td>
+						<td>Comma sepparated list of elements to show for each tweet, by default is "avatar,name,text"</td>
+					</tr>
+					<tr>
+						<td>slides</td>
+						<td>Number</td>
+						<td>Number of visible tweets at the same time</td>
+					</tr>
+					<tr>
+						<td>autoplay</td>
+						<td>true / false</td>
+						<td>Let the carousel begin animation alone</td>
+					</tr>
+					<tr>
+						<td>pause</td>
+						<td>Number</td>
+						<td>Time in milisecons between slides</td>
+					</tr>
+					<tr>
+						<td>speed</td>
+						<td>Number</td>
+						<td>Speed in milisecons of the slide animation</td>
+					</tr>
+					<tr>
+						<td>controls</td>
+						<td>true / false</td>
+						<td>Display arrows</td>
+					</tr>
+					<tr>
+						<td>pager</td>
+						<td>true / false</td>
+						<td>Display dots pager</td>
+					</tr>
+					<tr>
+						<td>button (Deprecated)</td>
+						<td>true / false</td>
+						<td>Display the user follow button or the tweet button ()</td>
+					</tr>
+					<tr>
+						<td>avatars (Deprecated)</td>
+						<td>true / false</td>
+						<td>Use display instead. Display the avatars of the users</td>
+					</tr>
+					<tr>
+						<td>userinfo (Deprecated)</td>
+						<td>true / false</td>
+						<td>Only avaible in user shortcode, display the user's info in top of the slider</td>
+					</tr>
+					<tr>
+						<td>width (Deprecated)</td>
+						<td>Number</td>
+						<td>Slide max-with, just necessary if the slider doesn't fill all the space of your website, amount in px but without the "px"</td>
+					</tr>
+					<tr>
+						<td>height (Deprecated)</td>
+						<td>Number</td>
+						<td>Slide height, setup a height per each slide, amount in px</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<br /><br />
+
+			<h3>Twitter Card</h3>
+			<table>
+				<thead>
+					<tr>
+						<th>Parameter</th>
+						<th>Possible values</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>display</td>
+						<td>String</td>
+						<td>Comma sepparated list of elements to show for each tweet, by default is "banner,avatar,name,description,meta"</td>
+					</tr>
+					<tr>
+						<td>template</td>
+						<td>Check the <a class="anchor" href="#templates">templates section</a></td>
+						<td>The template to use</td>
+					</tr>
+					<tr>
+						<td>cache</td>
+						<td>Number</td>
+						<td>Interval time the tweets will be stored before pulling new ones, defaults to 900 milisecons (15 min)</td>
+					</tr>
+					<tr>
+						<td>button</td>
+						<td>true / false</td>
+						<td>Display the follow button</td>
+					</tr>
+					<tr>
+						<td>description (Deprecated)</td>
+						<td>true / false</td>
+						<td>Use display instead. Display the user's description</td>
+					</tr>
+					<tr>
+						<td>usermeta (Deprecated)</td>
+						<td>true / false</td>
+						<td>Use display instead. Display the user's meta</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</section>
+
+	<section>
+		<div class="container">
+			<h2 id="templates">Templates</h2>
+			<p>Twitter slider comes with some pretty cool templates, this are the current options:</p>
+			<ul>
+				<li>default</li>
+				<li>square</li>
+				<li>balloon</li>
+				<li>card</li>
+			</ul>
+			<p>You can create your own custom templates for Twitter slider, to do so let's say you set the parameter template to <kbd>custom</kbd></p>
+			<pre>[mgl_twitter template="custom"]</pre>
+
+			<p>Then you can add your own styles to the gallery with the base class <code>mgl_twitter_template_custom</code></p>
+
+			<p>If you need to customize/overwrite the code of the template you can create a folder inside your theme with the name <code>tweetlab</code> and another folder inside it with the name of the template you want, in this case <code>custom</code></p>
+
+			<p>Copy the original files from <code>templates/default</code> inside the plugin's folder into the <code>tweetlab/custom</code> inside your theme, you just need to copy the files you want to customize</p>
+
+			<p>The logic of the plugin when searching for a file of the template <kbd>custom</kbd> template is as it follows:</p>
+			<ol>
+				<li>The plugin will look for the file inside the theme folder</li>
+				<li>The plugin will look for the file inside the plugin folder</li>
+				<li>The plugin will load the default theme file</li>
+			</ol>
+
+		</div>
+	</section>
+
+	<section>	
+		<div class="container">
+			<h2 id="widgets">Widgets</h2>
+			
+			<p>The same shortcodes ara available as <strong>WordPress Widgets</strong> with all the same parameters</p>
+
+			<img src="images/twitter-widgets.png" alt="The widgets" style="display:block;" />
+		
+		</div>
+	</section>
+	<section>	
+		<div class="container">
+			<h2 id="credits">FAQ</h2>
+			
+			<p><strong>The styles looks horrible, can I do?</strong><br />Check that the shortcode is not wrapped into <code>< pre ></code> tags, also check that any styles of your theme are causing problemes with the ones of the plugin, of course if you have any issue contact us via de comments section</p>
+
+			<p><strong>Which library are you using for the slider?</strong><br />The <a href="http://www.owlcarousel.owlgraphic.com/" target="_blank">Owl Carousel</a> by Bartosz Wojciechowski and the <a href="http://bxslider.com/" target="_blank">BxSlider</a> by Steven Wanderski</p>
+
+			<p><strong>Do I need jQuery in order to make this plugin work?</strong><br />Yes, the plugin itself loads jQuery, but you can disable it in the configuration page</p>
+
+		</div><!-- end div .container -->
+	</section>
+</div>
+</body>
+</html>

@@ -3,7 +3,7 @@
 Plugin Name: Styler for WPForms
 Plugin URI:  http://wpmonks.com/styler-wpforms
 Description: Create beautiful styles for your WPForms
-Version:     2.0.1
+Version:     2.0.3
 Author:      Sushil Kumar
 Author URI:  http://wpmonks.com/
 License:     GPL2License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -31,7 +31,7 @@ require_once SFWF_DIR . '/admin-menu/addons.php';
 require_once 'helpers/utils/responsive.php';
 class Sk_Sfwf_Main_Class {
 
-	const VERSION = '2.0.1';
+	const VERSION = '2.0.3';
 	const SLUG    = 'styler-wpforms';
 	const NAME    = 'Styler for WPForms';
 	const AUTHOR  = 'Sushil Kumar';
@@ -267,7 +267,7 @@ class Sk_Sfwf_Main_Class {
 		wp_enqueue_script( 'sfwf_show_live_changes', self::$url . 'js/live-preview/live-preview-changes.js', array( 'jquery', 'customize-preview' ), '', true );
 		$current_form_id = get_option( 'sfwf_select_form_id' );
 		wp_enqueue_script( 'sfwf_customizer_shortcut_icons', self::$url . 'js/live-preview/edit-shortcuts.js', array( 'jquery', 'customize-preview', 'wpforms' ), '', true );
-		wp_localize_script( 'sfwf_show_live_changes', 'sfwf_localize_current_form', $current_form_id );
+		wp_localize_script( 'sfwf_show_live_changes', 'sfwf_localize_current_form', array( 'formId' => $current_form_id ) );
 		wp_localize_script( 'sfwf_customizer_shortcut_icons', 'sfwf_localize_edit_shortcuts', array( 'formId' => $current_form_id ) );
 	}
 	public function customize_save_after() {

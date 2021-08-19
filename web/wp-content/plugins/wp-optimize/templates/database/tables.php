@@ -23,6 +23,16 @@ do_action('wpo_tables_list_before');
 
 <p class="wpo-table-list-filter"><strong><?php echo __('Database name:', 'wp-optimize')." '".htmlspecialchars(DB_NAME)."'"; ?><a id="wp_optimize_table_list_refresh" href="#" class="wpo-refresh-button"><span class="dashicons dashicons-image-rotate"></span><?php _e('Refresh data', 'wp-optimize'); ?></a></strong> <input id="wpoptimize_table_list_filter" class="search" type="search" value="" placeholder="<?php esc_attr_e('Search for table', 'wp-optimize'); ?>" data-column="1" /></p>
 
+<?php
+$optimizer = WP_Optimize()->get_optimizer();
+$table_prefix = $optimizer->get_table_prefix();
+if (!$table_prefix) {
+?>
+<p class="wpo-table-list-filter"><span style="color: #0073aa;"><span class="dashicons dashicons-info"></span> <?php echo __('Note:', 'wp-optimize').'</span> '.__('Your WordPress install does not use a database prefix, so WP-Optimize was not able to differentiate which tables belong to WordPress so all tables are listed below.', 'wp-optimize'); ?></p>
+<?php
+}
+?>
+
 <table id="wpoptimize_table_list" class="wp-list-table widefat striped tablesorter wp-list-table-mobile-labels">
 	<thead>
 		<tr>
@@ -57,4 +67,3 @@ do_action('wpo_tables_list_before');
 <?php
 
 WP_Optimize()->include_template('database/tables-list-after.php', false, array('optimize_db' => $optimize_db, 'load_data' => $load_data));
-

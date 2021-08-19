@@ -1,0 +1,241 @@
+/** * html5doctor.com Reset Stylesheet v1.6.1 (http://html5doctor.com/html-5-reset-stylesheet/) * Richard Clark (http://richclarkdesign.com) * http://cssreset.com */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+body {
+  font: 400 14px 'Open Sans', Helvetica, Arial, Verdana, sans-serif;
+  background-color: #eee;
+  color: #444; }
+
+a {
+  text-decoration: none;
+  color: #55acee; }
+
+h2 {
+  font-weight: 700;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 30px; }
+
+h3 {
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #3ea1ec; }
+
+h4 {
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 10px; }
+
+pre {
+  padding: 10px;
+  background: #eee;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  margin: 20px 0; }
+
+code {
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #c7254e;
+  background-color: #f9f2f4;
+  border-radius: 4px; }
+
+kbd {
+  padding: 2px 6px;
+  font-size: 90%;
+  color: #fff;
+  background-color: #333;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25);
+  font-family: 'Open Sans'; }
+
+.logo {
+  display: block;
+  font-size: 30px;
+  padding: 20px;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0; }
+  .logo span {
+    font-weight: 700; }
+  .logo small {
+    font-size: 14px; }
+
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #3ea1ec;
+  width: 320px;
+  height: 100%;
+  box-shadow: 5px 0 7px rgba(0, 0, 0, 0.1); }
+  #sidebar .logo {
+    background-color: #55acee; }
+  #sidebar nav ol {
+    margin: 0;
+    padding: 0;
+    text-decoration: none; }
+    #sidebar nav ol li a {
+      color: #fff;
+      padding: 15px 20px;
+      display: block;
+      text-transform: uppercase;
+      transition: background-color .5s; }
+      #sidebar nav ol li a:hover {
+        background-color: #55acee; }
+
+#main {
+  padding-left: 320px;
+  line-height: 25px; }
+  #main section {
+    padding: 0 30px 60px; }
+    #main section:nth-child(2n) {
+      background-color: #fff; }
+    #main section h2 {
+      padding-top: 60px; }
+    #main section .container {
+      max-width: 1200px; }
+    #main section img {
+      display: block;
+      max-width: 100%;
+      margin-bottom: 30px; }
+  #main p {
+    margin-bottom: 20px; }
+  #main ul, #main ol {
+    margin-bottom: 20px; }
+    #main ul li, #main ol li {
+      margin-left: 30px; }
+  #main table {
+    width: 100%;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); }
+    #main table th, #main table td {
+      text-align: left;
+      padding: 10px; }
+    #main table thead tr {
+      background-color: #55acee;
+      color: #fff; }
+    #main table tbody tr:nth-child(2n) {
+      background-color: #fff; }
+  #main .first {
+    background-color: #444;
+    color: #fff;
+    padding-top: 60px;
+    text-align: center; }
+    #main .first .logo {
+      background: url("../images/twitter_logo.png") no-repeat top center;
+      padding: 0;
+      padding-top: 60px;
+      margin-bottom: 30px; }
+      #main .first .logo small {
+        display: block;
+        margin-top: 10px; }
+
+.row {
+  display: flex; }
+
+.col-1 {
+  width: 8.33333%; }
+
+.col-2 {
+  width: 16.66667%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-4 {
+  width: 33.33333%; }
+
+.col-5 {
+  width: 41.66667%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-7 {
+  width: 58.33333%; }
+
+.col-8 {
+  width: 66.66667%; }
+
+.col-9 {
+  width: 75%; }
+
+.col-10 {
+  width: 83.33333%; }
+
+.col-11 {
+  width: 91.66667%; }
+
+.col-12 {
+  width: 100%; }
+
+/*# sourceMappingURL=documentation.css.map */

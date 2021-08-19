@@ -1,0 +1,593 @@
+0000.028 (R) [notice] Looking for db archive: file name: backup_2021-07-30-2003_Central_College_Anuradhapura_e74525e55aeb-db.gz
+0000.028 (R) [notice] Archive is expected to be size: 5042.6 KB: OK
+0000.028 (R) [notice] Looking for plugins archive: file name: backup_2021-07-30-2003_Central_College_Anuradhapura_e74525e55aeb-plugins.zip
+0000.029 (R) [notice] Archive is expected to be size: 132071.9 KB: OK
+0000.029 (R) [notice] Looking for themes archive: file name: backup_2021-07-30-2003_Central_College_Anuradhapura_e74525e55aeb-themes.zip
+0000.029 (R) [notice] Archive is expected to be size: 26454 KB: OK
+0000.029 (R) [notice] Looking for uploads archive: file name: backup_2021-07-30-2003_Central_College_Anuradhapura_e74525e55aeb-uploads.zip
+0000.029 (R) [notice] Archive is expected to be size: 317839 KB: OK
+0000.030 (R) [notice] Looking for others archive: file name: backup_2021-07-30-2003_Central_College_Anuradhapura_e74525e55aeb-others.zip
+0000.030 (R) [notice] Archive is expected to be size: 3330 KB: OK
+0000.034 (R) [notice] Unpacking backup... (backup_2021-07-30-2003_Central_College_Anuradhapura_e74525e55aeb-db.gz, 4.9 Mb)
+0000.040 (R) [notice] Restoring the database (on a large site this can take a long time - if it times out (which can happen if your web hosting company has configured your hosting to limit resources) then you should use a different method, such as phpMyAdmin)...
+0000.140 (R) [notice] Enabling Maintenance mode&#8230;
+0000.148 (R) [notice] Backup created by: 1.16.59
+0000.149 (R) [notice] Backup of: http://anucentralcollege.lk
+0000.161 (R) [notice] Content URL: http://anucentralcollege.lk/wp-content
+0000.161 (R) [notice] Uploads URL: http://anucentralcollege.lk/wp-content/uploads
+0000.161 (R) [notice] Old table prefix: wp_
+0000.161 (R) [notice] Site information: multisite = 0
+0000.161 (R) [notice] Site information: sql_mode = NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION
+0000.161 (R) [notice] Skipped tables: wpposts
+0000.165 (R) [notice] New table prefix: 50_
+0000.165 (R) [notice] Skipping table wp_options: user has chosen not to restore this table
+0000.218 (R) [notice] Skipping table wp_users: user has chosen not to restore this table
+0000.226 (R) [notice] Processing table (MyISAM):  wp_usermeta - will restore as: 50_usermeta
+0000.254 (R) [notice] Atomic restore: dropping original table (wp_usermeta)
+0000.260 (R) [notice] Atomic restore: renaming new table (50_usermeta) to final table name (wp_usermeta)
+0000.266 (R) [notice] Processing table (MyISAM):  wp_actionscheduler_actions - will restore as: 50_actionscheduler_actions
+0000.289 (R) [notice] Atomic restore: dropping original table (wp_actionscheduler_actions)
+0000.296 (R) [notice] Atomic restore: renaming new table (50_actionscheduler_actions) to final table name (wp_actionscheduler_actions)
+0000.304 (R) [notice] Processing table (MyISAM):  wp_actionscheduler_claims - will restore as: 50_actionscheduler_claims
+0000.318 (R) [notice] Atomic restore: dropping original table (wp_actionscheduler_claims)
+0000.323 (R) [notice] Atomic restore: renaming new table (50_actionscheduler_claims) to final table name (wp_actionscheduler_claims)
+0000.329 (R) [notice] Processing table (MyISAM):  wp_actionscheduler_groups - will restore as: 50_actionscheduler_groups
+0000.347 (R) [notice] Atomic restore: dropping original table (wp_actionscheduler_groups)
+0000.355 (R) [notice] Atomic restore: renaming new table (50_actionscheduler_groups) to final table name (wp_actionscheduler_groups)
+0000.360 (R) [notice] Processing table (MyISAM):  wp_actionscheduler_logs - will restore as: 50_actionscheduler_logs
+0000.379 (R) [notice] Atomic restore: dropping original table (wp_actionscheduler_logs)
+0000.385 (R) [notice] Atomic restore: renaming new table (50_actionscheduler_logs) to final table name (wp_actionscheduler_logs)
+0000.391 (R) [notice] Processing table (MyISAM):  wp_commentmeta - will restore as: 50_commentmeta
+0000.411 (R) [notice] Atomic restore: dropping original table (wp_commentmeta)
+0000.417 (R) [notice] Atomic restore: renaming new table (50_commentmeta) to final table name (wp_commentmeta)
+0000.425 (R) [notice] Processing table (MyISAM):  wp_comments - will restore as: 50_comments
+0000.443 (R) [notice] Atomic restore: dropping original table (wp_comments)
+0000.459 (R) [notice] Atomic restore: renaming new table (50_comments) to final table name (wp_comments)
+0000.467 (R) [notice] Processing table (MyISAM):  wp_links - will restore as: 50_links
+0000.483 (R) [notice] Atomic restore: dropping original table (wp_links)
+0000.489 (R) [notice] Atomic restore: renaming new table (50_links) to final table name (wp_links)
+0000.496 (R) [notice] Processing table (MyISAM):  wp_postmeta - will restore as: 50_postmeta
+0001.839 (R) [notice] Atomic restore: dropping original table (wp_postmeta)
+0001.845 (R) [notice] Atomic restore: renaming new table (50_postmeta) to final table name (wp_postmeta)
+0001.853 (R) [notice] Processing table (MyISAM):  wp_posts - will restore as: 50_posts
+0001.995 (R) [notice] Atomic restore: dropping original table (wp_posts)
+0002.004 (R) [notice] Atomic restore: renaming new table (50_posts) to final table name (wp_posts)
+0002.011 (R) [notice] Processing table (MyISAM):  wp_term_relationships - will restore as: 50_term_relationships
+0002.025 (R) [notice] Database queries processed: 50 in 1.98 seconds
+0002.034 (R) [notice] Atomic restore: dropping original table (wp_term_relationships)
+0002.042 (R) [notice] Atomic restore: renaming new table (50_term_relationships) to final table name (wp_term_relationships)
+0002.049 (R) [notice] Processing table (MyISAM):  wp_term_taxonomy - will restore as: 50_term_taxonomy
+0002.072 (R) [notice] Atomic restore: dropping original table (wp_term_taxonomy)
+0002.078 (R) [notice] Atomic restore: renaming new table (50_term_taxonomy) to final table name (wp_term_taxonomy)
+0002.084 (R) [notice] Processing table (MyISAM):  wp_termmeta - will restore as: 50_termmeta
+0002.104 (R) [notice] Atomic restore: dropping original table (wp_termmeta)
+0002.113 (R) [notice] Atomic restore: renaming new table (50_termmeta) to final table name (wp_termmeta)
+0002.119 (R) [notice] Processing table (MyISAM):  wp_terms - will restore as: 50_terms
+0002.138 (R) [notice] Atomic restore: dropping original table (wp_terms)
+0002.144 (R) [notice] Atomic restore: renaming new table (50_terms) to final table name (wp_terms)
+0002.151 (R) [notice] Processing table (MyISAM):  wp_FinalTiles_gallery - will restore as: 50_FinalTiles_gallery
+0002.151 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0002.167 (R) [notice] Atomic restore: dropping original table (wp_FinalTiles_gallery)
+0002.173 (R) [notice] Atomic restore: renaming new table (50_FinalTiles_gallery) to final table name (wp_FinalTiles_gallery)
+0002.180 (R) [notice] Processing table (MyISAM):  wp_FinalTiles_gallery_images - will restore as: 50_FinalTiles_gallery_images
+0002.180 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0002.194 (R) [notice] Atomic restore: dropping original table (wp_FinalTiles_gallery_images)
+0002.200 (R) [notice] Atomic restore: renaming new table (50_FinalTiles_gallery_images) to final table name (wp_FinalTiles_gallery_images)
+0002.208 (R) [notice] Processing table (MyISAM):  wp_addonlibrary_addons - will restore as: 50_addonlibrary_addons
+0002.257 (R) [notice] Atomic restore: dropping original table (wp_addonlibrary_addons)
+0002.263 (R) [notice] Atomic restore: renaming new table (50_addonlibrary_addons) to final table name (wp_addonlibrary_addons)
+0002.271 (R) [notice] Processing table (MyISAM):  wp_addonlibrary_categories - will restore as: 50_addonlibrary_categories
+0002.289 (R) [notice] Atomic restore: dropping original table (wp_addonlibrary_categories)
+0002.295 (R) [notice] Atomic restore: renaming new table (50_addonlibrary_categories) to final table name (wp_addonlibrary_categories)
+0002.301 (R) [notice] Processing table (InnoDB):  wp_dpproeventcalendar_booking - will restore as: 50_dpproeventcalendar_booking
+0002.301 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0002.337 (R) [notice] Atomic restore: dropping original table (wp_dpproeventcalendar_booking)
+0002.353 (R) [notice] Atomic restore: renaming new table (50_dpproeventcalendar_booking) to final table name (wp_dpproeventcalendar_booking)
+0002.370 (R) [notice] Processing table (InnoDB):  wp_dpproeventcalendar_calendars - will restore as: 50_dpproeventcalendar_calendars
+0002.370 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0002.414 (R) [notice] Atomic restore: dropping original table (wp_dpproeventcalendar_calendars)
+0002.443 (R) [notice] Atomic restore: renaming new table (50_dpproeventcalendar_calendars) to final table name (wp_dpproeventcalendar_calendars)
+0002.471 (R) [notice] Processing table (InnoDB):  wp_dpproeventcalendar_special_dates - will restore as: 50_dpproeventcalendar_special_dates
+0002.471 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0002.503 (R) [notice] Atomic restore: dropping original table (wp_dpproeventcalendar_special_dates)
+0002.519 (R) [notice] Atomic restore: renaming new table (50_dpproeventcalendar_special_dates) to final table name (wp_dpproeventcalendar_special_dates)
+0002.538 (R) [notice] Processing table (InnoDB):  wp_dpproeventcalendar_special_dates_calendar - will restore as: 50_dpproeventcalendar_special_dates_calendar
+0002.538 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0002.573 (R) [notice] Atomic restore: dropping original table (wp_dpproeventcalendar_special_dates_calendar)
+0002.585 (R) [notice] Atomic restore: renaming new table (50_dpproeventcalendar_special_dates_calendar) to final table name (wp_dpproeventcalendar_special_dates_calendar)
+0002.605 (R) [notice] Processing table (InnoDB):  wp_dpproeventcalendar_subscribers_calendar - will restore as: 50_dpproeventcalendar_subscribers_calendar
+0002.605 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0002.638 (R) [notice] Atomic restore: dropping original table (wp_dpproeventcalendar_subscribers_calendar)
+0002.651 (R) [notice] Atomic restore: renaming new table (50_dpproeventcalendar_subscribers_calendar) to final table name (wp_dpproeventcalendar_subscribers_calendar)
+0002.670 (R) [notice] Processing table (MyISAM):  wp_duplicator_packages - will restore as: 50_duplicator_packages
+0002.683 (R) [notice] Atomic restore: dropping original table (wp_duplicator_packages)
+0002.691 (R) [notice] Atomic restore: renaming new table (50_duplicator_packages) to final table name (wp_duplicator_packages)
+0002.697 (R) [notice] Processing table (MyISAM):  wp_eg_grids - will restore as: 50_eg_grids
+0002.718 (R) [notice] Atomic restore: dropping original table (wp_eg_grids)
+0002.724 (R) [notice] Atomic restore: renaming new table (50_eg_grids) to final table name (wp_eg_grids)
+0002.730 (R) [notice] Processing table (MyISAM):  wp_eg_item_elements - will restore as: 50_eg_item_elements
+0002.744 (R) [notice] Atomic restore: dropping original table (wp_eg_item_elements)
+0002.750 (R) [notice] Atomic restore: renaming new table (50_eg_item_elements) to final table name (wp_eg_item_elements)
+0002.756 (R) [notice] Processing table (MyISAM):  wp_eg_item_skins - will restore as: 50_eg_item_skins
+0002.795 (R) [notice] Atomic restore: dropping original table (wp_eg_item_skins)
+0002.801 (R) [notice] Atomic restore: renaming new table (50_eg_item_skins) to final table name (wp_eg_item_skins)
+0002.810 (R) [notice] Processing table (MyISAM):  wp_eg_navigation_skins - will restore as: 50_eg_navigation_skins
+0002.828 (R) [notice] Atomic restore: dropping original table (wp_eg_navigation_skins)
+0002.835 (R) [notice] Atomic restore: renaming new table (50_eg_navigation_skins) to final table name (wp_eg_navigation_skins)
+0002.841 (R) [notice] Processing table (MyISAM):  wp_flag_album - will restore as: 50_flag_album
+0002.857 (R) [notice] Atomic restore: dropping original table (wp_flag_album)
+0002.864 (R) [notice] Atomic restore: renaming new table (50_flag_album) to final table name (wp_flag_album)
+0002.870 (R) [notice] Processing table (MyISAM):  wp_flag_comments - will restore as: 50_flag_comments
+0002.886 (R) [notice] Database queries processed: 100 in 2.84 seconds
+0002.886 (R) [notice] Atomic restore: dropping original table (wp_flag_comments)
+0002.893 (R) [notice] Atomic restore: renaming new table (50_flag_comments) to final table name (wp_flag_comments)
+0002.901 (R) [notice] Processing table (MyISAM):  wp_flag_gallery - will restore as: 50_flag_gallery
+0002.920 (R) [notice] Atomic restore: dropping original table (wp_flag_gallery)
+0002.926 (R) [notice] Atomic restore: renaming new table (50_flag_gallery) to final table name (wp_flag_gallery)
+0002.933 (R) [notice] Processing table (MyISAM):  wp_flag_pictures - will restore as: 50_flag_pictures
+0002.948 (R) [notice] Atomic restore: dropping original table (wp_flag_pictures)
+0002.955 (R) [notice] Atomic restore: renaming new table (50_flag_pictures) to final table name (wp_flag_pictures)
+0002.962 (R) [notice] Processing table (MyISAM):  wp_itsec_lockouts - will restore as: 50_itsec_lockouts
+0002.977 (R) [notice] Atomic restore: dropping original table (wp_itsec_lockouts)
+0002.983 (R) [notice] Atomic restore: renaming new table (50_itsec_lockouts) to final table name (wp_itsec_lockouts)
+0002.989 (R) [notice] Processing table (MyISAM):  wp_itsec_log - will restore as: 50_itsec_log
+0003.010 (R) [notice] Atomic restore: dropping original table (wp_itsec_log)
+0003.017 (R) [notice] Atomic restore: renaming new table (50_itsec_log) to final table name (wp_itsec_log)
+0003.024 (R) [notice] Processing table (MyISAM):  wp_itsec_temp - will restore as: 50_itsec_temp
+0003.039 (R) [notice] Atomic restore: dropping original table (wp_itsec_temp)
+0003.045 (R) [notice] Atomic restore: renaming new table (50_itsec_temp) to final table name (wp_itsec_temp)
+0003.051 (R) [notice] Processing table (InnoDB):  wp_ose_app_admin - will restore as: 50_ose_app_admin
+0003.051 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0003.085 (R) [notice] Atomic restore: dropping original table (wp_ose_app_admin)
+0003.103 (R) [notice] Atomic restore: renaming new table (50_ose_app_admin) to final table name (wp_ose_app_admin)
+0003.124 (R) [notice] Constraints found, will disable atomic restore for current table (wp_ose_app_adminrecemail)
+0003.143 (R) [notice] Processing table (InnoDB):  wp_ose_app_adminrecemail
+0003.143 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0003.188 (R) [notice] Processing table (InnoDB):  wp_ose_app_email - will restore as: 50_ose_app_email
+0003.188 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0003.229 (R) [notice] Atomic restore: dropping original table (wp_ose_app_email)
+0003.246 (R) [notice] Atomic restore: renaming new table (50_ose_app_email) to final table name (wp_ose_app_email)
+0003.267 (R) [notice] Processing table (InnoDB):  wp_ose_app_geoip - will restore as: 50_ose_app_geoip
+0003.267 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0003.301 (R) [notice] Atomic restore: dropping original table (wp_ose_app_geoip)
+0003.318 (R) [notice] Atomic restore: renaming new table (50_ose_app_geoip) to final table name (wp_ose_app_geoip)
+0003.338 (R) [notice] Processing table (InnoDB):  wp_ose_secConfig - will restore as: 50_ose_secConfig
+0003.339 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0003.381 (R) [notice] Atomic restore: dropping original table (wp_ose_secConfig)
+0003.395 (R) [notice] Atomic restore: renaming new table (50_ose_secConfig) to final table name (wp_ose_secConfig)
+0003.413 (R) [notice] Constraints found, will disable atomic restore for current table (wp_osefirewall_acl)
+0003.435 (R) [notice] Processing table (InnoDB):  wp_osefirewall_acl
+0003.435 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0003.507 (R) [notice] Constraints found, will disable atomic restore for current table (wp_osefirewall_adminemails)
+0003.523 (R) [notice] Processing table (InnoDB):  wp_osefirewall_adminemails
+0003.523 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0003.563 (R) [notice] Constraints found, will disable atomic restore for current table (wp_osefirewall_advancepatterns)
+0003.583 (R) [notice] Processing table (InnoDB):  wp_osefirewall_advancepatterns
+0003.583 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0003.626 (R) [notice] Processing table (InnoDB):  wp_osefirewall_aiscan - will restore as: 50_osefirewall_aiscan
+0003.626 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0003.662 (R) [notice] Atomic restore: dropping original table (wp_osefirewall_aiscan)
+0003.675 (R) [notice] Atomic restore: renaming new table (50_osefirewall_aiscan) to final table name (wp_osefirewall_aiscan)
+0003.693 (R) [notice] Processing table (InnoDB):  wp_osefirewall_attacktype - will restore as: 50_osefirewall_attacktype
+0003.693 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0003.736 (R) [notice] Atomic restore: dropping original table (wp_osefirewall_attacktype)
+0003.754 (R) [notice] Atomic restore: renaming new table (50_osefirewall_attacktype) to final table name (wp_osefirewall_attacktype)
+0003.773 (R) [notice] Processing table (InnoDB):  wp_osefirewall_backup - will restore as: 50_osefirewall_backup
+0003.773 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0003.814 (R) [notice] Atomic restore: dropping original table (wp_osefirewall_backup)
+0003.830 (R) [notice] Atomic restore: renaming new table (50_osefirewall_backup) to final table name (wp_osefirewall_backup)
+0003.848 (R) [notice] Processing table (InnoDB):  wp_osefirewall_backupath - will restore as: 50_osefirewall_backupath
+0003.848 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0003.888 (R) [notice] Atomic restore: dropping original table (wp_osefirewall_backupath)
+0003.908 (R) [notice] Atomic restore: renaming new table (50_osefirewall_backupath) to final table name (wp_osefirewall_backupath)
+0003.931 (R) [notice] Processing table (InnoDB):  wp_osefirewall_backuplog - will restore as: 50_osefirewall_backuplog
+0003.931 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0003.965 (R) [notice] Atomic restore: dropping original table (wp_osefirewall_backuplog)
+0003.979 (R) [notice] Atomic restore: renaming new table (50_osefirewall_backuplog) to final table name (wp_osefirewall_backuplog)
+0003.998 (R) [notice] Processing table (InnoDB):  wp_osefirewall_basicrules - will restore as: 50_osefirewall_basicrules
+0003.998 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0004.034 (R) [notice] Atomic restore: dropping original table (wp_osefirewall_basicrules)
+0004.049 (R) [notice] Atomic restore: renaming new table (50_osefirewall_basicrules) to final table name (wp_osefirewall_basicrules)
+0004.064 (R) [notice] Processing table (InnoDB):  wp_osefirewall_bkfiles - will restore as: 50_osefirewall_bkfiles
+0004.064 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0004.099 (R) [notice] Atomic restore: dropping original table (wp_osefirewall_bkfiles)
+0004.114 (R) [notice] Atomic restore: renaming new table (50_osefirewall_bkfiles) to final table name (wp_osefirewall_bkfiles)
+0004.134 (R) [notice] Processing table (InnoDB):  wp_osefirewall_cronsettings - will restore as: 50_osefirewall_cronsettings
+0004.134 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0004.166 (R) [notice] Atomic restore: dropping original table (wp_osefirewall_cronsettings)
+0004.182 (R) [notice] Atomic restore: renaming new table (50_osefirewall_cronsettings) to final table name (wp_osefirewall_cronsettings)
+0004.199 (R) [notice] Processing table (InnoDB):  wp_osefirewall_dbconfiggit - will restore as: 50_osefirewall_dbconfiggit
+0004.199 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0004.235 (R) [notice] Database queries processed: 150 in 4.19 seconds
+0004.236 (R) [notice] Atomic restore: dropping original table (wp_osefirewall_dbconfiggit)
+0004.250 (R) [notice] Atomic restore: renaming new table (50_osefirewall_dbconfiggit) to final table name (wp_osefirewall_dbconfiggit)
+0004.267 (R) [notice] Constraints found, will disable atomic restore for current table (wp_osefirewall_detattacktype)
+0004.285 (R) [notice] Processing table (InnoDB):  wp_osefirewall_detattacktype
+0004.286 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0004.343 (R) [notice] Constraints found, will disable atomic restore for current table (wp_osefirewall_detcontdetail)
+0004.363 (R) [notice] Processing table (InnoDB):  wp_osefirewall_detcontdetail
+0004.420 (R) [notice] Processing table (InnoDB):  wp_osefirewall_detcontent - will restore as: 50_osefirewall_detcontent
+0004.492 (R) [notice] Atomic restore: dropping original table (wp_osefirewall_detcontent)
+0004.510 (R) [notice] Atomic restore: renaming new table (50_osefirewall_detcontent) to final table name (wp_osefirewall_detcontent)
+0004.530 (R) [notice] Constraints found, will disable atomic restore for current table (wp_osefirewall_detected)
+0004.551 (R) [notice] Processing table (InnoDB):  wp_osefirewall_detected
+0004.551 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0004.616 (R) [notice] Processing table (InnoDB):  wp_osefirewall_domains - will restore as: 50_osefirewall_domains
+0004.617 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0004.652 (R) [notice] Atomic restore: dropping original table (wp_osefirewall_domains)
+0004.667 (R) [notice] Atomic restore: renaming new table (50_osefirewall_domains) to final table name (wp_osefirewall_domains)
+0004.686 (R) [notice] Processing table (InnoDB):  wp_osefirewall_emailnotificationmgmtv7 - will restore as: 50_osefirewall_emailnotificationmgmtv7
+0004.686 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0004.724 (R) [notice] Atomic restore: dropping original table (wp_osefirewall_emailnotificationmgmtv7)
+0004.735 (R) [notice] Atomic restore: renaming new table (50_osefirewall_emailnotificationmgmtv7) to final table name (wp_osefirewall_emailnotificationmgmtv7)
+0004.751 (R) [notice] Processing table (InnoDB):  wp_osefirewall_errorlog - will restore as: 50_osefirewall_errorlog
+0004.751 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0004.786 (R) [notice] Atomic restore: dropping original table (wp_osefirewall_errorlog)
+0004.799 (R) [notice] Atomic restore: renaming new table (50_osefirewall_errorlog) to final table name (wp_osefirewall_errorlog)
+0004.818 (R) [notice] Processing table (InnoDB):  wp_osefirewall_files - will restore as: 50_osefirewall_files
+0004.818 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0004.856 (R) [notice] Atomic restore: dropping original table (wp_osefirewall_files)
+0004.870 (R) [notice] Atomic restore: renaming new table (50_osefirewall_files) to final table name (wp_osefirewall_files)
+0004.883 (R) [notice] Processing table (InnoDB):  wp_osefirewall_fileuploadext - will restore as: 50_osefirewall_fileuploadext
+0004.884 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0004.935 (R) [notice] Atomic restore: dropping original table (wp_osefirewall_fileuploadext)
+0004.952 (R) [notice] Atomic restore: renaming new table (50_osefirewall_fileuploadext) to final table name (wp_osefirewall_fileuploadext)
+0004.973 (R) [notice] Constraints found, will disable atomic restore for current table (wp_osefirewall_fileuploadlog)
+0004.994 (R) [notice] Processing table (InnoDB):  wp_osefirewall_fileuploadlog
+0004.994 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0005.050 (R) [notice] Processing table (InnoDB):  wp_osefirewall_fileuploadlogv7 - will restore as: 50_osefirewall_fileuploadlogv7
+0005.050 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0005.086 (R) [notice] Atomic restore: dropping original table (wp_osefirewall_fileuploadlogv7)
+0005.098 (R) [notice] Atomic restore: renaming new table (50_osefirewall_fileuploadlogv7) to final table name (wp_osefirewall_fileuploadlogv7)
+0005.119 (R) [notice] Processing table (InnoDB):  wp_osefirewall_fwscannerv7Config - will restore as: 50_osefirewall_fwscannerv7Config
+0005.119 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0005.175 (R) [notice] Atomic restore: dropping original table (wp_osefirewall_fwscannerv7Config)
+0005.187 (R) [notice] Atomic restore: renaming new table (50_osefirewall_fwscannerv7Config) to final table name (wp_osefirewall_fwscannerv7Config)
+0005.206 (R) [notice] Processing table (InnoDB):  wp_osefirewall_gitlog - will restore as: 50_osefirewall_gitlog
+0005.206 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0005.243 (R) [notice] Atomic restore: dropping original table (wp_osefirewall_gitlog)
+0005.254 (R) [notice] Atomic restore: renaming new table (50_osefirewall_gitlog) to final table name (wp_osefirewall_gitlog)
+0005.271 (R) [notice] Processing table (InnoDB):  wp_osefirewall_ipmanagement - will restore as: 50_osefirewall_ipmanagement
+0005.271 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0005.321 (R) [notice] Atomic restore: dropping original table (wp_osefirewall_ipmanagement)
+0005.340 (R) [notice] Atomic restore: renaming new table (50_osefirewall_ipmanagement) to final table name (wp_osefirewall_ipmanagement)
+0005.360 (R) [notice] Constraints found, will disable atomic restore for current table (wp_osefirewall_iptable)
+0005.382 (R) [notice] Processing table (InnoDB):  wp_osefirewall_iptable
+0005.382 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0005.444 (R) [notice] Processing table (InnoDB):  wp_osefirewall_iptable_tmp - will restore as: 50_osefirewall_iptable_tmp
+0005.444 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0005.657 (R) [notice] Atomic restore: dropping original table (wp_osefirewall_iptable_tmp)
+0005.671 (R) [notice] Atomic restore: renaming new table (50_osefirewall_iptable_tmp) to final table name (wp_osefirewall_iptable_tmp)
+0005.687 (R) [notice] Processing table (InnoDB):  wp_osefirewall_logs - will restore as: 50_osefirewall_logs
+0005.687 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0005.724 (R) [notice] Atomic restore: dropping original table (wp_osefirewall_logs)
+0005.741 (R) [notice] Database queries processed: 200 in 5.69 seconds
+0005.741 (R) [notice] Atomic restore: renaming new table (50_osefirewall_logs) to final table name (wp_osefirewall_logs)
+0005.759 (R) [notice] Processing table (InnoDB):  wp_osefirewall_malware - will restore as: 50_osefirewall_malware
+0005.760 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0005.821 (R) [notice] Atomic restore: dropping original table (wp_osefirewall_malware)
+0005.838 (R) [notice] Atomic restore: renaming new table (50_osefirewall_malware) to final table name (wp_osefirewall_malware)
+0005.857 (R) [notice] Processing table (InnoDB):  wp_osefirewall_pages - will restore as: 50_osefirewall_pages
+0005.857 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0005.898 (R) [notice] Atomic restore: dropping original table (wp_osefirewall_pages)
+0005.914 (R) [notice] Atomic restore: renaming new table (50_osefirewall_pages) to final table name (wp_osefirewall_pages)
+0005.939 (R) [notice] Processing table (InnoDB):  wp_osefirewall_referers - will restore as: 50_osefirewall_referers
+0005.939 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0005.984 (R) [notice] Atomic restore: dropping original table (wp_osefirewall_referers)
+0006.002 (R) [notice] Atomic restore: renaming new table (50_osefirewall_referers) to final table name (wp_osefirewall_referers)
+0006.021 (R) [notice] Processing table (InnoDB):  wp_osefirewall_scanhist - will restore as: 50_osefirewall_scanhist
+0006.021 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0006.062 (R) [notice] Atomic restore: dropping original table (wp_osefirewall_scanhist)
+0006.078 (R) [notice] Atomic restore: renaming new table (50_osefirewall_scanhist) to final table name (wp_osefirewall_scanhist)
+0006.095 (R) [notice] Processing table (InnoDB):  wp_osefirewall_sfschecked - will restore as: 50_osefirewall_sfschecked
+0006.095 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0006.289 (R) [notice] Atomic restore: dropping original table (wp_osefirewall_sfschecked)
+0006.306 (R) [notice] Atomic restore: renaming new table (50_osefirewall_sfschecked) to final table name (wp_osefirewall_sfschecked)
+0006.322 (R) [notice] Processing table (InnoDB):  wp_osefirewall_updateLog - will restore as: 50_osefirewall_updateLog
+0006.322 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0006.355 (R) [notice] Atomic restore: dropping original table (wp_osefirewall_updateLog)
+0006.377 (R) [notice] Atomic restore: renaming new table (50_osefirewall_updateLog) to final table name (wp_osefirewall_updateLog)
+0006.393 (R) [notice] Processing table (InnoDB):  wp_osefirewall_vars - will restore as: 50_osefirewall_vars
+0006.437 (R) [notice] Atomic restore: dropping original table (wp_osefirewall_vars)
+0006.458 (R) [notice] Atomic restore: renaming new table (50_osefirewall_vars) to final table name (wp_osefirewall_vars)
+0006.479 (R) [notice] Processing table (InnoDB):  wp_osefirewall_versioninfo - will restore as: 50_osefirewall_versioninfo
+0006.479 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0006.513 (R) [notice] Atomic restore: dropping original table (wp_osefirewall_versioninfo)
+0006.531 (R) [notice] Atomic restore: renaming new table (50_osefirewall_versioninfo) to final table name (wp_osefirewall_versioninfo)
+0006.545 (R) [notice] Processing table (InnoDB):  wp_osefirewall_versions - will restore as: 50_osefirewall_versions
+0006.545 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0006.586 (R) [notice] Atomic restore: dropping original table (wp_osefirewall_versions)
+0006.599 (R) [notice] Atomic restore: renaming new table (50_osefirewall_versions) to final table name (wp_osefirewall_versions)
+0006.618 (R) [notice] Processing table (InnoDB):  wp_osefirewall_virusVersion - will restore as: 50_osefirewall_virusVersion
+0006.618 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0006.647 (R) [notice] Atomic restore: dropping original table (wp_osefirewall_virusVersion)
+0006.661 (R) [notice] Atomic restore: renaming new table (50_osefirewall_virusVersion) to final table name (wp_osefirewall_virusVersion)
+0006.678 (R) [notice] Processing table (InnoDB):  wp_osefirewall_vlscanner - will restore as: 50_osefirewall_vlscanner
+0006.678 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0006.707 (R) [notice] Atomic restore: dropping original table (wp_osefirewall_vlscanner)
+0006.724 (R) [notice] Atomic restore: renaming new table (50_osefirewall_vlscanner) to final table name (wp_osefirewall_vlscanner)
+0006.744 (R) [notice] Processing table (InnoDB):  wp_osefirewall_vshash - will restore as: 50_osefirewall_vshash
+0006.744 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0006.783 (R) [notice] Atomic restore: dropping original table (wp_osefirewall_vshash)
+0006.799 (R) [notice] Atomic restore: renaming new table (50_osefirewall_vshash) to final table name (wp_osefirewall_vshash)
+0006.817 (R) [notice] Constraints found, will disable atomic restore for current table (wp_osefirewall_vspatterns)
+0006.838 (R) [notice] Processing table (InnoDB):  wp_osefirewall_vspatterns
+0006.839 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0006.907 (R) [notice] Processing table (InnoDB):  wp_osefirewall_vstypes - will restore as: 50_osefirewall_vstypes
+0006.907 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0006.955 (R) [notice] Atomic restore: dropping original table (wp_osefirewall_vstypes)
+0006.989 (R) [notice] Atomic restore: renaming new table (50_osefirewall_vstypes) to final table name (wp_osefirewall_vstypes)
+0007.011 (R) [notice] Processing table (InnoDB):  wp_osefirewall_whitelistmgmt - will restore as: 50_osefirewall_whitelistmgmt
+0007.011 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0007.056 (R) [notice] Atomic restore: dropping original table (wp_osefirewall_whitelistmgmt)
+0007.073 (R) [notice] Atomic restore: renaming new table (50_osefirewall_whitelistmgmt) to final table name (wp_osefirewall_whitelistmgmt)
+0007.095 (R) [notice] Processing table (MyISAM):  wp_preloader_ultimate - will restore as: 50_preloader_ultimate
+0007.114 (R) [notice] Atomic restore: dropping original table (wp_preloader_ultimate)
+0007.122 (R) [notice] Atomic restore: renaming new table (50_preloader_ultimate) to final table name (wp_preloader_ultimate)
+0007.131 (R) [notice] Processing table (MyISAM):  wp_revslider_css - will restore as: 50_revslider_css
+0007.153 (R) [notice] Atomic restore: dropping original table (wp_revslider_css)
+0007.159 (R) [notice] Database queries processed: 250 in 7.11 seconds
+0007.159 (R) [notice] Atomic restore: renaming new table (50_revslider_css) to final table name (wp_revslider_css)
+0007.165 (R) [notice] Processing table (MyISAM):  wp_revslider_css_bkp - will restore as: 50_revslider_css_bkp
+0007.190 (R) [notice] Atomic restore: dropping original table (wp_revslider_css_bkp)
+0007.197 (R) [notice] Atomic restore: renaming new table (50_revslider_css_bkp) to final table name (wp_revslider_css_bkp)
+0007.204 (R) [notice] Processing table (MyISAM):  wp_revslider_layer_animations - will restore as: 50_revslider_layer_animations
+0007.221 (R) [notice] Atomic restore: dropping original table (wp_revslider_layer_animations)
+0007.227 (R) [notice] Atomic restore: renaming new table (50_revslider_layer_animations) to final table name (wp_revslider_layer_animations)
+0007.233 (R) [notice] Processing table (MyISAM):  wp_revslider_layer_animations_bkp - will restore as: 50_revslider_layer_animations_bkp
+0007.249 (R) [notice] Atomic restore: dropping original table (wp_revslider_layer_animations_bkp)
+0007.255 (R) [notice] Atomic restore: renaming new table (50_revslider_layer_animations_bkp) to final table name (wp_revslider_layer_animations_bkp)
+0007.261 (R) [notice] Processing table (MyISAM):  wp_revslider_navigations - will restore as: 50_revslider_navigations
+0007.274 (R) [notice] Atomic restore: dropping original table (wp_revslider_navigations)
+0007.282 (R) [notice] Atomic restore: renaming new table (50_revslider_navigations) to final table name (wp_revslider_navigations)
+0007.288 (R) [notice] Processing table (MyISAM):  wp_revslider_navigations_bkp - will restore as: 50_revslider_navigations_bkp
+0007.303 (R) [notice] Atomic restore: dropping original table (wp_revslider_navigations_bkp)
+0007.309 (R) [notice] Atomic restore: renaming new table (50_revslider_navigations_bkp) to final table name (wp_revslider_navigations_bkp)
+0007.319 (R) [notice] Processing table (MyISAM):  wp_revslider_sliders - will restore as: 50_revslider_sliders
+0007.337 (R) [notice] Atomic restore: dropping original table (wp_revslider_sliders)
+0007.343 (R) [notice] Atomic restore: renaming new table (50_revslider_sliders) to final table name (wp_revslider_sliders)
+0007.349 (R) [notice] Processing table (MyISAM):  wp_revslider_sliders_bkp - will restore as: 50_revslider_sliders_bkp
+0007.370 (R) [notice] Atomic restore: dropping original table (wp_revslider_sliders_bkp)
+0007.377 (R) [notice] Atomic restore: renaming new table (50_revslider_sliders_bkp) to final table name (wp_revslider_sliders_bkp)
+0007.383 (R) [notice] Processing table (MyISAM):  wp_revslider_slides - will restore as: 50_revslider_slides
+0007.405 (R) [notice] Atomic restore: dropping original table (wp_revslider_slides)
+0007.413 (R) [notice] Atomic restore: renaming new table (50_revslider_slides) to final table name (wp_revslider_slides)
+0007.420 (R) [notice] Processing table (MyISAM):  wp_revslider_slides_bkp - will restore as: 50_revslider_slides_bkp
+0007.445 (R) [notice] Atomic restore: dropping original table (wp_revslider_slides_bkp)
+0007.452 (R) [notice] Atomic restore: renaming new table (50_revslider_slides_bkp) to final table name (wp_revslider_slides_bkp)
+0007.459 (R) [notice] Processing table (MyISAM):  wp_revslider_static_slides - will restore as: 50_revslider_static_slides
+0007.478 (R) [notice] Atomic restore: dropping original table (wp_revslider_static_slides)
+0007.486 (R) [notice] Atomic restore: renaming new table (50_revslider_static_slides) to final table name (wp_revslider_static_slides)
+0007.494 (R) [notice] Processing table (MyISAM):  wp_revslider_static_slides_bkp - will restore as: 50_revslider_static_slides_bkp
+0007.508 (R) [notice] Atomic restore: dropping original table (wp_revslider_static_slides_bkp)
+0007.517 (R) [notice] Atomic restore: renaming new table (50_revslider_static_slides_bkp) to final table name (wp_revslider_static_slides_bkp)
+0007.524 (R) [notice] Processing table (MyISAM):  wp_rj_quickcharts - will restore as: 50_rj_quickcharts
+0007.544 (R) [notice] Atomic restore: dropping original table (wp_rj_quickcharts)
+0007.550 (R) [notice] Atomic restore: renaming new table (50_rj_quickcharts) to final table name (wp_rj_quickcharts)
+0007.556 (R) [notice] Processing table (MyISAM):  wp_sbi_instagram_feeds_posts - will restore as: 50_sbi_instagram_feeds_posts
+0007.571 (R) [notice] Atomic restore: dropping original table (wp_sbi_instagram_feeds_posts)
+0007.576 (R) [notice] Atomic restore: renaming new table (50_sbi_instagram_feeds_posts) to final table name (wp_sbi_instagram_feeds_posts)
+0007.582 (R) [notice] Processing table (MyISAM):  wp_sbi_instagram_posts - will restore as: 50_sbi_instagram_posts
+0007.597 (R) [notice] Atomic restore: dropping original table (wp_sbi_instagram_posts)
+0007.604 (R) [notice] Atomic restore: renaming new table (50_sbi_instagram_posts) to final table name (wp_sbi_instagram_posts)
+0007.618 (R) [notice] Processing table (InnoDB):  wp_scroll_news - will restore as: 50_scroll_news
+0007.663 (R) [notice] Atomic restore: dropping original table (wp_scroll_news)
+0007.683 (R) [notice] Atomic restore: renaming new table (50_scroll_news) to final table name (wp_scroll_news)
+0007.702 (R) [notice] Processing table (MyISAM):  wp_smartiplog - will restore as: 50_smartiplog
+0007.722 (R) [notice] Atomic restore: dropping original table (wp_smartiplog)
+0007.729 (R) [notice] Atomic restore: renaming new table (50_smartiplog) to final table name (wp_smartiplog)
+0007.735 (R) [notice] Processing table (MyISAM):  wp_smush_dir_images - will restore as: 50_smush_dir_images
+0007.749 (R) [notice] Atomic restore: dropping original table (wp_smush_dir_images)
+0007.755 (R) [notice] Atomic restore: renaming new table (50_smush_dir_images) to final table name (wp_smush_dir_images)
+0007.762 (R) [notice] Processing table (MyISAM):  wp_stream - will restore as: 50_stream
+0007.781 (R) [notice] Atomic restore: dropping original table (wp_stream)
+0007.786 (R) [notice] Atomic restore: renaming new table (50_stream) to final table name (wp_stream)
+0007.793 (R) [notice] Processing table (MyISAM):  wp_stream_meta - will restore as: 50_stream_meta
+0007.810 (R) [notice] Atomic restore: dropping original table (wp_stream_meta)
+0007.820 (R) [notice] Atomic restore: renaming new table (50_stream_meta) to final table name (wp_stream_meta)
+0007.829 (R) [notice] Processing table (MyISAM):  wp_tm_taskmeta - will restore as: 50_tm_taskmeta
+0007.844 (R) [notice] Atomic restore: dropping original table (wp_tm_taskmeta)
+0007.850 (R) [notice] Atomic restore: renaming new table (50_tm_taskmeta) to final table name (wp_tm_taskmeta)
+0007.857 (R) [notice] Processing table (MyISAM):  wp_tm_tasks - will restore as: 50_tm_tasks
+0007.872 (R) [notice] Atomic restore: dropping original table (wp_tm_tasks)
+0007.879 (R) [notice] Atomic restore: renaming new table (50_tm_tasks) to final table name (wp_tm_tasks)
+0007.886 (R) [notice] Processing table (InnoDB):  wp_ultimatetables - will restore as: 50_ultimatetables
+0007.937 (R) [notice] Atomic restore: dropping original table (wp_ultimatetables)
+0007.954 (R) [notice] Atomic restore: renaming new table (50_ultimatetables) to final table name (wp_ultimatetables)
+0007.974 (R) [notice] Processing table (MyISAM):  wp_unitegallery_categories - will restore as: 50_unitegallery_categories
+0007.990 (R) [notice] Atomic restore: dropping original table (wp_unitegallery_categories)
+0007.998 (R) [notice] Atomic restore: renaming new table (50_unitegallery_categories) to final table name (wp_unitegallery_categories)
+0008.004 (R) [notice] Processing table (MyISAM):  wp_unitegallery_galleries - will restore as: 50_unitegallery_galleries
+0008.021 (R) [notice] Atomic restore: dropping original table (wp_unitegallery_galleries)
+0008.029 (R) [notice] Atomic restore: renaming new table (50_unitegallery_galleries) to final table name (wp_unitegallery_galleries)
+0008.036 (R) [notice] Processing table (MyISAM):  wp_unitegallery_items - will restore as: 50_unitegallery_items
+0008.055 (R) [notice] Atomic restore: dropping original table (wp_unitegallery_items)
+0008.062 (R) [notice] Atomic restore: renaming new table (50_unitegallery_items) to final table name (wp_unitegallery_items)
+0008.069 (R) [notice] Processing table (MyISAM):  wp_wfBadLeechers - will restore as: 50_wfBadLeechers
+0008.084 (R) [notice] Atomic restore: dropping original table (wp_wfBadLeechers)
+0008.090 (R) [notice] Atomic restore: renaming new table (50_wfBadLeechers) to final table name (wp_wfBadLeechers)
+0008.097 (R) [notice] Processing table (MyISAM):  wp_wfBlockedIPLog - will restore as: 50_wfBlockedIPLog
+0008.097 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0008.111 (R) [notice] Atomic restore: dropping original table (wp_wfBlockedIPLog)
+0008.118 (R) [notice] Atomic restore: renaming new table (50_wfBlockedIPLog) to final table name (wp_wfBlockedIPLog)
+0008.124 (R) [notice] Processing table (MyISAM):  wp_wfBlocks - will restore as: 50_wfBlocks
+0008.124 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0008.139 (R) [notice] Atomic restore: dropping original table (wp_wfBlocks)
+0008.148 (R) [notice] Atomic restore: renaming new table (50_wfBlocks) to final table name (wp_wfBlocks)
+0008.155 (R) [notice] Processing table (MyISAM):  wp_wfBlocksAdv - will restore as: 50_wfBlocksAdv
+0008.155 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0008.170 (R) [notice] Atomic restore: dropping original table (wp_wfBlocksAdv)
+0008.176 (R) [notice] Atomic restore: renaming new table (50_wfBlocksAdv) to final table name (wp_wfBlocksAdv)
+0008.182 (R) [notice] Processing table (MyISAM):  wp_wfConfig - will restore as: 50_wfConfig
+0008.183 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0008.201 (R) [notice] Atomic restore: dropping original table (wp_wfConfig)
+0008.207 (R) [notice] Atomic restore: renaming new table (50_wfConfig) to final table name (wp_wfConfig)
+0008.213 (R) [notice] Processing table (MyISAM):  wp_wfCrawlers - will restore as: 50_wfCrawlers
+0008.230 (R) [notice] Atomic restore: dropping original table (wp_wfCrawlers)
+0008.237 (R) [notice] Atomic restore: renaming new table (50_wfCrawlers) to final table name (wp_wfCrawlers)
+0008.244 (R) [notice] Processing table (MyISAM):  wp_wfFileMods - will restore as: 50_wfFileMods
+0008.245 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0008.549 (R) [notice] Atomic restore: dropping original table (wp_wfFileMods)
+0008.557 (R) [notice] Atomic restore: renaming new table (50_wfFileMods) to final table name (wp_wfFileMods)
+0008.563 (R) [notice] Processing table (MyISAM):  wp_wfHits - will restore as: 50_wfHits
+0008.585 (R) [notice] Atomic restore: dropping original table (wp_wfHits)
+0008.593 (R) [notice] Atomic restore: renaming new table (50_wfHits) to final table name (wp_wfHits)
+0008.603 (R) [notice] Processing table (MyISAM):  wp_wfHoover - will restore as: 50_wfHoover
+0008.603 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0008.622 (R) [notice] Atomic restore: dropping original table (wp_wfHoover)
+0008.630 (R) [notice] Atomic restore: renaming new table (50_wfHoover) to final table name (wp_wfHoover)
+0008.637 (R) [notice] Processing table (MyISAM):  wp_wfIssues - will restore as: 50_wfIssues
+0008.637 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0008.651 (R) [notice] Atomic restore: dropping original table (wp_wfIssues)
+0008.658 (R) [notice] Atomic restore: renaming new table (50_wfIssues) to final table name (wp_wfIssues)
+0008.666 (R) [notice] Processing table (MyISAM):  wp_wfLeechers - will restore as: 50_wfLeechers
+0008.681 (R) [notice] Atomic restore: dropping original table (wp_wfLeechers)
+0008.691 (R) [notice] Atomic restore: renaming new table (50_wfLeechers) to final table name (wp_wfLeechers)
+0008.698 (R) [notice] Processing table (MyISAM):  wp_wfLockedOut - will restore as: 50_wfLockedOut
+0008.698 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0008.714 (R) [notice] Atomic restore: dropping original table (wp_wfLockedOut)
+0008.720 (R) [notice] Atomic restore: renaming new table (50_wfLockedOut) to final table name (wp_wfLockedOut)
+0008.729 (R) [notice] Processing table (MyISAM):  wp_wfLocs - will restore as: 50_wfLocs
+0008.729 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0008.744 (R) [notice] Atomic restore: dropping original table (wp_wfLocs)
+0008.749 (R) [notice] Atomic restore: renaming new table (50_wfLocs) to final table name (wp_wfLocs)
+0008.756 (R) [notice] Processing table (MyISAM):  wp_wfLogins - will restore as: 50_wfLogins
+0008.756 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0008.771 (R) [notice] Atomic restore: dropping original table (wp_wfLogins)
+0008.777 (R) [notice] Atomic restore: renaming new table (50_wfLogins) to final table name (wp_wfLogins)
+0008.784 (R) [notice] Processing table (MyISAM):  wp_wfNet404s - will restore as: 50_wfNet404s
+0008.785 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0008.801 (R) [notice] Atomic restore: dropping original table (wp_wfNet404s)
+0008.806 (R) [notice] Atomic restore: renaming new table (50_wfNet404s) to final table name (wp_wfNet404s)
+0008.814 (R) [notice] Processing table (MyISAM):  wp_wfReverseCache - will restore as: 50_wfReverseCache
+0008.828 (R) [notice] Atomic restore: dropping original table (wp_wfReverseCache)
+0008.833 (R) [notice] Atomic restore: renaming new table (50_wfReverseCache) to final table name (wp_wfReverseCache)
+0008.841 (R) [notice] Processing table (MyISAM):  wp_wfScanners - will restore as: 50_wfScanners
+0008.854 (R) [notice] Atomic restore: dropping original table (wp_wfScanners)
+0008.860 (R) [notice] Atomic restore: renaming new table (50_wfScanners) to final table name (wp_wfScanners)
+0008.866 (R) [notice] Processing table (MyISAM):  wp_wfStatus - will restore as: 50_wfStatus
+0008.866 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0008.889 (R) [notice] Atomic restore: dropping original table (wp_wfStatus)
+0008.895 (R) [notice] Atomic restore: renaming new table (50_wfStatus) to final table name (wp_wfStatus)
+0008.901 (R) [notice] Processing table (MyISAM):  wp_wfThrottleLog - will restore as: 50_wfThrottleLog
+0008.901 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0008.921 (R) [notice] Atomic restore: dropping original table (wp_wfThrottleLog)
+0008.928 (R) [notice] Atomic restore: renaming new table (50_wfThrottleLog) to final table name (wp_wfThrottleLog)
+0008.934 (R) [notice] Processing table (MyISAM):  wp_wfVulnScanners - will restore as: 50_wfVulnScanners
+0008.950 (R) [notice] Atomic restore: dropping original table (wp_wfVulnScanners)
+0008.955 (R) [notice] Atomic restore: renaming new table (50_wfVulnScanners) to final table name (wp_wfVulnScanners)
+0008.962 (R) [notice] Processing table (MyISAM):  wp_woocommerce_api_keys - will restore as: 50_woocommerce_api_keys
+0008.977 (R) [notice] Atomic restore: dropping original table (wp_woocommerce_api_keys)
+0008.983 (R) [notice] Atomic restore: renaming new table (50_woocommerce_api_keys) to final table name (wp_woocommerce_api_keys)
+0008.989 (R) [notice] Processing table (MyISAM):  wp_woocommerce_attribute_taxonomies - will restore as: 50_woocommerce_attribute_taxonomies
+0009.003 (R) [notice] Atomic restore: dropping original table (wp_woocommerce_attribute_taxonomies)
+0009.010 (R) [notice] Atomic restore: renaming new table (50_woocommerce_attribute_taxonomies) to final table name (wp_woocommerce_attribute_taxonomies)
+0009.020 (R) [notice] Processing table (MyISAM):  wp_woocommerce_downloadable_product_permissions - will restore as: 50_woocommerce_downloadable_product_permissions
+0009.036 (R) [notice] Atomic restore: dropping original table (wp_woocommerce_downloadable_product_permissions)
+0009.043 (R) [notice] Atomic restore: renaming new table (50_woocommerce_downloadable_product_permissions) to final table name (wp_woocommerce_downloadable_product_permissions)
+0009.051 (R) [notice] Processing table (MyISAM):  wp_woocommerce_log - will restore as: 50_woocommerce_log
+0009.067 (R) [notice] Atomic restore: dropping original table (wp_woocommerce_log)
+0009.073 (R) [notice] Atomic restore: renaming new table (50_woocommerce_log) to final table name (wp_woocommerce_log)
+0009.080 (R) [notice] Processing table (MyISAM):  wp_woocommerce_order_itemmeta - will restore as: 50_woocommerce_order_itemmeta
+0009.094 (R) [notice] Atomic restore: dropping original table (wp_woocommerce_order_itemmeta)
+0009.100 (R) [notice] Atomic restore: renaming new table (50_woocommerce_order_itemmeta) to final table name (wp_woocommerce_order_itemmeta)
+0009.108 (R) [notice] Processing table (MyISAM):  wp_woocommerce_order_items - will restore as: 50_woocommerce_order_items
+0009.124 (R) [notice] Atomic restore: dropping original table (wp_woocommerce_order_items)
+0009.133 (R) [notice] Atomic restore: renaming new table (50_woocommerce_order_items) to final table name (wp_woocommerce_order_items)
+0009.139 (R) [notice] Processing table (MyISAM):  wp_woocommerce_payment_tokenmeta - will restore as: 50_woocommerce_payment_tokenmeta
+0009.153 (R) [notice] Atomic restore: dropping original table (wp_woocommerce_payment_tokenmeta)
+0009.159 (R) [notice] Atomic restore: renaming new table (50_woocommerce_payment_tokenmeta) to final table name (wp_woocommerce_payment_tokenmeta)
+0009.166 (R) [notice] Processing table (MyISAM):  wp_woocommerce_payment_tokens - will restore as: 50_woocommerce_payment_tokens
+0009.180 (R) [notice] Atomic restore: dropping original table (wp_woocommerce_payment_tokens)
+0009.186 (R) [notice] Atomic restore: renaming new table (50_woocommerce_payment_tokens) to final table name (wp_woocommerce_payment_tokens)
+0009.193 (R) [notice] Processing table (MyISAM):  wp_woocommerce_sessions - will restore as: 50_woocommerce_sessions
+0009.211 (R) [notice] Atomic restore: dropping original table (wp_woocommerce_sessions)
+0009.219 (R) [notice] Atomic restore: renaming new table (50_woocommerce_sessions) to final table name (wp_woocommerce_sessions)
+0009.226 (R) [notice] Processing table (MyISAM):  wp_woocommerce_shipping_zone_locations - will restore as: 50_woocommerce_shipping_zone_locations
+0009.243 (R) [notice] Atomic restore: dropping original table (wp_woocommerce_shipping_zone_locations)
+0009.249 (R) [notice] Atomic restore: renaming new table (50_woocommerce_shipping_zone_locations) to final table name (wp_woocommerce_shipping_zone_locations)
+0009.259 (R) [notice] Processing table (MyISAM):  wp_woocommerce_shipping_zone_methods - will restore as: 50_woocommerce_shipping_zone_methods
+0009.273 (R) [notice] Atomic restore: dropping original table (wp_woocommerce_shipping_zone_methods)
+0009.279 (R) [notice] Atomic restore: renaming new table (50_woocommerce_shipping_zone_methods) to final table name (wp_woocommerce_shipping_zone_methods)
+0009.285 (R) [notice] Processing table (MyISAM):  wp_woocommerce_shipping_zones - will restore as: 50_woocommerce_shipping_zones
+0009.299 (R) [notice] Atomic restore: dropping original table (wp_woocommerce_shipping_zones)
+0009.305 (R) [notice] Atomic restore: renaming new table (50_woocommerce_shipping_zones) to final table name (wp_woocommerce_shipping_zones)
+0009.311 (R) [notice] Processing table (MyISAM):  wp_woocommerce_tax_rate_locations - will restore as: 50_woocommerce_tax_rate_locations
+0009.328 (R) [notice] Atomic restore: dropping original table (wp_woocommerce_tax_rate_locations)
+0009.333 (R) [notice] Atomic restore: renaming new table (50_woocommerce_tax_rate_locations) to final table name (wp_woocommerce_tax_rate_locations)
+0009.339 (R) [notice] Processing table (MyISAM):  wp_woocommerce_tax_rates - will restore as: 50_woocommerce_tax_rates
+0009.354 (R) [notice] Atomic restore: dropping original table (wp_woocommerce_tax_rates)
+0009.360 (R) [notice] Atomic restore: renaming new table (50_woocommerce_tax_rates) to final table name (wp_woocommerce_tax_rates)
+0009.367 (R) [notice] Processing table (MyISAM):  wp_wpdatatable_2 - will restore as: 50_wpdatatable_2
+0009.367 (R) [notice] Requested table character set (utf8mb3) is not present - changing to utf8.
+0009.385 (R) [notice] Atomic restore: dropping original table (wp_wpdatatable_2)
+0009.390 (R) [notice] Atomic restore: renaming new table (50_wpdatatable_2) to final table name (wp_wpdatatable_2)
+0009.397 (R) [notice] Processing table (MyISAM):  wp_wpforms_entries - will restore as: 50_wpforms_entries
+0009.412 (R) [notice] Atomic restore: dropping original table (wp_wpforms_entries)
+0009.420 (R) [notice] Atomic restore: renaming new table (50_wpforms_entries) to final table name (wp_wpforms_entries)
+0009.431 (R) [notice] Processing table (MyISAM):  wp_wpforms_entry_fields - will restore as: 50_wpforms_entry_fields
+0009.447 (R) [notice] Atomic restore: dropping original table (wp_wpforms_entry_fields)
+0009.453 (R) [notice] Atomic restore: renaming new table (50_wpforms_entry_fields) to final table name (wp_wpforms_entry_fields)
+0009.461 (R) [notice] Processing table (MyISAM):  wp_wpforms_entry_meta - will restore as: 50_wpforms_entry_meta
+0009.477 (R) [notice] Atomic restore: dropping original table (wp_wpforms_entry_meta)
+0009.485 (R) [notice] Atomic restore: renaming new table (50_wpforms_entry_meta) to final table name (wp_wpforms_entry_meta)
+0009.492 (R) [notice] Processing table (MyISAM):  wp_wpforms_tasks_meta - will restore as: 50_wpforms_tasks_meta
+0009.511 (R) [notice] Atomic restore: dropping original table (wp_wpforms_tasks_meta)
+0009.519 (R) [notice] Atomic restore: renaming new table (50_wpforms_tasks_meta) to final table name (wp_wpforms_tasks_meta)
+0009.525 (R) [notice] Processing table (MyISAM):  wp_wsal_metadata - will restore as: 50_wsal_metadata
+0027.997 (R) [notice] Database queries processed: 500 in 27.95 seconds
+0028.834 (R) [notice] Atomic restore: dropping original table (wp_wsal_metadata)
+0028.845 (R) [notice] Atomic restore: renaming new table (50_wsal_metadata) to final table name (wp_wsal_metadata)
+0028.852 (R) [notice] Processing table (MyISAM):  wp_wsal_occurrences - will restore as: 50_wsal_occurrences
+0032.716 (R) [notice] Atomic restore: dropping original table (wp_wsal_occurrences)
+0032.725 (R) [notice] Atomic restore: renaming new table (50_wsal_occurrences) to final table name (wp_wsal_occurrences)
+0032.731 (R) [notice] Processing table (MyISAM):  wp_wsal_options - will restore as: 50_wsal_options
+0033.264 (R) [notice] Disabling Maintenance mode&#8230;
+0033.264 (R) [notice] Atomic restore: dropping original table (wp_wsal_options)
+0033.274 (R) [notice] Atomic restore: renaming new table (50_wsal_options) to final table name (wp_wsal_options)
+0033.281 (R) [notice] Finished: lines processed: 535 in 33.23 seconds
+0033.282 (R) [notice] Cleaning up rubbish...
+0033.297 (R) [notice] Unpacking backup... (backup_2021-07-30-2003_Central_College_Anuradhapura_e74525e55aeb-plugins.zip, 129 MB)
+0035.052 (R) [notice] Unzip progress: 2508 out of 19779 files (1.1 KB, plugins/vc-social-stream/addons/social-stream/template/template.html)
+0035.172 (R) [notice] Unzip progress: 3509 out of 19779 files (56.9 MB, plugins/meta-box/inc/templates/upload.php)
+0035.248 (R) [notice] Unzip progress: 4510 out of 19779 files (69.2 MB, plugins/revslider/public/assets/assets/svg/busy-icons-svg/preson-laurels.svg)
+0035.307 (R) [notice] Unzip progress: 5511 out of 19779 files (71.3 MB, plugins/revslider/admin/includes/shortcode_generator/gutenberg/dist/blocks.style.build.css)
+0035.382 (R) [notice] Unzip progress: 6512 out of 19779 files (91.7 MB, plugins/wpforms/assets/js/lity.min.js)
+0035.484 (R) [notice] Unzip progress: 7513 out of 19779 files (112.5 MB, plugins/old_plugins/js_composer/assets/lib/bower/bootstrap3/less/mixins/grid-framework.less)
+0035.567 (R) [notice] Unzip progress: 8514 out of 19779 files (120.5 MB, plugins/wp-asset-clean-up-pro/vendor/rawr/t-regx/test/CleanRegex/Internal/Delimiter/DelimiterParserTest.php)
+0035.645 (R) [notice] Unzip progress: 9515 out of 19779 files (134.7 MB, plugins/old/revslider/public/assets/assets/svg/busy-icons-svg/calendar1.svg)
+0035.706 (R) [notice] Unzip progress: 10516 out of 19779 files (137.1 MB, plugins/old/revslider/public/assets/assets/svg/av/ic_replay_5_24px.svg)
+0035.784 (R) [notice] Unzip progress: 11517 out of 19779 files (147.3 MB, plugins/old/essential-grid/admin/includes/index.php)
+0037.152 (R) [notice] Unzip progress: 12518 out of 19779 files (166.2 MB, plugins/old/js_composer/include/classes/shortcodes/vc-facebook.php)
+0037.228 (R) [notice] Unzip progress: 13519 out of 19779 files (185.8 MB, plugins/updraftplus/vendor/guzzle/guzzle/src/Guzzle/Service/Exception/ServiceBuilderException.php)
+0037.294 (R) [notice] Unzip progress: 14520 out of 19779 files (193.6 MB, plugins/wp-table-builder/inc/frontend/index.php)
+0037.353 (R) [notice] Unzip progress: 15521 out of 19779 files (194.3 MB, plugins/wp-table-builder/inc/frontend/views/icons/house-damage.svg)
+0037.445 (R) [notice] Unzip progress: 16522 out of 19779 files (214.7 MB, plugins/wp-security-audit-log/classes/Loggers/Database.php)
+0037.540 (R) [notice] Unzip progress: 17523 out of 19779 files (238.3 MB, plugins/wp-optimize/vendor/marcusschwarz/lesserphp/tests/inputs_lessjs/mixins-args.less)
+0037.656 (R) [notice] Unzip progress: 18524 out of 19779 files (268.1 MB, plugins/js_composer/assets/less/shortcodes/vc_flickr.less)
+0037.736 (R) [notice] Unzip progress: 19525 out of 19779 files (277 MB, plugins/wp-smushit/_src/scss/accessibility/_color-accessibility.scss)
+0037.763 (R) [notice] Unzip progress: 19779 out of 19779 files (282.4 MB, plugins/vc-extensions-imageoverlay/js/init.min.js)
+0037.777 (R) [notice] Moving old data out of the way...
+0038.876 (R) [notice] Moving unpacked backup into place...
+0039.924 (R) [notice] Cleaning up rubbish...
+0039.937 (R) [notice] Unpacking backup... (backup_2021-07-30-2003_Central_College_Anuradhapura_e74525e55aeb-themes.zip, 25.8 MB)
+0040.330 (R) [notice] Unzip progress: 1002 out of 2578 files (18.6 MB, themes/betheme/functions/importer/demo/be/band/menu.txt)
+0040.419 (R) [notice] Unzip progress: 2003 out of 2578 files (30.7 MB, themes/betheme/functions/builder/images/items/portfolio_photo.png)
+0040.471 (R) [notice] Unzip progress: 2578 out of 2578 files (40.8 MB, themes/archi/js/total1.js)
+0040.476 (R) [notice] Moving old data out of the way...
+0040.665 (R) [notice] Moving unpacked backup into place...
+0040.802 (R) [notice] Cleaning up rubbish...
+0040.812 (R) [notice] Unpacking backup... (backup_2021-07-30-2003_Central_College_Anuradhapura_e74525e55aeb-uploads.zip, 310.4 MB)
+0042.225 (R) [notice] Unzip progress: 1002 out of 6512 files (9.7 MB, uploads/ac_assets/uc_diamond_accordion/uc_diamond_accordion.css)
+0042.321 (R) [notice] Unzip progress: 2003 out of 6512 files (23.1 MB, uploads/revslider/templates/blooming-wedding-carousel/slide1.jpg)
+0042.433 (R) [notice] Unzip progress: 3004 out of 6512 files (47.2 MB, uploads/2017/07/vr-bg-img-01-700x358.jpg)
+0042.622 (R) [notice] Unzip progress: 3966 out of 6512 files (147.2 MB, uploads/2017/06/THE-TEACHERS-DAY-2014-700x358.jpg)
+0044.191 (R) [notice] Unzip progress: 4967 out of 6512 files (219.8 MB, uploads/2020/04/AL-Category-05-2048x474.png)
+0044.349 (R) [notice] Unzip progress: 5968 out of 6512 files (284 MB, uploads/2014/05/nietop1.jpg)
+0044.440 (R) [notice] Unzip progress: 6512 out of 6512 files (320.9 MB, uploads/js_composer/index.php)
+0044.474 (R) [notice] Moving old data out of the way...
+0045.701 (R) [notice] Moving unpacked backup into place...
+0046.050 (R) [notice] Cleaning up rubbish...
+0046.060 (R) [notice] Unpacking backup... (backup_2021-07-30-2003_Central_College_Anuradhapura_e74525e55aeb-others.zip, 3.3 MB)
+0046.102 (R) [notice] Unzip progress: 111 out of 111 files (3.5 MB, wflogs/ips.php)
+0046.107 (R) [notice] Cleaning up rubbish...

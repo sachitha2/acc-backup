@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
     'HTTP_ConditionalGet' => $vendorDir . '/mrclay/minify/lib/HTTP/ConditionalGet.php',
     'HTTP_Encoder' => $vendorDir . '/mrclay/minify/lib/HTTP/Encoder.php',
     'Minify' => $vendorDir . '/mrclay/minify/lib/Minify.php',

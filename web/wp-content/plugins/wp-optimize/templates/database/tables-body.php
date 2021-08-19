@@ -7,6 +7,7 @@
 	// Check for windows servers.
 	$sqlversion = $wp_optimize->get_db_info()->get_version();
 	$tablesstatus = $wp_optimize->get_optimizer()->get_tables();
+	$is_multisite_mode = $wp_optimize->is_multisite_mode();
 	$total_gain = 0;
 	$no = 0;
 	$row_usage = 0;
@@ -22,22 +23,24 @@
 			data-tablename="'.esc_attr($tablestatus->Name).'"
 			data-type="'.esc_attr($tablestatus->Engine).'"
 			data-optimizable="'.($tablestatus->is_optimizable ? 1 : 0).'"
+			'.($is_multisite_mode ? 'data-blog_id="'.($tablestatus->blog_id).'"' : '').'
 		>'."\n";
 		echo '<td data-colname="'.__('No.', 'wp-optimize').'">'.number_format_i18n($no).'</td>'."\n";
 		echo '<td data-tablename="'.esc_attr($tablestatus->Name).'" data-colname="'.__('Table', 'wp-optimize').'">'.htmlspecialchars($tablestatus->Name);
 
 		if (!empty($tablestatus->plugin_status)) {
-			echo "<br><span style='font-size: 11px;'>".__('Belongs to:', 'wp-optimize')."</span> ";
 			if ($tablestatus->wp_core_table) {
+				echo "<br><span style='font-size: 11px;'>".__('Belongs to:', 'wp-optimize')."</span> ";
 				echo "<span style='font-size: 11px;'>".__('WordPress core', 'wp-optimize')."</span>";
 			} else {
-				$separator = '';
+				echo '<div class="table-plugins">';
+				echo "<span style='font-size: 11px;'>".__('Known plugins that use this table name:', 'wp-optimize')."</span> ";
+				$separator = '<br>';
 				foreach ($tablestatus->plugin_status as $plugins_status) {
 					$plugin = $plugins_status['plugin'];
 					$status = $plugins_status['status'];
 
 					echo $separator;
-					$separator = '<br>';
 
 					echo " <a href='https://wordpress.org/plugins/{$plugin}/' target='_blank'><span style='font-size: 11px;'>{$plugin}</a>";
 
@@ -47,6 +50,7 @@
 						echo " <span style='font-size: 11px; color: #9B0000; font-weight: bold;'>[".__('inactive', 'wp-optimize')."]</span>";
 					}
 				}
+				echo '</div>';
 			}
 		}
 
